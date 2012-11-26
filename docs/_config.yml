@@ -1,0 +1,12 @@
+
+# filesystem
+source      : .
+destination : ./_site
+plugins     : ./_plugins
+exclude     : [.git, Gemfile, Gemfile.lock, .gitignore]
+
+# misc
+auto     : false
+safe     : false
+server   : false
+

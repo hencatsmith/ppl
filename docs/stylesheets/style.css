@@ -1,0 +1,40 @@
+
+body {
+	background-color: #EEE8D5;
+	font-family: "Ubuntu", sans-serif;
+	margin: 0;
+	padding: 0;
+	line-height: 1.5;
+}
+
+
+header.global {
+	background-color: #002B36;
+	padding: 128px 0 32px 0;
+}
+
+header.page {
+	background-color: #CB4B16;
+	color: #EEE8D5;
+	padding: 16px 0;
+}
+
+header.global h1,
+header.page h2,
+article.page {
+	margin: 0 auto;
+	width: 800px;
+}
+
+header.global h1 a {
+	color: #859900;
+	font-size: 32px;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+header.page h2 {
+	font-size: 20px;
+	font-weight: normal;
+}
+
