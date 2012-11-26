@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <title>Ppl by h2s</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Ppl</h1>
+        <h2>The CLI address book application that doesn't seem to exist yet but should</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/h2s/ppl/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/h2s/ppl/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/h2s/ppl" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <pre><code> _____  _____  __
+|  _  ||  _  ||  |
+|   __||   __||  |__
+|__|   |__|   |_____|
+</code></pre>
+
+<p>ppl aims to be address book software for command-line users. It's pronounced
+like "people". You might be interested in ppl if:</p>
+
+<ul>
+<li>You like using the command-line</li>
+<li>You want ownership of your address book data back from the cloud</li>
+<li>You prefer to keep your data stored in an open format</li>
+</ul><p>ppl is in an incomplete state right now, and is in active development. Stay
+tuned.</p>
+
+<p><a href="http://travis-ci.org/h2s/ppl"><img src="https://secure.travis-ci.org/h2s/ppl.png" alt="Build Status"></a></p>
+
+<h2>Installation</h2>
+
+<div class="highlight"><pre><span class="nv">$ </span>sudo gem install ppl
+</pre></div>
+
+<h2>Usage</h2>
+
+<h3>List all contacts</h3>
+
+<div class="highlight"><pre><span class="nv">$ </span>ppl ls
+dave: dave@example.org
+fred: fred@example.org
+john: john@example.org
+</pre></div>
+
+<h3>Add a contact</h3>
+
+<div class="highlight"><pre><span class="nv">$ </span>ppl add paul <span class="s2">"Paul Baker"</span>
+</pre></div>
+
+<h3>Show a contact</h3>
+
+<div class="highlight"><pre><span class="nv">$ </span>ppl show fred
+Fred Smith
+fred@example.org
+</pre></div>
+
+<h3>Delete a contact</h3>
+
+<div class="highlight"><pre><span class="nv">$ </span>ppl rm dave
+</pre></div>
+
+<h3>Change a contact's ID</h3>
+
+<div class="highlight"><pre><span class="nv">$ </span>ppl mv dave david
+</pre></div>
+
+<h3>Change a contact's name</h3>
+
+<div class="highlight"><pre><span class="nv">$ </span>ppl name john <span class="s2">"John Smith"</span>
+</pre></div>
+
+<h3>Change a contact's email address</h3>
+
+<div class="highlight"><pre><span class="nv">$ </span>ppl email dave david@example.org
+</pre></div>
+
+<h3>Change a contact's birthday</h3>
+
+<div class="highlight"><pre><span class="nv">$ </span>ppl birthday john 1980-01-01
+</pre></div>
+
+<h2>Roadmap</h2>
+
+<p>One of the core ideas of ppl is for it to turn your address book into a Git
+repository. In an earlier version, this was achieved using
+<a href="https://github.com/libgit2/rugged">Rugged</a>. This functionality will be added
+back in so that contact information can be easily synced between computers. In
+the meantime, ppl simply writes to disk.</p>
+
+<p>Other data about contacts will also be supported, such as:</p>
+
+<ul>
+<li>Postal addresses</li>
+<li>Phone numbers</li>
+<li>The name of the organization to which the contact belongs</li>
+<li>The position of the contact within their organization</li>
+</ul><p>The email address handling is currently very rudimentary. The eventual plan is
+to support storage of several addresses per contact. Addresses will be able to
+be organized according to location, such as "home" or "work", and it will be
+possible to mark a particular address as "preferred" for each location.</p>
+
+<p>Here's a quick mockup of the sort of output <code>ppl show</code> should produce a little
+further down the road once some of these goals have been reached:</p>
+
+<pre><code>Fred Smith &lt;fred.smith@example.org&gt;
+
+-- Email Addresses -------------------------------------------------------------
+
+   Home
+ * fred.smith@example.org
+   fsmith@aol.com
+
+   Work
+ * fred.smith@megacorp.com
+   fred.s.123@initrode.net
+
+-- Postal Addresses ------------------------------------------------------------
+
+   Home
+   1 Testing Road, TestVille, Testing, CA, 12345
+
+   Work
+   30 Business Road, TestVille, Testing, CA, 23454
+
+-- Telephone Numbers -----------------------------------------------------------
+
+   01234567891
+   09876541233
+</code></pre>
+
+<h2>Contributing</h2>
+
+<p>Bug reports, fixes, and additional features are encouraged. The project uses
+<a href="https://github.com/h2s/ppl/issues">Github issues</a> to track bug reports.</p>
+
+<p>If you'd like to contribute code, please just bear in mind that ppl development
+is test-driven and attempts to follow the "Object Mentor school of clean code"
+as described in the book <a href="http://books.google.co.uk/books?id=_i6bDeoCQzsC">Clean
+Code</a>.</p>
+
+<h2>License</h2>
+
+<p>ppl is licensed under the GNU GENERAL PUBLIC LICENSE Version 2.</p>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
