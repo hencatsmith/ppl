@@ -4,6 +4,7 @@ source      : .
 destination : ./_site
 plugins     : ./_plugins
 exclude     : [.git, Gemfile, Gemfile.lock, .gitignore]
+include     : [stylesheets]
 
 # misc
 auto     : false
