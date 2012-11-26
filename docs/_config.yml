@@ -2,12 +2,16 @@
 # filesystem
 source      : .
 destination : ./_site
-plugins     : ./_plugins
 exclude     : [.git, Gemfile, Gemfile.lock, .gitignore]
 include     : [stylesheets]
 
+# gitub compatibility
+safe     : true
+lsi      : false
+pygments : true
+
+
 # misc
-auto     : false
-safe     : false
-server   : false
+auto   : false
+server : false
 
