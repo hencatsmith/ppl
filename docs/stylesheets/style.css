@@ -21,13 +21,14 @@ header.page {
 
 header.global h1,
 header.page h2,
-article.page {
+article.page .content {
 	margin: 0 auto;
 	width: 800px;
 }
 
 header.global h1 a {
 	color: #859900;
+	color: #EEE8D5;
 	font-size: 32px;
 	font-weight: normal;
 	text-decoration: none;
@@ -36,5 +37,10 @@ header.global h1 a {
 header.page h2 {
 	font-size: 20px;
 	font-weight: normal;
+}
+
+article.page .content {
+	color: #586E75;
+	font-size: 18px;
 }
 
