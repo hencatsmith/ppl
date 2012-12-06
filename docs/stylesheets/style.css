@@ -1,7 +1,9 @@
 
 body {
+	background-color: #fdf6e3;
+	color: #586e75;
 	font-family: "Ubuntu", sans-serif;
-	font-size: 18px;
+	font-size: 16px;
 	margin: 0;
 	padding: 0;
 	line-height: 1.5;
@@ -11,13 +13,39 @@ code {
 	font-family: "Ubuntu Mono", monospace;
 }
 
-pre > code {
+pre {
+	background-color: #073642;
+	border: 1px solid #002b36;
+	color: #93a1a1;
+	display: block;
+	font-family: "Ubuntu Mono", monospace;
 	font-size: 18px;
 }
 
 .front-page .welcome,
 .front-page .what {
 	margin-top: 64px;
+}
+
+.front-page h1.big-welcome {
+	color: #002b36;
+	font-size: 64px;
+	margin: 32px 0 32px 0;
+}
+
+.front-page .little-welcome {
+	color: #002b36;
+	font-size: 24px;
+}
+
+.front-page .welcome-example code {
+	line-height: 20px;
+	font-size: 20px;
+}
+
+.front-page .what h2 {
+	color: #002b36;
+	font-size: 20px;
 }
 
 /*
