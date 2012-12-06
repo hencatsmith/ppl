@@ -1,4 +1,20 @@
 
+body {
+	font-family: "Ubuntu", sans-serif;
+	font-size: 18px;
+	margin: 0;
+	padding: 0;
+	line-height: 1.5;
+}
+
+code {
+	font-family: "Ubuntu Mono", monospace;
+}
+
+pre > code {
+	font-size: 18px;
+}
+
 /*
 SOLARIZED HEX     16/8 TERMCOL  XTERM/HEX   L*A*B      RGB         HSB
 --------- ------- ---- -------  ----------- ---------- ----------- -----------
@@ -18,14 +34,7 @@ violet    #6c71c4 13/5 brmagenta 61 #5f5faf 50  15 -45 108 113 196 237  45  77
 blue      #268bd2  4/4 blue      33 #0087ff 55 -10 -45  38 139 210 205  82  82
 cyan      #2aa198  6/6 cyan      37 #00afaf 60 -35 -05  42 161 152 175  74  63
 green     #859900  2/2 green     64 #5f8700 60 -20  65 133 153   0  68 100  60
-body {
-	background-color: #002b36;
-	color: #839496;
-	font-family: "Ubuntu", sans-serif;
-	margin: 0;
-	padding: 0;
-	line-height: 1.5;
-}
+
 
 
 header.global {
