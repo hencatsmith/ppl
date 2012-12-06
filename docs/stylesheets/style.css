@@ -64,6 +64,12 @@ pre {
 	text-shadow: none;
 }
 
+.nav-tabs.nav-stacked > li > a {
+	background-color: #eee8d5;
+	border-color: none;
+	color: #586e75;
+}
+
 /*
 SOLARIZED HEX     16/8 TERMCOL  XTERM/HEX   L*A*B      RGB         HSB
 --------- ------- ---- -------  ----------- ---------- ----------- -----------
