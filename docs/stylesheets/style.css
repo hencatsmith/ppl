@@ -15,6 +15,11 @@ pre > code {
 	font-size: 18px;
 }
 
+.front-page .welcome,
+.front-page .what {
+	margin-top: 64px;
+}
+
 /*
 SOLARIZED HEX     16/8 TERMCOL  XTERM/HEX   L*A*B      RGB         HSB
 --------- ------- ---- -------  ----------- ---------- ----------- -----------
