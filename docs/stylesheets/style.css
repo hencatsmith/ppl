@@ -48,6 +48,22 @@ pre {
 	font-size: 20px;
 }
 
+.navbar-inner {
+	background-color: #eee8d5;
+}
+
+.navbar .nav > li > a {
+	color: #586e75;
+}
+
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus {
+	background-color: #cb4b16;
+	color: #eee8d5;
+	text-shadow: none;
+}
+
 /*
 SOLARIZED HEX     16/8 TERMCOL  XTERM/HEX   L*A*B      RGB         HSB
 --------- ------- ---- -------  ----------- ---------- ----------- -----------
