@@ -52,6 +52,10 @@ pre {
 	background-color: #fdf6e3;
 }
 
+.navbar .brand {
+	padding: 5px 20px 0px;
+}
+
 .navbar .nav > li > a {
 	color: #586e75;
 }
@@ -72,7 +76,14 @@ pre {
 
 .commands h1 {
 	font-size: 32px;
-	margin: 32px 0;
+	font-weight: normal;
+	margin: 0 0 32px 0;
+}
+
+h2 {
+	font-size: 32px;
+	font-weight: normal;
+	margin: 0 0 32px 0;
 }
 
 /*

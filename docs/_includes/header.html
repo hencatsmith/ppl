@@ -18,16 +18,18 @@
   <div class="container">
 
     <div class="navbar">
-    <div class="navbar-inner">
+      <div class="navbar-inner">
 
-    <ul class="nav">
-      <li class="active">
-        <a href="/">Home</a>
-      </li>
-      <li><a href="/documentation">Documentation</a></li>
-    </ul>
+        <a class="brand" href="/">ppl</a>
 
-    </div>
+        <ul class="nav pull-right">
+
+          {% if page.section == "documentation" %}<li class="active">{% else %}<li>{% endif %}
+            <a href="/documentation">Documentation</a>
+          </li>
+
+        </ul>
+      </div>
     </div>
 
 
