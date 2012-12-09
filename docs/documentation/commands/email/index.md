@@ -2,6 +2,7 @@
 title: ppl email Manual Page
 layout: command
 section: documentation
+command: email
 ---
 
 ### Name

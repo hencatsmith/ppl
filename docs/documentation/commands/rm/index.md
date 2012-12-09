@@ -2,6 +2,7 @@
 title: ppl rm Manual Page
 layout: command
 section: documentation
+command: rm
 ---
 
 ### Name

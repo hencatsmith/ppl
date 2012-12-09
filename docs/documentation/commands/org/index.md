@@ -2,6 +2,7 @@
 title: ppl org Manual Page
 layout: command
 section: documentation
+command: org
 ---
 
 ### Name

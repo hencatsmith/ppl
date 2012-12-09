@@ -2,6 +2,7 @@
 title: ppl bday Manual Page
 layout: command
 section: documentation
+command: bday
 ---
 
 ### Name

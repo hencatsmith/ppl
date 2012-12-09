@@ -2,6 +2,7 @@
 title: ppl mv Manual Page
 layout: command
 section: documentation
+command: mv
 ---
 
 ### Name

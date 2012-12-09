@@ -2,6 +2,7 @@
 title: ppl phone Manual Page
 layout: command
 section: documentation
+command: phone
 ---
 
 ### Name

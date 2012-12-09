@@ -2,6 +2,7 @@
 title: ppl ls Manual Page
 layout: command
 section: documentation
+command: ls
 ---
 
 ### Name

@@ -2,6 +2,7 @@
 title: ppl show Manual Page
 layout: command
 section: documentation
+command: show
 ---
 
 ### Name
