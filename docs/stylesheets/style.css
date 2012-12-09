@@ -43,6 +43,10 @@ pre {
 	font-size: 20px;
 }
 
+.front-page .welcome-example .bash-prompt {
+	color: #859900;
+}
+
 .front-page .what h2 {
 	color: #002b36;
 	font-size: 20px;
