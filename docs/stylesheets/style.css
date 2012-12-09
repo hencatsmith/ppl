@@ -74,6 +74,11 @@ pre {
 	color: #586e75;
 }
 
+.nav-tabs.nav-stacked > li.active > a {
+	background-color: #cb4b16;
+	color: #eee8d5;
+}
+
 .commands h1 {
 	font-size: 32px;
 	font-weight: normal;
