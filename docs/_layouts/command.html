@@ -25,6 +25,29 @@
   </div>
 
   <div class="span8">
+
+    {% if page.command_name %}
+      <h2 class="command-name">
+        ppl {{page.command_name}} Manual Page
+      </h2>
+    {% endif %}
+
+    {% if page.command_name %}
+      <h3>Name</h3>
+      <p>
+        ppl {{page.command_name}}
+        {% if page.command_summary %}
+          - {{page.command_summary}}
+        {% endif %}
+      </p>
+    {% endif %}
+
+    {% if page.command_synopsis %}
+      <h3>Synopsis</h3>
+      <pre><code>{% for line in page.command_synopsis %}{{line}}
+{% endfor %}</code></pre>
+    {% endif %}
+
     {{content}}
   </div>
 
