@@ -11,6 +11,7 @@ body {
 
 code {
 	font-family: "Ubuntu Mono", monospace;
+	font-size: inherit;
 }
 
 pre {
