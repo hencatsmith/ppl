@@ -20,7 +20,11 @@
     <div class="navbar navbar-static-top">
       <div class="navbar-inner">
         <div class="container">
-          <a class="brand" href="/">ppl</a>
+
+          {% if page.url != "/index.html" %}
+            <a class="brand" href="/">ppl</a>
+          {% endif %}
+
           <ul class="nav pull-right">
             {% if page.section == "documentation" %}<li class="active">{% else %}<li>{% endif %}
               <a href="/documentation">Documentation</a>
