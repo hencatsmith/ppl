@@ -1,0 +1,50 @@
+a:link,
+a:visited {
+  color: #268bd2;
+}
+body {
+  background-color: #FAFAFA;
+  color: #586e75;
+}
+code {
+  background-color: #fdf6e3;
+}
+h2 {
+  color: #002b36;
+}
+h3 {
+  color: #cb4b16;
+}
+pre {
+  background-color: #002b36;
+  color: #eee8d5;
+  display: block;
+}
+.front-page h1.big-welcome,
+.front-page .little-welcome {
+  color: #002b36;
+}
+.btn.btn-primary {
+  background-color: #268bd2;
+  color: #eee8d5;
+}
+.navbar .navbar-inner {
+  background-color: #eee8d5;
+}
+.navbar .brand {
+  color: #002b36;
+  font-weight: bold;
+  text-shadow: none;
+}
+.command-list h2 {
+  color: inherit;
+}
+.navbar .nav > li > a {
+  color: #073642;
+}
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus {
+  background-color: #cb4b16;
+  color: #fdf6e3;
+}
