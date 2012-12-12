@@ -3,8 +3,11 @@ a:visited {
   color: #268bd2;
 }
 body {
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   color: #586e75;
+}
+div.content {
+  background-color: #fafafa;
 }
 code {
   background-color: #fdf6e3;
@@ -55,8 +58,12 @@ pre {
   background-color: #cb4b16;
   color: #fdf6e3;
 }
-.container.global {
-  margin-top: 20px;
+footer.global {
+  color: #93a1a1;
+}
+footer.global a:link,
+footer.global a:visited {
+  color: #839496;
 }
 .front-page .row.welcome {
   margin-top: 32px;
@@ -75,6 +82,14 @@ h3 {
 }
 .navbar .nav > li > a {
   padding: 12px 15px 12px;
+}
+.content {
+  padding-top: 20px;
+  padding-bottom: 128px;
+}
+footer.global {
+  border-top: 1px solid #D4D4D4;
+  padding: 16px 0;
 }
 body {
   font-family: "Arvo", sans-serif;
@@ -116,6 +131,13 @@ h3 {
 .navbar .nav > .active > a:hover,
 .navbar .nav > .active > a:focus {
   text-shadow: none;
+}
+footer.global {
+  font-size: 12px;
+}
+footer.global a:link,
+footer.global a:visited {
+  text-decoration: underline;
 }
 /*
 body {

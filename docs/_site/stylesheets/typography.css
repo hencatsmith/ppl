@@ -39,3 +39,10 @@ h3 {
 .navbar .nav > .active > a:focus {
   text-shadow: none;
 }
+footer.global {
+  font-size: 12px;
+}
+footer.global a:link,
+footer.global a:visited {
+  text-decoration: underline;
+}

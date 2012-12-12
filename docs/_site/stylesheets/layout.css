@@ -1,6 +1,3 @@
-.container.global {
-  margin-top: 20px;
-}
 .front-page .row.welcome {
   margin-top: 32px;
 }
@@ -18,4 +15,12 @@ h3 {
 }
 .navbar .nav > li > a {
   padding: 12px 15px 12px;
+}
+.content {
+  padding-top: 20px;
+  padding-bottom: 128px;
+}
+footer.global {
+  border-top: 1px solid #D4D4D4;
+  padding: 16px 0;
 }

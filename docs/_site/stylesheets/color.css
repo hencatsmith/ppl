@@ -3,8 +3,11 @@ a:visited {
   color: #268bd2;
 }
 body {
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   color: #586e75;
+}
+div.content {
+  background-color: #fafafa;
 }
 code {
   background-color: #fdf6e3;
@@ -54,4 +57,11 @@ pre {
 .nav-tabs.nav-stacked > li.active > a {
   background-color: #cb4b16;
   color: #fdf6e3;
+}
+footer.global {
+  color: #93a1a1;
+}
+footer.global a:link,
+footer.global a:visited {
+  color: #839496;
 }

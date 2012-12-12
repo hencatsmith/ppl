@@ -16,13 +16,20 @@
 @cyan    : #2aa198;
 @green   : #859900;
 
+@lightGrey: #FAFAFA;
+@darkGrey: #F0F0F0;
+
 a:link, a:visited {
   color: @blue;
 }
 
 body {
-  background-color: #FAFAFA;
+  background-color: @lightGrey;
   color: @base01;
+}
+
+div.content {
+  background-color: @lightGrey;
 }
 
 code {
@@ -53,7 +60,7 @@ pre {
 
 .navbar {
   .navbar-inner {
-    background-color: #f0f0f0;
+    background-color: @darkGrey;
   }
   .brand {
     color: @base03;
@@ -80,10 +87,18 @@ pre {
 }
 
 .nav-tabs.nav-stacked > li > a {
-  background-color: #f0f0f0;
+  background-color: @darkGrey;
 }
 .nav-tabs.nav-stacked > li.active > a {
   background-color: @orange;
   color: @base3;
+}
+
+footer.global {
+  color: @base1;
+
+  a:link, a:visited {
+    color: @base0;
+  }
 }
 
