@@ -15,15 +15,26 @@ ppl add - Add a new contact
 
 ### Description
 
-Lorem ipsum dolor sit amet, liber luptatum et nam. Nullam legimus meliore no
-vis, id latine fabellas honestatis duo, ne quo everti blandit euripidis. Mea ad
-nobis aperiri, velit mentitum ius cu. His id salutatus assueverit persequeris,
-populo scriptorem pri at. Vitae bonorum has an, mea diam delectus electram et.
+This command adds a new contact to the address book. The first parameter,
+`<contact>`, is an alphanumeric string used to uniquely identify the contact
+within the address book. The second parameter, `<name>`, is the contact's actual
+name.
 
-Sea ne eros evertitur, nec verterem percipitur sadipscing eu. Cu pro consul
-ornatus facilisis. Nulla option vulputate te eam, mea graeco explicari
-vituperatoribus ad. Te vocent reformidans vel, his ad utroque constituam
-eloquentiam, nec prompta eligendi argumentum te. Eum summo labores cu, wisi
-minim prompta no eam, id inimicus electram accommodare usu. Utinam veritus
-fuisset eum te.
+The `<contact>` parameter must not already be in use as the identifier of
+another contact in the address book. Ideally you'll want to pick something short
+and easy to type, so if you're adding a contact named "John Doe", then "john" or
+"jdoe" might be good choices if they aren't already in use.
+
+The `<name>` parameter should be the full name of the contact, and is identical
+to its namesake expected by the [ppl name](/documentation/commands/name)
+command.  Usually, this means it needs to be enclosed in quotation marks to
+indicate that all the words in the name are part of the same parameter. 
+
+### Examples
+
+    ppl add jdoe "John Doe"
+
+### See Also
+
+[ppl name](/documentation/commands/name)
 

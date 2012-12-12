@@ -103,9 +103,19 @@
 
 <h3 id='description'>Description</h3>
 
-<p>Lorem ipsum dolor sit amet, liber luptatum et nam. Nullam legimus meliore no vis, id latine fabellas honestatis duo, ne quo everti blandit euripidis. Mea ad nobis aperiri, velit mentitum ius cu. His id salutatus assueverit persequeris, populo scriptorem pri at. Vitae bonorum has an, mea diam delectus electram et.</p>
+<p>This command adds a new contact to the address book. The first parameter, <code>&lt;contact&gt;</code>, is an alphanumeric string used to uniquely identify the contact within the address book. The second parameter, <code>&lt;name&gt;</code>, is the contact&#8217;s actual name.</p>
 
-<p>Sea ne eros evertitur, nec verterem percipitur sadipscing eu. Cu pro consul ornatus facilisis. Nulla option vulputate te eam, mea graeco explicari vituperatoribus ad. Te vocent reformidans vel, his ad utroque constituam eloquentiam, nec prompta eligendi argumentum te. Eum summo labores cu, wisi minim prompta no eam, id inimicus electram accommodare usu. Utinam veritus fuisset eum te.</p>
+<p>The <code>&lt;contact&gt;</code> parameter must not already be in use as the identifier of another contact in the address book. Ideally you&#8217;ll want to pick something short and easy to type, so if you&#8217;re adding a contact named &#8220;John Doe&#8221;, then &#8220;john&#8221; or &#8220;jdoe&#8221; might be good choices if they aren&#8217;t already in use.</p>
+
+<p>The <code>&lt;name&gt;</code> parameter should be the full name of the contact, and is identical to its namesake expected by the <a href='/documentation/commands/name'>ppl name</a> command. Usually, this means it needs to be enclosed in quotation marks to indicate that all the words in the name are part of the same parameter.</p>
+
+<h3 id='examples'>Examples</h3>
+
+<pre><code>ppl add jdoe &quot;John Doe&quot;</code></pre>
+
+<h3 id='see_also'>See Also</h3>
+
+<p><a href='/documentation/commands/name'>ppl name</a></p>
   </div>
 
 </div>
