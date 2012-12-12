@@ -29,7 +29,7 @@ pre {
   color: #eee8d5;
 }
 .navbar .navbar-inner {
-  background-color: #eee8d5;
+  background-color: #f0f0f0;
 }
 .navbar .brand {
   color: #002b36;
@@ -45,6 +45,13 @@ pre {
 .navbar .nav > .active > a,
 .navbar .nav > .active > a:hover,
 .navbar .nav > .active > a:focus {
+  background-color: #cb4b16;
+  color: #fdf6e3;
+}
+.nav-tabs.nav-stacked > li > a {
+  background-color: #f0f0f0;
+}
+.nav-tabs.nav-stacked > li.active > a {
   background-color: #cb4b16;
   color: #fdf6e3;
 }
