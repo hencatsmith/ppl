@@ -1,0 +1,35 @@
+
+{% include header.html %}
+
+<div class="row">
+
+  <div class="span8">
+
+    {% if page.title %}
+      <h2>
+        {{page.title}}
+      </h2>
+    {% endif %}
+
+    {{content}}
+  </div>
+
+  <div class="span4">
+
+    <dl>
+      {% for post in site.posts %}
+        <dt>
+          <a href="{{post.url}}">
+            {{post.title}}
+          </a>
+        </dt>
+        <dd>{{post.date | date: '%Y-%m-%d'}}</dd>
+      {% endfor %}
+    </dl>
+
+  </div>
+
+</div>
+
+{% include footer.html %}
+

@@ -1,12 +1,9 @@
 ---
 title: News
-layout: page
 section: news
 ---
 
-<dl>
-{% for post in site.posts %}
-  {% include news-index-item.html %}
-{% endfor %}
-</dl>
+{% assign page = site.posts.first %}
+{% assign content = site.posts.first.content %}
+{% include news.html %}
 
