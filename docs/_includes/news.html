@@ -3,20 +3,19 @@
 
 <div class="row">
 
+  {% if page.title %}
+    <h2>
+      {{page.title}}
+    </h2>
+  {% endif %}
+
   <div class="span8">
-
-    {% if page.title %}
-      <h2>
-        {{page.title}}
-      </h2>
-    {% endif %}
-
     {{content}}
   </div>
 
   <div class="span4">
 
-    <dl class="news-sidebar">
+    <dl class="nav-sidebar">
       {% for post in site.posts %}
         {% if post.url == page.url %}<dt class="active">{% else %}<dt>{% endif %}
           <a href="{{post.url}}">

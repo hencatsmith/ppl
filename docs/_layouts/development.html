@@ -1,0 +1,43 @@
+{% include header.html %}
+
+<h2>Development</h2>
+
+<div class="row">
+
+  <div class="span8">
+    {{content}}
+  </div>
+
+  <div class="span4">
+
+    <dl class="nav-sidebar">
+
+      {% if page.url == "/development/index.html" %}<dt class="active">{% else %}<dt>{% endif %}
+        <a href="/development">Introduction</a>
+      </dt>
+      {% if page.url == "/development/index.html" %}<dd class="active">{% else %}<dd>{% endif %}
+        The very basics
+      </dd>
+
+      {% if page.url == "/development/changelog/index.html" %}<dt class="active">{% else %}<dt>{% endif %}
+        <a href="/development/changelog">Changelog</a>
+      </dt>
+      {% if page.url == "/development/changelog/index.html" %}<dd class="active">{% else %}<dd>{% endif %}
+        The fruit of our labor
+      </dd>
+
+      {% if page.url == "/development/roadmap/index.html" %}<dt class="active">{% else %}<dt>{% endif %}
+        <a href="/development/roadmap">Roadmap</a>
+      </dt>
+      {% if page.url == "/development/roadmap/index.html" %}<dd class="active">{% else %}<dd>{% endif %}
+        The plan for the the future
+      </dd>
+
+    </dl>
+
+  </div>
+
+</div>
+
+{% include footer.html %}
+

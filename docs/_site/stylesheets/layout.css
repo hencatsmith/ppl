@@ -24,12 +24,15 @@ footer.global {
   border-top: 1px solid #D4D4D4;
   padding: 16px 0;
 }
-.news-sidebar dt {
+.nav-sidebar {
+  margin: 0;
+}
+.nav-sidebar dt {
   padding: 4px 4px 0px 4px;
 }
-.news-sidebar dd {
+.nav-sidebar dd {
   padding: 0px 4px 4px 4px;
 }
-.news-sidebar dd {
+.nav-sidebar dd {
   margin: 0 0 16px 0;
 }
