@@ -65,6 +65,12 @@ footer.global a:link,
 footer.global a:visited {
   color: #839496;
 }
+.news-sidebar dt.active,
+.news-sidebar dt.active a,
+.news-sidebar dd.active {
+  background-color: #cb4b16;
+  color: #fdf6e3;
+}
 .front-page .row.welcome {
   margin-top: 32px;
 }
@@ -90,6 +96,15 @@ h3 {
 footer.global {
   border-top: 1px solid #D4D4D4;
   padding: 16px 0;
+}
+.news-sidebar dt {
+  padding: 4px 4px 0px 4px;
+}
+.news-sidebar dd {
+  padding: 0px 4px 4px 4px;
+}
+.news-sidebar dd {
+  margin: 0 0 16px 0;
 }
 body {
   font-family: "Arvo", sans-serif;

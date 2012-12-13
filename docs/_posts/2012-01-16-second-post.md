@@ -1,6 +1,6 @@
 ---
-title: First Post
-date: 2012-12-12
+title: Second Post
+date: 2012-12-13
 layout: news
 section: news
 ---

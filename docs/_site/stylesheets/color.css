@@ -65,3 +65,9 @@ footer.global a:link,
 footer.global a:visited {
   color: #839496;
 }
+.news-sidebar dt.active,
+.news-sidebar dt.active a,
+.news-sidebar dd.active {
+  background-color: #cb4b16;
+  color: #fdf6e3;
+}

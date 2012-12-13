@@ -16,14 +16,16 @@
 
   <div class="span4">
 
-    <dl>
+    <dl class="news-sidebar">
       {% for post in site.posts %}
-        <dt>
+        {% if post.url == page.url %}<dt class="active">{% else %}<dt>{% endif %}
           <a href="{{post.url}}">
             {{post.title}}
           </a>
         </dt>
-        <dd>{{post.date | date: '%Y-%m-%d'}}</dd>
+        {% if post.url == page.url %}<dd class="active">{% else %}<dd>{% endif %}
+          {{post.date | date: '%Y-%m-%d'}}
+        </dd>
       {% endfor %}
     </dl>
 
