@@ -12,6 +12,4 @@ lsi    : false
 safe   : false
 server : false
 
-url       : "http://h2s.github.com/ppl"
-
 
