@@ -12,4 +12,5 @@ lsi    : false
 safe   : false
 server : false
 
+version: 2
 
