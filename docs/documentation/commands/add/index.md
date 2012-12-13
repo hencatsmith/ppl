@@ -26,9 +26,9 @@ and easy to type, so if you're adding a contact named "John Doe", then "john" or
 "jdoe" might be good choices if they aren't already in use.
 
 The `<name>` parameter should be the full name of the contact, and is identical
-to its namesake expected by the [ppl name](/documentation/commands/name)
-command.  Usually, this means it needs to be enclosed in quotation marks to
-indicate that all the words in the name are part of the same parameter. 
+to its namesake expected by the [ppl name](/../name) command.  Usually, this
+means it needs to be enclosed in quotation marks to indicate that all the words
+in the name are part of the same parameter. 
 
 ### Examples
 
@@ -36,5 +36,5 @@ indicate that all the words in the name are part of the same parameter.
 
 ### See Also
 
-[ppl name](/documentation/commands/name)
+[ppl name](/../name)
 
