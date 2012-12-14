@@ -5,7 +5,7 @@ destination : ./_site
 plugins     : ./_plugins
 exclude     : [.git, Gemfile, Gemfile.lock, .gitignore]
 
-url       : "http://h2s.github.com/ppl"
+url       : "http://ppladdressbook.org"
 permalink : "/news/:title"
 
 auto   : false

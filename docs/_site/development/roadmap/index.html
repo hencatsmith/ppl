@@ -6,8 +6,8 @@
     <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
 
-    <link href="http://h2s.github.com/ppl/stylesheets/flatstrap/bootstrap.min.css" rel="stylesheet" />
-    <link href="http://h2s.github.com/ppl/stylesheets/ppl/2.css" rel="stylesheet" type="text/css" />
+    <link href="http://ppladdressbook.org/stylesheets/flatstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="http://ppladdressbook.org/stylesheets/ppl/2.css" rel="stylesheet" type="text/css" />
 
   </head>
   <body>
@@ -17,18 +17,18 @@
         <div class="container">
 
           
-            <a class="brand" href="http://h2s.github.com/ppl">ppl</a>
+            <a class="brand" href="http://ppladdressbook.org">ppl</a>
           
 
           <ul class="nav pull-right">
             <li>
-              <a href="http://h2s.github.com/ppl/documentation">Documentation</a>
+              <a href="http://ppladdressbook.org/documentation">Documentation</a>
             </li>
             <li>
-              <a href="http://h2s.github.com/ppl/news">News</a>
+              <a href="http://ppladdressbook.org/news">News</a>
             </li>
             <li class="active">
-              <a href="http://h2s.github.com/ppl/development">Development</a>
+              <a href="http://ppladdressbook.org/development">Development</a>
             </li>
           </ul>
         </div>
@@ -47,21 +47,21 @@
 <div class="row">
 
   <div class="span8">
-    <p>Lots of things:</p>
+    <h3 id='richer_dataset'>Richer Dataset</h3>
 
-<ul>
-<li>Postal address support</li>
+<p>As of 1.0.0, the set of contact data storable in ppl is fairly rudimentary. The big priority for the near future is to augment this aspect of the program.</p>
 
-<li>Multiple email addresses per contact</li>
+<p>Instead of a single email address or phone number per contact, support for zero or more of each is needed. And support for zero or more postal addresses as well. Other scalar properties will be supported too, such as URLs and job titles.</p>
 
-<li>Multiple phone numbers per contact</li>
+<h3 id='improved_configurability'>Improved Configurability</h3>
 
-<li>Color output</li>
+<p>There are a few git-like CLI features that would be desirable. The ability to colorize the output of certain commands such as &#8220;ls&#8221; or &#8220;show&#8221; is a good example. Support for aliases is also in the pipeline.</p>
 
-<li>Aliases</li>
+<h3 id='synchronization_ux'>Synchronization UX</h3>
 
-<li>Some sort of &#8220;ppl sync&#8221; command</li>
-</ul>
+<p>While using git as the storage engine enables a nice decentralized approach to managing contacts, ppl does not yet offer any help with this. Pushing, pulling and merging are operations for which users must drop back into regular git commands.</p>
+
+<p>It would be good to implement some sort of &#8220;ppl sync&#8221; command to automate as much of this as possible. Right now, I&#8217;m not aware of any git wrapper for Ruby that facilitates pushing and pulling of commits though.</p>
   </div>
 
   <div class="span4">
@@ -69,21 +69,21 @@
     <dl class="nav-sidebar">
 
       <dt>
-        <a href="http://h2s.github.com/ppl/development">Introduction</a>
+        <a href="http://ppladdressbook.org/development">Introduction</a>
       </dt>
       <dd>
         The very basics
       </dd>
 
       <dt>
-        <a href="http://h2s.github.com/ppl/development/changelog">Changelog</a>
+        <a href="http://ppladdressbook.org/development/changelog">Changelog</a>
       </dt>
       <dd>
         The fruit of our labor
       </dd>
 
       <dt class="active">
-        <a href="http://h2s.github.com/ppl/development/roadmap">Roadmap</a>
+        <a href="http://ppladdressbook.org/development/roadmap">Roadmap</a>
       </dt>
       <dd class="active">
         The plan for the the future
@@ -111,8 +111,8 @@
       </div>
     </footer>
 
-    <script src="http://h2s.github.com/ppl/javascript/flatstrap/jquery.js"></script>
-    <script src="http://h2s.github.com/ppl/javascript/flatstrap/bootstrap.min.js"></script>
+    <script src="http://ppladdressbook.org/javascript/flatstrap/jquery.js"></script>
+    <script src="http://ppladdressbook.org/javascript/flatstrap/bootstrap.min.js"></script>
 
   </body>
 </html>
