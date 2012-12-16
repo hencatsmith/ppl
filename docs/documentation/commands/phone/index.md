@@ -7,7 +7,7 @@ command: phone
 
 ### Name
 
-ppl phone - Set a contact's phone number
+ppl phone - List, show or change phone numbers
 
 ### Synopsis
 
