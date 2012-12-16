@@ -7,20 +7,31 @@ command: org
 
 ### Name
 
-ppl org - Set the organization name of a contact
+ppl org - List, show or change organizations
 
 ### Synopsis
 
+    ppl org
+    ppl org <contact>
     ppl org <contact> <organization>
 
 ### Description
 
-Stores the given `<organization>` as the name of the organization to which the
-specified `<contact>` belongs.  The `<contact>` parameter must correspond to the
-ID of an existing contact in the address book. The `<organization>` may be any
-string value.
+With no arguments, the organizations of each contact in the address book are
+listed.
+
+If a `<contact>` is specified, the organization of that contact is shown.
+
+If both a `<contact>` and an `<organization>` are given, then the organization
+is stored as the organization of that contact.
 
 ### Examples
 
-    ppl org jdoe "Free Software Foundation"
+    $ ppl org jdoe "Free Software Foundation"
+    $ ppl org adam "Microsoft Corporation"
+    $ ppl org jdoe
+    Free Software Foundation
+    $ ppl org
+    adam:  Microsoft Corporation
+    jdoe:  Free Software Foundation
 

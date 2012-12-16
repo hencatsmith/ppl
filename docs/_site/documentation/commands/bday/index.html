@@ -7,8 +7,8 @@
     <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
 
-    <link href="http://ppladdressbook.org/stylesheets/flatstrap/bootstrap.min.css" rel="stylesheet" />
-    <link href="http://ppladdressbook.org/stylesheets/ppl/2.css" rel="stylesheet" type="text/css" />
+    <link href="http://ppl.blueprint/stylesheets/flatstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="http://ppl.blueprint/stylesheets/ppl/2.css" rel="stylesheet" type="text/css" />
 
   </head>
   <body>
@@ -18,18 +18,18 @@
         <div class="container">
 
           
-            <a class="brand" href="http://ppladdressbook.org">ppl</a>
+            <a class="brand" href="http://ppl.blueprint">ppl</a>
           
 
           <ul class="nav pull-right">
             <li class="active">
-              <a href="http://ppladdressbook.org/documentation">Documentation</a>
+              <a href="http://ppl.blueprint/documentation">Documentation</a>
             </li>
             <li>
-              <a href="http://ppladdressbook.org/news">News</a>
+              <a href="http://ppl.blueprint/news">News</a>
             </li>
             <li>
-              <a href="http://ppladdressbook.org/development">Development</a>
+              <a href="http://ppl.blueprint/development">Development</a>
             </li>
           </ul>
         </div>
@@ -52,37 +52,37 @@
 
     <ul class="nav nav-tabs nav-stacked">
       <li>
-        <a href="http://ppladdressbook.org/documentation/commands/add">add</a>
+        <a href="http://ppl.blueprint/documentation/commands/add">add</a>
       </li>
       <li class="active">
-        <a href="http://ppladdressbook.org/documentation/commands/bday">bday</a>
+        <a href="http://ppl.blueprint/documentation/commands/bday">bday</a>
       </li>
       <li>
-        <a href="http://ppladdressbook.org/documentation/commands/email">email</a>
+        <a href="http://ppl.blueprint/documentation/commands/email">email</a>
       </li>
       <li>
-        <a href="http://ppladdressbook.org/documentation/commands/init">init</a>
+        <a href="http://ppl.blueprint/documentation/commands/init">init</a>
       </li>
       <li>
-        <a href="http://ppladdressbook.org/documentation/commands/ls">ls</a>
+        <a href="http://ppl.blueprint/documentation/commands/ls">ls</a>
       </li>
       <li>
-        <a href="http://ppladdressbook.org/documentation/commands/mv">mv</a>
+        <a href="http://ppl.blueprint/documentation/commands/mv">mv</a>
       </li>
       <li>
-        <a href="http://ppladdressbook.org/documentation/commands/name">name</a>
+        <a href="http://ppl.blueprint/documentation/commands/name">name</a>
       </li>
       <li>
-        <a href="http://ppladdressbook.org/documentation/commands/org">org</a>
+        <a href="http://ppl.blueprint/documentation/commands/org">org</a>
       </li>
       <li>
-        <a href="http://ppladdressbook.org/documentation/commands/phone">phone</a>
+        <a href="http://ppl.blueprint/documentation/commands/phone">phone</a>
       </li>
       <li>
-        <a href="http://ppladdressbook.org/documentation/commands/rm">rm</a>
+        <a href="http://ppl.blueprint/documentation/commands/rm">rm</a>
       </li>
       <li>
-        <a href="http://ppladdressbook.org/documentation/commands/show">show</a>
+        <a href="http://ppl.blueprint/documentation/commands/show">show</a>
       </li>
     </ul>
   </div>
@@ -97,19 +97,31 @@
 
     <h3 id='name'>Name</h3>
 
-<p>ppl bday - Set a contact&#8217;s birthday</p>
+<p>ppl bday - List, show or change birthdays</p>
 
 <h3 id='synopsis'>Synopsis</h3>
 
-<pre><code>ppl bday &lt;contact&gt; &lt;date&gt;</code></pre>
+<pre><code>ppl bday
+ppl bday &lt;contact&gt;
+ppl bday &lt;contact&gt; &lt;date&gt;</code></pre>
 
 <h3 id='description'>Description</h3>
 
-<p>Stores the given date as the date of birth of the specified contact. The <code>&lt;contact&gt;</code> parameter must correspond to the ID of an existing contact in the address book. The <code>&lt;date&gt;</code> parameter must be a valid date string parseable by Ruby&#8217;s <a href='http://ruby-doc.org/stdlib-1.9.3/libdoc/date/rdoc/Date.html\#method-c-parse'>Date.parse</a> function.</p>
+<p>With no arguments, the dates of birth of each contact in the address book are listed.</p>
+
+<p>If a <code>&lt;contact&gt;</code> is specified, the date of birth of that contact is shown.</p>
+
+<p>If both a <code>&lt;contact&gt;</code> and a <code>&lt;date&gt;</code> are given, then the date is stored as the date of birth of that contact. The <code>&lt;date&gt;</code> parameter must be a valid date string parseable by Ruby&#8217;s <a href='http://ruby-doc.org/stdlib-1.9.3/libdoc/date/rdoc/Date.html\#method-c-parse'>Date.parse</a> function.</p>
 
 <h3 id='examples'>Examples</h3>
 
-<pre><code>ppl bday jdoe 1970-01-01</code></pre>
+<pre><code>$ ppl bday jdoe 1970-01-01
+$ ppl bday adam 1975-06-01
+$ ppl bday jdoe
+1970-01-01
+$ ppl bday
+adam:  1975-06-01
+jdoe:  1970-01-01</code></pre>
 
 <h3 id='see_also'>See Also</h3>
 
@@ -136,8 +148,8 @@
       </div>
     </footer>
 
-    <script src="http://ppladdressbook.org/javascript/flatstrap/jquery.js"></script>
-    <script src="http://ppladdressbook.org/javascript/flatstrap/bootstrap.min.js"></script>
+    <script src="http://ppl.blueprint/javascript/flatstrap/jquery.js"></script>
+    <script src="http://ppl.blueprint/javascript/flatstrap/bootstrap.min.js"></script>
 
   </body>
 </html>

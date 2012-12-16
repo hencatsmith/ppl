@@ -7,19 +7,31 @@ command: name
 
 ### Name
 
-ppl name - Set a contact's name
+ppl name - List, show or change names
 
 ### Synopsis
 
+    ppl name
+    ppl name <contact>
     ppl name <contact> <name>
 
 ### Description
 
-Stores the given `<name>` as the full name of the contact specified by the
-`<contact>` parameter. The `<contact>` parameter must correspond to the ID of an
-existing contact in the address book. The `<name>` may be any string value.
+With no arguments, the full names of each contact in the address book are
+listed.
+
+If a `<contact>` is specified, the full name of that contact is shown.
+
+If both a `<contact>` and a `<name>` are given, then the name is stored as the
+full name of the contact.
 
 ### Examples
 
-    ppl name jdoe "John Doe"
+    $ ppl name jdoe "John Doe"
+    $ ppl name adam "Adam West"
+    $ ppl name jdoe
+    John Doe
+    $ ppl name
+    adam:  Adam West
+    jdoe:  John Doe
 
