@@ -97,19 +97,31 @@
 
     <h3 id='name'>Name</h3>
 
-<p>ppl email - Set a contact&#8217;s email address</p>
+<p>ppl email - List, show or change email addresses</p>
 
 <h3 id='synopsis'>Synopsis</h3>
 
-<pre><code>ppl email &lt;contact&gt; &lt;email-address&gt;</code></pre>
+<pre><code>ppl email
+ppl email &lt;contact&gt;
+ppl email &lt;contact&gt; &lt;email-address&gt;</code></pre>
 
 <h3 id='description'>Description</h3>
 
-<p>Stores the given email address as the contact address of the specified contact. The <code>&lt;contact&gt;</code> parameter must correspond to the ID of an existing contact in the address book. No validation is performed against the <code>&lt;email&gt;</code> parameter, so go nuts.</p>
+<p>With no arguments, the email addresses of each contact in the address book are listed.</p>
+
+<p>If a <code>&lt;contact&gt;</code> is specified, the email address of that contact is shown.</p>
+
+<p>If both a <code>&lt;contact&gt;</code> and an <code>&lt;email-address&gt;</code> are given, then the address is stored as the address of the contact.</p>
 
 <h3 id='examples'>Examples</h3>
 
-<pre><code>ppl email jdoe jdoe@example.org</code></pre>
+<pre><code>$ ppl email jdoe jdoe@example.org
+$ ppl email adam adam@example.com
+$ ppl email jdoe
+jdoe@example.org
+$ ppl email
+adam:  adam@example.com
+jdoe:  jdoe@example.org</code></pre>
   </div>
 
 </div>

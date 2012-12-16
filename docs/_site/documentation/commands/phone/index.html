@@ -101,15 +101,27 @@
 
 <h3 id='synopsis'>Synopsis</h3>
 
-<pre><code>ppl phone &lt;contact&gt; &lt;number&gt;</code></pre>
+<pre><code>ppl phone
+ppl phone &lt;contact&gt;
+ppl phone &lt;contact&gt; &lt;number&gt;</code></pre>
 
 <h3 id='description'>Description</h3>
 
-<p>Stores the given <code>&lt;number&gt;</code> as the phone number of the specified <code>&lt;contact&gt;</code>. The <code>&lt;contact&gt;</code> parameter must correspond to the ID of an existing contact in the address book. The <code>&lt;number&gt;</code> may be any string value.</p>
+<p>With no arguments, the phone numbers of each contact in the address book are listed.</p>
+
+<p>If a <code>&lt;contact&gt;</code> is specified, the phone number of that contact is shown.</p>
+
+<p>If both a <code>&lt;contact&gt;</code> and a <code>&lt;phone-number&gt;</code> are given, then the number is stored as the phone number of the contact.</p>
 
 <h3 id='examples'>Examples</h3>
 
-<pre><code>ppl phone jdoe 0123456789</code></pre>
+<pre><code>$ ppl phone jdoe 0123456789
+$ ppl phone adam 0777111222
+$ ppl phone jdoe
+0123456789
+$ ppl phone
+adam:  0777111222
+jdoe:  0123456789</code></pre>
   </div>
 
 </div>

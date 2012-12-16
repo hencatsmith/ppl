@@ -7,20 +7,31 @@ command: email
 
 ### Name
 
-ppl email - Set a contact's email address
+ppl email - List, show or change email addresses
 
 ### Synopsis
 
+    ppl email
+    ppl email <contact>
     ppl email <contact> <email-address>
 
 ### Description
 
-Stores the given email address as the contact address of the specified contact.
-The `<contact>` parameter must correspond to the ID of an existing contact in
-the address book. No validation is performed against the `<email>` parameter, so
-go nuts.
+With no arguments, the email addresses of each contact in the address book are
+listed.
+
+If a `<contact>` is specified, the email address of that contact is shown.
+
+If both a `<contact>` and an `<email-address>` are given, then the address is
+stored as the address of the contact.
 
 ### Examples
 
-    ppl email jdoe jdoe@example.org
+    $ ppl email jdoe jdoe@example.org
+    $ ppl email adam adam@example.com
+    $ ppl email jdoe
+    jdoe@example.org
+    $ ppl email
+    adam:  adam@example.com
+    jdoe:  jdoe@example.org
 

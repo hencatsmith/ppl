@@ -11,15 +11,27 @@ ppl phone - Set a contact's phone number
 
 ### Synopsis
 
+    ppl phone
+    ppl phone <contact>
     ppl phone <contact> <number>
 
 ### Description
 
-Stores the given `<number>` as the phone number of the specified `<contact>`.
-The `<contact>` parameter must correspond to the ID of an existing contact in
-the address book. The `<number>` may be any string value.
+With no arguments, the phone numbers of each contact in the address book are
+listed.
+
+If a `<contact>` is specified, the phone number of that contact is shown.
+
+If both a `<contact>` and a `<phone-number>` are given, then the number is
+stored as the phone number of the contact.
 
 ### Examples
 
-    ppl phone jdoe 0123456789
+    $ ppl phone jdoe 0123456789
+    $ ppl phone adam 0777111222
+    $ ppl phone jdoe
+    0123456789
+    $ ppl phone
+    adam:  0777111222
+    jdoe:  0123456789
 
