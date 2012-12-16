@@ -3,7 +3,7 @@
 source      : .
 destination : ./_site
 plugins     : ./_plugins
-exclude     : [.git, Gemfile, Gemfile.lock, .gitignore]
+exclude     : [.git, Gemfile, Gemfile.lock, .gitignore, Rakefile]
 
 url       : "http://ppladdressbook.org"
 permalink : "/news/:title"
