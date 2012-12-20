@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>ppl show Manual Page</title>
+    <title>ppl mutt Manual Page</title>
 
     <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
@@ -85,7 +85,7 @@
       <li>
         <a href="http://ppladdressbook.org/documentation/commands/ls">ls</a>
       </li>
-      <li>
+      <li class="active">
         <a href="http://ppladdressbook.org/documentation/commands/mutt">mutt</a>
       </li>
       <li>
@@ -103,7 +103,7 @@
       <li>
         <a href="http://ppladdressbook.org/documentation/commands/rm">rm</a>
       </li>
-      <li class="active">
+      <li>
         <a href="http://ppladdressbook.org/documentation/commands/show">show</a>
       </li>
     </ul>
@@ -113,29 +113,29 @@
 
     
       <h2>
-        ppl show Manual Page
+        ppl mutt Manual Page
       </h2>
     
 
     <h3 id='name'>Name</h3>
 
-<p>ppl show - Display a contact&#8217;s full details</p>
+<p>ppl mutt - Integration with mutt&#8217;s query_command</p>
 
 <h3 id='synopsis'>Synopsis</h3>
 
-<pre><code>ppl show &lt;contact&gt;</code></pre>
+<pre><code>ppl mutt &lt;query&gt;</code></pre>
 
 <h3 id='description'>Description</h3>
 
-<p>Display the full details of the specified <code>&lt;contact&gt;</code>. This command will output all the contact details that are currently stored, including email address, date of birth, organization, and so on.</p>
+<p>Searches the names and email addresses in the address book for the given <code>&lt;query&gt;</code> string and returns a list of results formatted for compatibility with <a href='http://www.mutt.org/doc/manual/manual-4.html#ss4.5'>mutt&#8217;s query_command option</a>.</p>
+
+<p>This is intended to enable mutt users to integrate ppl as the search backend for recipient autocompletion.</p>
 
 <h3 id='examples'>Examples</h3>
 
-<pre><code>$ ppl show jdoe
-jdoe: John Doe &lt;jdoe@example.org&gt;
+<p>Put the following in your <code>~/.muttrc</code>:</p>
 
-    Telephone 0123456789
-    Birthday  1970-01-01</code></pre>
+<pre><code>set query_command = &quot;ppl mutt &#39;%s&#39;&quot;</code></pre>
   </div>
 
 </div>
