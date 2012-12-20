@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>ppl show Manual Page</title>
+    <title>ppl post Manual Page</title>
 
     <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
@@ -100,13 +100,13 @@
       <li>
         <a href="http://ppladdressbook.org/documentation/commands/phone">phone</a>
       </li>
-      <li>
+      <li class="active">
         <a href="http://ppladdressbook.org/documentation/commands/post">post</a>
       </li>
       <li>
         <a href="http://ppladdressbook.org/documentation/commands/rm">rm</a>
       </li>
-      <li class="active">
+      <li>
         <a href="http://ppladdressbook.org/documentation/commands/show">show</a>
       </li>
     </ul>
@@ -116,29 +116,49 @@
 
     
       <h2>
-        ppl show Manual Page
+        ppl post Manual Page
       </h2>
     
 
     <h3 id='name'>Name</h3>
 
-<p>ppl show - Display a contact&#8217;s full details</p>
+<p>ppl post - List, show or change postal addresses</p>
 
 <h3 id='synopsis'>Synopsis</h3>
 
-<pre><code>ppl show &lt;contact&gt;</code></pre>
+<pre><code>ppl post
+ppl post &lt;contact&gt;
+ppl post &lt;contact&gt;
+    -s, --street &lt;street-address&gt;
+    -z, --postal-code &lt;postal-code&gt;
+    -p, --po-box &lt;po-box&gt;
+    -l, --locality &lt;locality&gt;
+    -r, --region &lt;region&gt;
+    -c, --country &lt;country&gt;</code></pre>
 
 <h3 id='description'>Description</h3>
 
-<p>Display the full details of the specified <code>&lt;contact&gt;</code>. This command will output all the contact details that are currently stored, including email address, date of birth, organization, and so on.</p>
+<p>With no arguments, the postal addresses of each contact in the address book are listed.</p>
+
+<p>If a <code>&lt;contact&gt;</code> is specified and no address properties are specified, the postal address of that contact is shown.</p>
+
+<p>If both a <code>&lt;contact&gt;</code> and some address properties are given, then those properties are stored as part of the postal address of that contact.</p>
 
 <h3 id='examples'>Examples</h3>
 
-<pre><code>$ ppl show jdoe
-jdoe: John Doe &lt;jdoe@example.org&gt;
-
-    Telephone 0123456789
-    Birthday  1970-01-01</code></pre>
+<pre><code>$ ppl post jdoe --street &quot;1600 Pennsylvania Avenue Northwest&quot;
+$ ppl post jdoe --postal-code 20500
+$ ppl post jdoe --locality &quot;Washington, D.C.&quot;
+$ ppl post jdoe --country &quot;USA&quot;
+$ ppl post jdoe
+Street:       1600 Pennsylvania Avenue Northwest
+Postal Code:  20500
+Locality:     Washington, D.C.
+Region:       Peshawar
+Country:      USA
+$ ppl post
+alice:  3701 Southwest 12th Street, Topeka, Kansas, USA
+bob:    1600 Pennsylvania Avenue Northwest, Washington, D.C., USA, 20500</code></pre>
   </div>
 
 </div>

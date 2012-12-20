@@ -4,6 +4,17 @@ layout: development
 section: development
 ---
 
+### 1.2.0
+
+A relatively small release in terms of new functionality, `1.2.0` simply adds
+the [ppl post](/documentation/commands/post) command. This command was always in
+the pipeline, but thanks anways to
+[nicky0](http://news.ycombinator.com/user?id=nicky0) on Hacker News for
+[prompting me](http://news.ycombinator.com/item?id=4947468) to prioritise it
+slightly.
+
+* Added `ppl post` command
+
 ### 1.1.0
 
 These are some very quickly added changes resulting from this morning's exposure
