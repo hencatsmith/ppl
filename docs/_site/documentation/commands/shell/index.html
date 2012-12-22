@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>ppl ls Manual Page</title>
+    <title>ppl shell Manual Page</title>
 
     <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
@@ -82,7 +82,7 @@
       <li>
         <a href="http://ppladdressbook.org/documentation/commands/init">init</a>
       </li>
-      <li class="active">
+      <li>
         <a href="http://ppladdressbook.org/documentation/commands/ls">ls</a>
       </li>
       <li>
@@ -106,7 +106,7 @@
       <li>
         <a href="http://ppladdressbook.org/documentation/commands/rm">rm</a>
       </li>
-      <li>
+      <li class="active">
         <a href="http://ppladdressbook.org/documentation/commands/shell">shell</a>
       </li>
       <li>
@@ -119,27 +119,33 @@
 
     
       <h2>
-        ppl ls Manual Page
+        ppl shell Manual Page
       </h2>
     
 
     <h3 id='name'>Name</h3>
 
-<p>ppl ls - List all contacts</p>
+<p>ppl shell - Interactive mode</p>
 
 <h3 id='synopsis'>Synopsis</h3>
 
-<pre><code>ppl ls</code></pre>
+<pre><code>ppl shell</code></pre>
 
 <h3 id='description'>Description</h3>
 
-<p>List all the contacts in the address book.</p>
+<p>Opens ppl in interactive mode, allowing users to skip typing &#8220;ppl&#8221; at the start of every single command. This is intended to be useful in the case of longer sessions, when a user plans to interact with ppl many times and wants to avoid some of the repetition.</p>
+
+<p>In interactive mode, all the ppl commands work as normal. The only difference is that there is no need to prefix every command with <code>ppl</code>. So instead of typing <code>ppl ls</code>, in interactive mode you would just type <code>ls</code>.</p>
+
+<p>To exit interactive mode, type <code>exit</code>, or send a <code>sigint</code> or <code>eof</code> (Ctrl+C or Ctrl+D usually).</p>
 
 <h3 id='examples'>Examples</h3>
 
-<pre><code>$ ppl ls
+<pre><code>$ ppl shell
+ppl&gt; ls
 jdoe: John Doe &lt;jdoe@example.org&gt;
-kdoe: Kent Doe &lt;kdoe@example.org&gt;</code></pre>
+kdoe: Kent Doe &lt;kdoe@example.org&gt;
+ppl&gt; exit</code></pre>
   </div>
 
 </div>

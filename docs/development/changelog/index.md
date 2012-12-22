@@ -4,6 +4,16 @@ layout: development
 section: development
 ---
 
+### 1.5.0
+
+The addition of "interactive mode" in the form of [ppl
+shell](/documentation/commands/shell). Thanks to
+[@axelGschaider](https://github.com/axelGschaider) on GitHub for [the
+suggestion](https://github.com/h2s/ppl/issues/7). This ought to make life a lot
+easier for people entering lots of commands at once!
+
+* Added `ppl shell` command
+
 ### 1.4.1
 
 This version is a first step towards removing the annoying limitation of one
