@@ -66,7 +66,27 @@
 <div class="row">
 
   <div class="span8">
-    <h3 id='120'>1.2.0</h3>
+    <h3 id='141'>1.4.1</h3>
+
+<p>This version is a first step towards removing the annoying limitation of one email address, postal address and so on per contact. This isn&#8217;t glamorous work but it&#8217;s vital functionality.</p>
+
+<p>The ability to add more than one email address to a contact has been added. This is not 100% complete: email addresses cannot yet be deleted, for example. And <a href='/documentation/commands/show'>ppl show</a> does not yet show all the addresses (only <a href='/documentation/commands/email'>ppl email</a> does for now). But at least it&#8217;s now possible to store the data</p>
+
+<ul>
+<li>Contacts can now have more than one email address</li>
+</ul>
+
+<h3 id='130'>1.3.0</h3>
+
+<p>Adds support for XDG-compatible configuration. Many thanks to <a href='https://github.com/h2s/ppl/issues/4'>@tijn</a> on GitHub for <a href='https://github.com/h2s/ppl/issues/4'>recommending this functionality</a>.</p>
+
+<p>This means ppl can now be alternatively configured using a file at <code>~/.config/ppl/config</code>. If you like keeping your <code>~/</code> free of dotfile clutter then this is good news. If not, don&#8217;t worry, <code>~/.pplconfig</code> continues working as normal.</p>
+
+<ul>
+<li>Add support for XDG-compatible configuration file location</li>
+</ul>
+
+<h3 id='120'>1.2.0</h3>
 
 <p>A relatively small release in terms of new functionality, <code>1.2.0</code> simply adds the <a href='/documentation/commands/post'>ppl post</a> command. This command was always in the pipeline, but thanks anways to <a href='http://news.ycombinator.com/user?id=nicky0'>nicky0</a> on Hacker News for <a href='http://news.ycombinator.com/item?id=4947468'>prompting me</a> to prioritise it slightly.</p>
 

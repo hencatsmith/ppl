@@ -4,6 +4,33 @@ layout: development
 section: development
 ---
 
+### 1.4.1
+
+This version is a first step towards removing the annoying limitation of one
+email address, postal address and so on per contact. This isn't glamorous work
+but it's vital functionality.
+
+The ability to add more than one email address to a contact has been added. This
+is not 100% complete: email addresses cannot yet be deleted, for example. And
+[ppl show](/documentation/commands/show) does not yet show all the addresses
+(only [ppl email](/documentation/commands/email) does for now). But at least
+it's now possible to store the data
+
+* Contacts can now have more than one email address
+
+### 1.3.0
+
+Adds support for XDG-compatible configuration. Many thanks to
+[@tijn](https://github.com/h2s/ppl/issues/4) on GitHub for [recommending this
+functionality](https://github.com/h2s/ppl/issues/4).
+
+This means ppl can now be alternatively configured using a file at
+`~/.config/ppl/config`. If you like keeping your `~/` free of dotfile clutter
+then this is good news. If not, don't worry, `~/.pplconfig` continues working as
+normal.
+
+* Add support for XDG-compatible configuration file location
+
 ### 1.2.0
 
 A relatively small release in terms of new functionality, `1.2.0` simply adds
