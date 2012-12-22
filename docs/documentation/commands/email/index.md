@@ -20,10 +20,10 @@ ppl email - List, show or change email addresses
 With no arguments, the email addresses of each contact in the address book are
 listed.
 
-If a `<contact>` is specified, the email address of that contact is shown.
+If a `<contact>` is specified, the email addresses of that contact are shown.
 
 If both a `<contact>` and an `<email-address>` are given, then the address is
-stored as the address of the contact.
+added to the email addresses of the contact.
 
 ### Examples
 
