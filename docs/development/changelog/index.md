@@ -4,6 +4,12 @@ layout: development
 section: development
 ---
 
+### 1.5.1
+
+This is a very small release to fix one very small bug.
+
+* Fix fatal error in `ppl post <contact>` when contact has no address
+
 ### 1.5.0
 
 The addition of "interactive mode" in the form of [ppl
