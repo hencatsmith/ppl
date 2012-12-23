@@ -30,9 +30,10 @@ Ctrl+D usually).
 ### Examples
 
     $ ppl shell
+    ppl 1.5.2 (type "exit" to leave)
     ppl> ls
     jdoe: John Doe <jdoe@example.org>
     kdoe: Kent Doe <kdoe@example.org>
     ppl> exit
-
+    $
 

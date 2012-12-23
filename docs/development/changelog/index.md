@@ -4,6 +4,14 @@ layout: development
 section: development
 ---
 
+### 1.5.2
+
+Another very small, very minor release addressing a usability issue with [ppl
+shell](/documentation/commands/shell).
+
+* Add "welcome" message to `ppl shell` explaining how to quit
+* Don't show "ppl>" prompt in `ppl shell` if stdin isn't a tty
+
 ### 1.5.1
 
 This is a very small release to fix one very small bug.
