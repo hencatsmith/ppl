@@ -4,6 +4,18 @@ layout: development
 section: development
 ---
 
+### 1.5.3
+
+There have been a lot of internal changes in this release, and one user-facing
+change to improve the error message when a non-existent contact is specified in
+a command.
+
+Before this change, non-existent contacts resulted in a fairly cryptic error
+message consisting only of the given non-existent contact ID. From now on the
+problem is actually explained to the user.
+
+* Added a proper error message when a non-existent contact is specified
+
 ### 1.5.2
 
 Another very small, very minor release addressing a usability issue with [ppl
