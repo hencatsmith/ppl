@@ -14,6 +14,7 @@ ppl email - List, show or change email addresses
     ppl email
     ppl email <contact>
     ppl email <contact> <email-address>
+    ppl email <contact> (-d | --delete) <email-address>
 
 ### Description
 
@@ -24,6 +25,9 @@ If a `<contact>` is specified, the email addresses of that contact are shown.
 
 If both a `<contact>` and an `<email-address>` are given, then the address is
 added to the email addresses of the contact.
+
+It the `--delete` or `-d` flag is set, then the given `<email-address>` is
+deleted from the specified `<contact>`.
 
 ### Examples
 

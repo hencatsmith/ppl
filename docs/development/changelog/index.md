@@ -4,6 +4,17 @@ layout: development
 section: development
 ---
 
+### 1.6.0
+
+This release contains a bugfix and the means for users to undo the minor damage
+caused by the bug. The bug was causing every new email address added by users to
+be saved against the contact *twice*. The fix stops that from happening. And a
+new feature has been added in the form of a `--delete` flag for [ppl
+email](/documentation/commands/email) so that dupliate addresses can be removed.
+
+* Fixed a bug causing duplicate email addresses to be saved
+* Added `--delete` flag to `ppl email`
+
 ### 1.5.3
 
 There have been a lot of internal changes in this release, and one user-facing
