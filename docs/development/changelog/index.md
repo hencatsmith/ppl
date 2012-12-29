@@ -4,6 +4,17 @@ layout: development
 section: development
 ---
 
+### 1.7.0
+
+This version contains some fairly substantial changes to the way the [ppl
+show](/documentation/commands/show) command formats its output. The need for
+this change was unearthed by a [question from
+@storge](https://github.com/h2s/ppl/issues/14) on GitHub. In short, the command
+was only showing one of the given contact's email addresses, giving the
+impression that this was all that ppl supported storing.
+
+* Improved the output format of `ppl show`
+
 ### 1.6.0
 
 This release contains a bugfix and the means for users to undo the minor damage

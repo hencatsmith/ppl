@@ -24,7 +24,10 @@ of birth, organization, and so on.
     $ ppl show jdoe
     jdoe: John Doe <jdoe@example.org>
 
-        Telephone 0123456789
         Birthday  1970-01-01
+
+    Phone Numbers:
+      0123456789
+      0543216790
 
 

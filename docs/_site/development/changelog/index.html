@@ -66,7 +66,15 @@
 <div class="row">
 
   <div class="span8">
-    <h3 id='160'>1.6.0</h3>
+    <h3 id='170'>1.7.0</h3>
+
+<p>This version contains some fairly substantial changes to the way the <a href='/documentation/commands/show'>ppl show</a> command formats its output. The need for this change was unearthed by a <a href='https://github.com/h2s/ppl/issues/14'>question from @storge</a> on GitHub. In short, the command was only showing one of the given contact&#8217;s email addresses, giving the impression that this was all that ppl supported storing.</p>
+
+<ul>
+<li>Improved the output format of <code>ppl show</code></li>
+</ul>
+
+<h3 id='160'>1.6.0</h3>
 
 <p>This release contains a bugfix and the means for users to undo the minor damage caused by the bug. The bug was causing every new email address added by users to be saved against the contact <em>twice</em>. The fix stops that from happening. And a new feature has been added in the form of a <code>--delete</code> flag for <a href='/documentation/commands/email'>ppl email</a> so that dupliate addresses can be removed.</p>
 
