@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>ppl post Manual Page</title>
+    <title>ppl url Manual Page</title>
 
     <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
@@ -100,7 +100,7 @@
       <li>
         <a href="http://ppladdressbook.org/documentation/commands/phone">phone</a>
       </li>
-      <li class="active">
+      <li>
         <a href="http://ppladdressbook.org/documentation/commands/post">post</a>
       </li>
       <li>
@@ -112,7 +112,7 @@
       <li>
         <a href="http://ppladdressbook.org/documentation/commands/show">show</a>
       </li>
-      <li>
+      <li class="active">
         <a href="http://ppladdressbook.org/documentation/commands/url">url</a>
       </li>
     </ul>
@@ -122,49 +122,40 @@
 
     
       <h2>
-        ppl post Manual Page
+        ppl url Manual Page
       </h2>
     
 
     <h3 id='name'>Name</h3>
 
-<p>ppl post - List, show or change postal addresses</p>
+<p>ppl url - List, show or change URLs</p>
 
 <h3 id='synopsis'>Synopsis</h3>
 
-<pre><code>ppl post
-ppl post &lt;contact&gt;
-ppl post &lt;contact&gt;
-    -s, --street &lt;street-address&gt;
-    -z, --postal-code &lt;postal-code&gt;
-    -p, --po-box &lt;po-box&gt;
-    -l, --locality &lt;locality&gt;
-    -r, --region &lt;region&gt;
-    -c, --country &lt;country&gt;</code></pre>
+<pre><code>ppl url
+ppl url &lt;contact&gt;
+ppl url &lt;contact&gt; &lt;url&gt;
+ppl url &lt;contact&gt; (-d | --delete) &lt;url&gt;</code></pre>
 
 <h3 id='description'>Description</h3>
 
-<p>With no arguments, the postal addresses of each contact in the address book are listed.</p>
+<p>With no arguments, the URLs of each contact in the address book are listed.</p>
 
-<p>If a <code>&lt;contact&gt;</code> is specified and no address properties are specified, the postal address of that contact is shown.</p>
+<p>If a <code>&lt;contact&gt;</code> is specified, the URLs of that contact are shown.</p>
 
-<p>If both a <code>&lt;contact&gt;</code> and some address properties are given, then those properties are stored as part of the postal address of that contact.</p>
+<p>If both a <code>&lt;contact&gt;</code> and a <code>&lt;URL&gt;</code> are given, then the URL is added to the contact.</p>
+
+<p>It the <code>--delete</code> or <code>-d</code> flag is set, then the given <code>&lt;url&gt;</code> is deleted from the specified <code>&lt;contact&gt;</code>.</p>
 
 <h3 id='examples'>Examples</h3>
 
-<pre><code>$ ppl post jdoe --street &quot;1600 Pennsylvania Avenue Northwest&quot;
-$ ppl post jdoe --postal-code 20500
-$ ppl post jdoe --locality &quot;Washington, D.C.&quot;
-$ ppl post jdoe --country &quot;USA&quot;
-$ ppl post jdoe
-Street:       1600 Pennsylvania Avenue Northwest
-Postal Code:  20500
-Locality:     Washington, D.C.
-Region:       Peshawar
-Country:      USA
-$ ppl post
-alice:  3701 Southwest 12th Street, Topeka, Kansas, USA
-bob:    1600 Pennsylvania Avenue Northwest, Washington, D.C., USA, 20500</code></pre>
+<pre><code>$ ppl url jdoe http://facebook.com/jdoe
+$ ppl url adam http://adamswebsite.com
+$ ppl url jdoe
+http://facebook.com/jdoe
+$ ppl url
+adam:  http://adamswebsite.com
+jdoe:  http://facebook.com/jdoe</code></pre>
   </div>
 
 </div>

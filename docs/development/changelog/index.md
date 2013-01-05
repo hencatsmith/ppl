@@ -4,6 +4,17 @@ layout: development
 section: development
 ---
 
+### 1.8.0
+
+Added another attribute that contacts often have: URLs. For example, a given
+contact may have a profile page on some social network, a personal website, or
+any number of different possibilities. The new comand, [ppl
+url](/documentation/commands/url), works similarly to [ppl
+email](/documentation/commands/email) and allows you to store these URLs in your
+address book.
+
+* Added `ppl url` command
+
 ### 1.7.0
 
 This version contains some fairly substantial changes to the way the [ppl
