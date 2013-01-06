@@ -1,0 +1,27 @@
+<h3 id='name'>Name</h3>
+
+<p>ppl org - List, show or change organizations</p>
+
+<h3 id='synopsis'>Synopsis</h3>
+
+<pre><code>ppl org
+ppl org &lt;contact&gt;
+ppl org &lt;contact&gt; &lt;organization&gt;</code></pre>
+
+<h3 id='description'>Description</h3>
+
+<p>With no arguments, the organizations of each contact in the address book are listed.</p>
+
+<p>If a <code>&lt;contact&gt;</code> is specified, the organization of that contact is shown.</p>
+
+<p>If both a <code>&lt;contact&gt;</code> and an <code>&lt;organization&gt;</code> are given, then the organization is stored as the organization of that contact.</p>
+
+<h3 id='examples'>Examples</h3>
+
+<pre><code>$ ppl org jdoe &quot;Free Software Foundation&quot;
+$ ppl org adam &quot;Microsoft Corporation&quot;
+$ ppl org jdoe
+Free Software Foundation
+$ ppl org
+adam:  Microsoft Corporation
+jdoe:  Free Software Foundation</code></pre>

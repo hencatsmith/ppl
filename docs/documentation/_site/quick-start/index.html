@@ -1,0 +1,82 @@
+<h2>Quick Start</h2>
+
+<div class="row">
+  <div class="span8">
+    <h3>Requirements</h3>
+    <p>
+      ppl depends on <a href="http://rubygems.org/">rubygems</a> for
+      installation, and on <a href="http://git-scm.com/">git</a> for storage and
+      syncing.
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="span8">
+    <h3>Installation</h3>
+    <pre><code>$ sudo gem install ppl</code></pre>
+  </div>
+</div>
+
+<div class="row">
+  <div class="span8">
+    <h3>Create An Address Book</h3>
+    <pre><code>$ ppl init ~/contacts</code></pre>
+  </div>
+  <div class="span4">
+    <h3>&nbsp;</h3>
+    <p>
+      <a href="http://ppl.blueprint/documentation/commands/init">ppl init</a> is just
+      like creating a Git repo
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="span8">
+    <h3>Add Some Contacts</h3>
+    <pre><code>$ cd ~/contacts
+$ ppl add alice "Alice Adams"
+$ ppl add bob "Bob Brown"
+$ ppl add eve "Eve Edwards"</code></pre>
+  </div>
+  <div class="span4">
+    <h3>&nbsp;</h3>
+    <p>
+      <a href="http://ppl.blueprint/documentation/commands/add">ppl add</a> creates new
+      contacts in the address book
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="span8">
+    <h3>Store Some Contact Details</h3>
+    <pre><code>$ ppl email alice alice@example.org
+$ ppl phone bob 0123456789
+$ ppl org eve "Red Hat"</code></pre>
+  </div>
+  <div class="span4">
+    <h3>&nbsp;</h3>
+    <p>
+      ppl has many commands for adding new properties to contacts. Further
+      information is available in the <a href="http://ppl.blueprint/documentation">documentation</a>
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="span8">
+    <h3>Set Your Default Address Book</h3>
+    <pre><code>$ echo "[address book]" > ~/.pplconfig
+$ echo path = "`pwd`" >> ~/.pplconfig</code></pre>
+  </div>
+  <div class="span4">
+    <h3>&nbsp;</h3>
+    <p>
+      This tells ppl to let you keep working with this address book even after
+      you <code>cd</code> into another directory
+    </p>
+  </div>
+</div>
+

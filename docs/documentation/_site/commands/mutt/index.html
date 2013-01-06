@@ -1,0 +1,19 @@
+<h3 id='name'>Name</h3>
+
+<p>ppl mutt - Integration with mutt&#8217;s query_command</p>
+
+<h3 id='synopsis'>Synopsis</h3>
+
+<pre><code>ppl mutt &lt;query&gt;</code></pre>
+
+<h3 id='description'>Description</h3>
+
+<p>Searches the names and email addresses in the address book for the given <code>&lt;query&gt;</code> string and returns a list of results formatted for compatibility with <a href='http://www.mutt.org/doc/manual/manual-4.html#ss4.5'>mutt&#8217;s query_command option</a>.</p>
+
+<p>This is intended to enable mutt users to integrate ppl as the search backend for recipient autocompletion.</p>
+
+<h3 id='examples'>Examples</h3>
+
+<p>Put the following in your <code>~/.muttrc</code>:</p>
+
+<pre><code>set query_command = &quot;ppl mutt &#39;%s&#39;&quot;</code></pre>

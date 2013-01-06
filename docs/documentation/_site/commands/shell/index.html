@@ -1,0 +1,25 @@
+<h3 id='name'>Name</h3>
+
+<p>ppl shell - Interactive mode</p>
+
+<h3 id='synopsis'>Synopsis</h3>
+
+<pre><code>ppl shell</code></pre>
+
+<h3 id='description'>Description</h3>
+
+<p>Opens ppl in interactive mode, allowing users to skip typing &#8220;ppl&#8221; at the start of every single command. This is intended to be useful in the case of longer sessions, when a user plans to interact with ppl many times and wants to avoid some of the repetition.</p>
+
+<p>In interactive mode, all the ppl commands work as normal. The only difference is that there is no need to prefix every command with <code>ppl</code>. So instead of typing <code>ppl ls</code>, in interactive mode you would just type <code>ls</code>.</p>
+
+<p>To exit interactive mode, type <code>exit</code>, or send a <code>sigint</code> or <code>eof</code> (Ctrl+C or Ctrl+D usually).</p>
+
+<h3 id='examples'>Examples</h3>
+
+<pre><code>$ ppl shell
+ppl 1.5.2 (type &quot;exit&quot; to leave)
+ppl&gt; ls
+jdoe: John Doe &lt;jdoe@example.org&gt;
+kdoe: Kent Doe &lt;kdoe@example.org&gt;
+ppl&gt; exit
+$</code></pre>

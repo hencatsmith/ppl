@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ppl [alias] Configuration Guide</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+
+    <link href="http://ppladdressbook.org/stylesheets/flatstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="http://ppladdressbook.org/stylesheets/ppl/4.css" rel="stylesheet" type="text/css" />
+
+    
+      
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37188158-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+    
+
+  </head>
+  <body>
+
+    <div class="navbar navbar-static-top">
+      <div class="navbar-inner">
+        <div class="container">
+
+          
+            <a class="brand" href="http://ppladdressbook.org">ppl</a>
+          
+
+          <ul class="nav pull-right">
+            <li class="active">
+              <a href="http://ppladdressbook.org/documentation">Documentation</a>
+            </li>
+            <li>
+              <a href="http://ppladdressbook.org/news">News</a>
+            </li>
+            <li>
+              <a href="http://ppladdressbook.org/development">Development</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+    <div class="container global">
+
+
+
+<div class="configuration">
+
+<div class="row">
+
+  <div class="span4 command-list">
+    <h2>
+      Configuration Guide
+    </h2>
+
+    <ul class="nav nav-tabs nav-stacked">
+      <li>
+        <a href="http://ppladdressbook.org/documentation/configuration/address_book">address book</a>
+      </li>
+      <li class="active">
+        <a href="http://ppladdressbook.org/documentation/configuration/alias">alias</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="span8">
+
+    
+      <h2>
+        ppl [alias] Configuration Guide
+      </h2>
+    
+
+    <p>Sometimes typing the same long commands repeatedly becomes tiresome. The <code>[alias]</code> section is intended to address this issue by providing a means of configuring shorter forms of commands.</p>
+
+<pre><code>[alias]
+    l = ls
+    s = show</code></pre>
+
+<p>Adding the above lines to <code>~/.pplconfig</code> would allow the user to interact with ppl as follows:</p>
+
+<pre><code>$ ppl l
+jdoe: John Doe    &lt;jdoe@example.org&gt;
+fred: Fred Bloggs &lt;fred@example.org&gt;
+$ ppl s jdoe
+John Doe &lt;jdoe@example.org&gt;
+
+  Birthday      1970-01-01
+  Organization  Example Organization
+
+Email Addresses
+  jdoe@example.org</code></pre>
+
+<h3 id='planned_functionality'>Planned Functionality</h3>
+
+<p>While this may look similar to git&#8217;s alias system, it&#8217;s not yet as complete. Only pure command names can be aliased at this point. There is not yet any support, for example, for aliasing commands <em>with</em> arguments or shell commands. The plan is to add this functionality eventually though.</p>
+  </div>
+
+</div>
+
+</div>
+
+
+    </div>
+    </div>
+
+    <footer class="global">
+      <div class="footer container">
+        <div class="row">
+          <div class="span12">
+            The contents of this site are available under the terms of the <a
+            href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation
+            License</a>.
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="http://ppladdressbook.org/javascript/flatstrap/jquery.js"></script>
+    <script src="http://ppladdressbook.org/javascript/flatstrap/bootstrap.min.js"></script>
+
+  </body>
+</html>
+
+
+

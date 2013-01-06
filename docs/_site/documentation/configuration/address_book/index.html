@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ppl [address book] Configuration Guide</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+
+    <link href="http://ppladdressbook.org/stylesheets/flatstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="http://ppladdressbook.org/stylesheets/ppl/4.css" rel="stylesheet" type="text/css" />
+
+    
+      
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37188158-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+    
+
+  </head>
+  <body>
+
+    <div class="navbar navbar-static-top">
+      <div class="navbar-inner">
+        <div class="container">
+
+          
+            <a class="brand" href="http://ppladdressbook.org">ppl</a>
+          
+
+          <ul class="nav pull-right">
+            <li class="active">
+              <a href="http://ppladdressbook.org/documentation">Documentation</a>
+            </li>
+            <li>
+              <a href="http://ppladdressbook.org/news">News</a>
+            </li>
+            <li>
+              <a href="http://ppladdressbook.org/development">Development</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+    <div class="container global">
+
+
+
+<div class="configuration">
+
+<div class="row">
+
+  <div class="span4 command-list">
+    <h2>
+      Configuration Guide
+    </h2>
+
+    <ul class="nav nav-tabs nav-stacked">
+      <li class="active">
+        <a href="http://ppladdressbook.org/documentation/configuration/address_book">address book</a>
+      </li>
+      <li>
+        <a href="http://ppladdressbook.org/documentation/configuration/alias">alias</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="span8">
+
+    
+      <h2>
+        ppl [address book] Configuration Guide
+      </h2>
+    
+
+    <h3 id='path'>path</h3>
+
+<pre><code>[address book]
+    path = ~/contacts</code></pre>
+
+<p>By default, ppl determines the location of the address book based on the user&#8217;s <a href='http://en.wikipedia.org/wiki/Working_directory'>working directory</a>. This value overrides that behaviour and sets a particular directory as the location of the address book regardless of the working directory.</p>
+
+<p>This is intended for the typical use-case where a user of ppl only has one address book. The purpose is to increase the convenience of using ppl with that single address book by removing the requirement that the user first navigate to its directory before reading from or writing to it.</p>
+  </div>
+
+</div>
+
+</div>
+
+
+    </div>
+    </div>
+
+    <footer class="global">
+      <div class="footer container">
+        <div class="row">
+          <div class="span12">
+            The contents of this site are available under the terms of the <a
+            href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation
+            License</a>.
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="http://ppladdressbook.org/javascript/flatstrap/jquery.js"></script>
+    <script src="http://ppladdressbook.org/javascript/flatstrap/bootstrap.min.js"></script>
+
+  </body>
+</html>
+
+
+

@@ -1,0 +1,31 @@
+<h3 id='name'>Name</h3>
+
+<p>ppl bday - List, show or change birthdays</p>
+
+<h3 id='synopsis'>Synopsis</h3>
+
+<pre><code>ppl bday
+ppl bday &lt;contact&gt;
+ppl bday &lt;contact&gt; &lt;date&gt;</code></pre>
+
+<h3 id='description'>Description</h3>
+
+<p>With no arguments, the dates of birth of each contact in the address book are listed.</p>
+
+<p>If a <code>&lt;contact&gt;</code> is specified, the date of birth of that contact is shown.</p>
+
+<p>If both a <code>&lt;contact&gt;</code> and a <code>&lt;date&gt;</code> are given, then the date is stored as the date of birth of that contact. The <code>&lt;date&gt;</code> parameter must be a valid date string parseable by Ruby&#8217;s <a href='http://ruby-doc.org/stdlib-1.9.3/libdoc/date/rdoc/Date.html\#method-c-parse'>Date.parse</a> function.</p>
+
+<h3 id='examples'>Examples</h3>
+
+<pre><code>$ ppl bday jdoe 1970-01-01
+$ ppl bday adam 1975-06-01
+$ ppl bday jdoe
+1970-01-01
+$ ppl bday
+adam:  1975-06-01
+jdoe:  1970-01-01</code></pre>
+
+<h3 id='see_also'>See Also</h3>
+
+<p><a href='http://ruby-doc.org/stdlib-1.9.3/libdoc/date/rdoc/Date.html\#method-c-parse'>Date.parse</a></p>

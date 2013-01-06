@@ -1,0 +1,39 @@
+<h3 id='name'>Name</h3>
+
+<p>ppl post - List, show or change postal addresses</p>
+
+<h3 id='synopsis'>Synopsis</h3>
+
+<pre><code>ppl post
+ppl post &lt;contact&gt;
+ppl post &lt;contact&gt;
+    -s, --street &lt;street-address&gt;
+    -z, --postal-code &lt;postal-code&gt;
+    -p, --po-box &lt;po-box&gt;
+    -l, --locality &lt;locality&gt;
+    -r, --region &lt;region&gt;
+    -c, --country &lt;country&gt;</code></pre>
+
+<h3 id='description'>Description</h3>
+
+<p>With no arguments, the postal addresses of each contact in the address book are listed.</p>
+
+<p>If a <code>&lt;contact&gt;</code> is specified and no address properties are specified, the postal address of that contact is shown.</p>
+
+<p>If both a <code>&lt;contact&gt;</code> and some address properties are given, then those properties are stored as part of the postal address of that contact.</p>
+
+<h3 id='examples'>Examples</h3>
+
+<pre><code>$ ppl post jdoe --street &quot;1600 Pennsylvania Avenue Northwest&quot;
+$ ppl post jdoe --postal-code 20500
+$ ppl post jdoe --locality &quot;Washington, D.C.&quot;
+$ ppl post jdoe --country &quot;USA&quot;
+$ ppl post jdoe
+Street:       1600 Pennsylvania Avenue Northwest
+Postal Code:  20500
+Locality:     Washington, D.C.
+Region:       Peshawar
+Country:      USA
+$ ppl post
+alice:  3701 Southwest 12th Street, Topeka, Kansas, USA
+bob:    1600 Pennsylvania Avenue Northwest, Washington, D.C., USA, 20500</code></pre>

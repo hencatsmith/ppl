@@ -1,0 +1,30 @@
+<h3 id='name'>Name</h3>
+
+<p>ppl email - List, show or change email addresses</p>
+
+<h3 id='synopsis'>Synopsis</h3>
+
+<pre><code>ppl email
+ppl email &lt;contact&gt;
+ppl email &lt;contact&gt; &lt;email-address&gt;
+ppl email &lt;contact&gt; (-d | --delete) &lt;email-address&gt;</code></pre>
+
+<h3 id='description'>Description</h3>
+
+<p>With no arguments, the email addresses of each contact in the address book are listed.</p>
+
+<p>If a <code>&lt;contact&gt;</code> is specified, the email addresses of that contact are shown.</p>
+
+<p>If both a <code>&lt;contact&gt;</code> and an <code>&lt;email-address&gt;</code> are given, then the address is added to the email addresses of the contact.</p>
+
+<p>It the <code>--delete</code> or <code>-d</code> flag is set, then the given <code>&lt;email-address&gt;</code> is deleted from the specified <code>&lt;contact&gt;</code>.</p>
+
+<h3 id='examples'>Examples</h3>
+
+<pre><code>$ ppl email jdoe jdoe@example.org
+$ ppl email adam adam@example.com
+$ ppl email jdoe
+jdoe@example.org
+$ ppl email
+adam:  adam@example.com
+jdoe:  jdoe@example.org</code></pre>

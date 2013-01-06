@@ -1,0 +1,27 @@
+<h3 id='name'>Name</h3>
+
+<p>ppl name - List, show or change names</p>
+
+<h3 id='synopsis'>Synopsis</h3>
+
+<pre><code>ppl name
+ppl name &lt;contact&gt;
+ppl name &lt;contact&gt; &lt;name&gt;</code></pre>
+
+<h3 id='description'>Description</h3>
+
+<p>With no arguments, the full names of each contact in the address book are listed.</p>
+
+<p>If a <code>&lt;contact&gt;</code> is specified, the full name of that contact is shown.</p>
+
+<p>If both a <code>&lt;contact&gt;</code> and a <code>&lt;name&gt;</code> are given, then the name is stored as the full name of the contact.</p>
+
+<h3 id='examples'>Examples</h3>
+
+<pre><code>$ ppl name jdoe &quot;John Doe&quot;
+$ ppl name adam &quot;Adam West&quot;
+$ ppl name jdoe
+John Doe
+$ ppl name
+adam:  Adam West
+jdoe:  John Doe</code></pre>
