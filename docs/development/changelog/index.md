@@ -7,11 +7,12 @@ section: development
 ### 1.9.0
 
 This release adds two new features: the [version
-command](/documentation/commands/version), and support for aliases. Both
-features function similarly to their git counterparts, albeit in a less complete
-way. For now the aliasing only supports simple aliasing of plain command names,
-and doesn't allow things like aliasing long chains of arguments or git's `!f()
-{}` style commands. These things will come in time.
+command](/documentation/commands/version), and support for
+[aliases](/documentation/configuration/alias). Both features function similarly
+to their git counterparts, albeit in a less complete way. For now the aliasing
+only supports simple aliasing of plain command names, and doesn't allow things
+like aliasing long chains of arguments or git's `!f() {}` style commands. These
+things will come in time.
 
 * Added `ppl version` command
 * Added rudimentary alias support
