@@ -14,6 +14,7 @@ ppl phone - List, show or change phone numbers
     ppl phone
     ppl phone <contact>
     ppl phone <contact> <number>
+    ppl phone <contact> (-d | --delete) <phone-number>
 
 ### Description
 
@@ -22,8 +23,11 @@ listed.
 
 If a `<contact>` is specified, the phone number of that contact is shown.
 
-If both a `<contact>` and a `<phone-number>` are given, then the number is
-stored as the phone number of the contact.
+If both a `<contact>` and a `<phone-number>` are given, then the number is added
+to the contact's phone numbers.
+
+It the `--delete` or `-d` flag is set, then the given `<phone-number>` is
+deleted from the specified `<contact>`.
 
 ### Examples
 

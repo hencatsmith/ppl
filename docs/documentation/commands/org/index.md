@@ -14,6 +14,7 @@ ppl org - List, show or change organizations
     ppl org
     ppl org <contact>
     ppl org <contact> <organization>
+    ppl org <contact> (-d | --delete) <organization>
 
 ### Description
 
@@ -23,7 +24,10 @@ listed.
 If a `<contact>` is specified, the organization of that contact is shown.
 
 If both a `<contact>` and an `<organization>` are given, then the organization
-is stored as the organization of that contact.
+is added to that contact's organizations.
+
+It the `--delete` or `-d` flag is set, then the given `<organization>` is
+deleted from the specified `<contact>`.
 
 ### Examples
 

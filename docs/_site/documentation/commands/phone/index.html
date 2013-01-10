@@ -137,7 +137,8 @@
 
 <pre><code>ppl phone
 ppl phone &lt;contact&gt;
-ppl phone &lt;contact&gt; &lt;number&gt;</code></pre>
+ppl phone &lt;contact&gt; &lt;number&gt;
+ppl phone &lt;contact&gt; (-d | --delete) &lt;phone-number&gt;</code></pre>
 
 <h3 id='description'>Description</h3>
 
@@ -145,7 +146,9 @@ ppl phone &lt;contact&gt; &lt;number&gt;</code></pre>
 
 <p>If a <code>&lt;contact&gt;</code> is specified, the phone number of that contact is shown.</p>
 
-<p>If both a <code>&lt;contact&gt;</code> and a <code>&lt;phone-number&gt;</code> are given, then the number is stored as the phone number of the contact.</p>
+<p>If both a <code>&lt;contact&gt;</code> and a <code>&lt;phone-number&gt;</code> are given, then the number is added to the contact&#8217;s phone numbers.</p>
+
+<p>It the <code>--delete</code> or <code>-d</code> flag is set, then the given <code>&lt;phone-number&gt;</code> is deleted from the specified <code>&lt;contact&gt;</code>.</p>
 
 <h3 id='examples'>Examples</h3>
 

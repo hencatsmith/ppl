@@ -137,7 +137,8 @@
 
 <pre><code>ppl org
 ppl org &lt;contact&gt;
-ppl org &lt;contact&gt; &lt;organization&gt;</code></pre>
+ppl org &lt;contact&gt; &lt;organization&gt;
+ppl org &lt;contact&gt; (-d | --delete) &lt;organization&gt;</code></pre>
 
 <h3 id='description'>Description</h3>
 
@@ -145,7 +146,9 @@ ppl org &lt;contact&gt; &lt;organization&gt;</code></pre>
 
 <p>If a <code>&lt;contact&gt;</code> is specified, the organization of that contact is shown.</p>
 
-<p>If both a <code>&lt;contact&gt;</code> and an <code>&lt;organization&gt;</code> are given, then the organization is stored as the organization of that contact.</p>
+<p>If both a <code>&lt;contact&gt;</code> and an <code>&lt;organization&gt;</code> are given, then the organization is added to that contact&#8217;s organizations.</p>
+
+<p>It the <code>--delete</code> or <code>-d</code> flag is set, then the given <code>&lt;organization&gt;</code> is deleted from the specified <code>&lt;contact&gt;</code>.</p>
 
 <h3 id='examples'>Examples</h3>
 

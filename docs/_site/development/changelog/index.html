@@ -66,7 +66,19 @@
 <div class="row">
 
   <div class="span8">
-    <h3 id='190'>1.9.0</h3>
+    <h3 id='1100'>1.10.0</h3>
+
+<p>A lot of the work in this release went into some much-needed refactoring as a precautionary measure against accumulating too much technical debt early on. The code reuse enabled by this refactor facilitated the addition of some key functionality, too.</p>
+
+<ul>
+<li>Added support for storing multiple organizations with <code>ppl org</code> command</li>
+
+<li>Added support for storing multiple phone numbers with <code>ppl phone</code> command</li>
+
+<li>Added support for deleting phone numbers with <code>ppl phone</code> command</li>
+</ul>
+
+<h3 id='190'>1.9.0</h3>
 
 <p>This release adds two new features: the <a href='/documentation/commands/version'>version command</a>, and support for <a href='/documentation/configuration/alias'>aliases</a>. Both features function similarly to their git counterparts, albeit in a less complete way. For now the aliasing only supports simple aliasing of plain command names, and doesn&#8217;t allow things like aliasing long chains of arguments or git&#8217;s <code>!f() {}</code> style commands. These things will come in time.</p>
 

@@ -4,6 +4,17 @@ layout: development
 section: development
 ---
 
+### 1.10.0
+
+A lot of the work in this release went into some much-needed refactoring as a
+precautionary measure against accumulating too much technical debt early on. The
+code reuse enabled by this refactor facilitated the addition of some key
+functionality, too.
+
+* Added support for storing multiple organizations with `ppl org` command
+* Added support for storing multiple phone numbers with `ppl phone` command
+* Added support for deleting phone numbers with `ppl phone` command
+
 ### 1.9.0
 
 This release adds two new features: the [version
