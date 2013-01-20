@@ -7,7 +7,7 @@ section: development
 ### 1.11.0
 
 This is a simple release that just adds new functionality in the form of support
-for another vCard property: [nicknames](/document/commands/nick).
+for another vCard property: [nicknames](/documentation/commands/nick).
 
 * Added `ppl nick` command
 

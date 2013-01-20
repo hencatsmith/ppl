@@ -25,7 +25,7 @@ If a `<contact>` is specified, the URLs of that contact are shown.
 If both a `<contact>` and a `<URL>` are given, then the URL is added to the
 contact.
 
-It the `--delete` or `-d` flag is set, then the given `<url>` is
+If the `--delete` or `-d` flag is set, then the given `<url>` is
 deleted from the specified `<contact>`.
 
 ### Examples
