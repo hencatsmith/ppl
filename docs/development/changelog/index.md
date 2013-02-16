@@ -4,6 +4,13 @@ layout: development
 section: development
 ---
 
+### 1.12.0
+
+This release adds the [age](/documentation/commands/age) command, which provides
+easy access to the ages of all contacts based on their dates of birth.
+
+* Added `ppl age` command
+
 ### 1.11.0
 
 This is a simple release that just adds new functionality in the form of support

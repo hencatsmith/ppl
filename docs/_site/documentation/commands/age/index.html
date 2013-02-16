@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>ppl ls Manual Page</title>
+    <title>ppl age Manual Page</title>
 
     <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
@@ -70,7 +70,7 @@
     </h2>
 
     <ul class="nav nav-tabs nav-stacked">
-      <li>
+      <li class="active">
         <a href="http://ppladdressbook.org/documentation/commands/age">age</a>
       </li>
       <li>
@@ -85,7 +85,7 @@
       <li>
         <a href="http://ppladdressbook.org/documentation/commands/init">init</a>
       </li>
-      <li class="active">
+      <li>
         <a href="http://ppladdressbook.org/documentation/commands/ls">ls</a>
       </li>
       <li>
@@ -131,27 +131,36 @@
 
     
       <h2>
-        ppl ls Manual Page
+        ppl age Manual Page
       </h2>
     
 
     <h3 id='name'>Name</h3>
 
-<p>ppl ls - List all contacts</p>
+<p>ppl age - List or show contacts&#8217; ages</p>
 
 <h3 id='synopsis'>Synopsis</h3>
 
-<pre><code>ppl ls</code></pre>
+<pre><code>ppl age [&lt;contact&gt;]</code></pre>
 
 <h3 id='description'>Description</h3>
 
-<p>List all the contacts in the address book.</p>
+<p>This command calculates contacts&#8217; current ages in years based on their date of birth. The purpose of this command is to provide easy access to an often-needed piece of information which is indirectly available from the data in the address book.</p>
+
+<p>Invoked without any arguments, all contacts are listed with their respective ages. If a <code>&lt;contact&gt;</code> is specified, only the age of that contact will be shown.</p>
 
 <h3 id='examples'>Examples</h3>
 
-<pre><code>$ ppl ls
-jdoe: John Doe &lt;jdoe@example.org&gt;
-kdoe: Kent Doe &lt;kdoe@example.org&gt;</code></pre>
+<pre><code>$ ppl bday jdoe 1980-01-01
+$ ppl age jdoe
+33
+$ ppl age
+fred: 25
+jdoe: 33</code></pre>
+
+<h3 id='see_also'>See Also</h3>
+
+<p><a href='../bday'>ppl bday</a></p>
   </div>
 
 </div>

@@ -11,6 +11,9 @@
     </h2>
 
     <ul class="nav nav-tabs nav-stacked">
+      <li{%if page.command == "age"%} class="active"{% endif %}>
+        <a href="{{site.url}}/documentation/commands/age">age</a>
+      </li>
       <li{%if page.command == "add"%} class="active"{% endif %}>
         <a href="{{site.url}}/documentation/commands/add">add</a>
       </li>
