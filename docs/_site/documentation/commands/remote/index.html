@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>ppl email Manual Page</title>
+    <title>ppl remote Manual Page</title>
 
     <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
@@ -79,7 +79,7 @@
       <li>
         <a href="/documentation/commands/bday">bday</a>
       </li>
-      <li class="active">
+      <li>
         <a href="/documentation/commands/email">email</a>
       </li>
       <li>
@@ -115,7 +115,7 @@
       <li>
         <a href="/documentation/commands/push">push</a>
       </li>
-      <li>
+      <li class="active">
         <a href="/documentation/commands/remote">remote</a>
       </li>
       <li>
@@ -140,40 +140,42 @@
 
     
       <h2>
-        ppl email Manual Page
+        ppl remote Manual Page
       </h2>
     
 
     <h3 id='name'>Name</h3>
 
-<p>ppl email - List, show or change email addresses</p>
+<p>ppl remote - Execute <code>git remote</code> in the address book directory</p>
 
 <h3 id='synopsis'>Synopsis</h3>
 
-<pre><code>ppl email
-ppl email &lt;contact&gt;
-ppl email &lt;contact&gt; &lt;email-address&gt;
-ppl email &lt;contact&gt; (-d | --delete) &lt;email-address&gt;</code></pre>
+<pre><code>ppl remote [-v | --verbose]
+ppl remote rename &lt;old&gt; &lt;new&gt;
+ppl remote rm &lt;name&gt;</code></pre>
 
 <h3 id='description'>Description</h3>
 
-<p>With no arguments, the email addresses of each contact in the address book are listed.</p>
+<p>This command is an alias of <code>git remote</code>. It is intended to make it more convenient to use git to synchronise your address book. See the documentation for <a href='/documentation/commands/pull'>git pull</a> for more details.</p>
 
-<p>If a <code>&lt;contact&gt;</code> is specified, the email addresses of that contact are shown.</p>
-
-<p>If both a <code>&lt;contact&gt;</code> and an <code>&lt;email-address&gt;</code> are given, then the address is added to the email addresses of the contact.</p>
-
-<p>It the <code>--delete</code> or <code>-d</code> flag is set, then the given <code>&lt;email-address&gt;</code> is deleted from the specified <code>&lt;contact&gt;</code>.</p>
+<p>Note that this command literally executes the git command <code>remote</code> in the address book directory. If you don&#8217;t have the git CLI tool installed, this command will not work.</p>
 
 <h3 id='examples'>Examples</h3>
 
-<pre><code>$ ppl email jdoe jdoe@example.org
-$ ppl email adam adam@example.com
-$ ppl email jdoe
-jdoe@example.org
-$ ppl email
-adam:  adam@example.com
-jdoe:  jdoe@example.org</code></pre>
+<pre><code>$ ppl remote
+origin
+github
+$ ppl remote rm github</code></pre>
+
+<h3 id='see_also'>See Also</h3>
+
+<ul>
+<li><a href='http://git-scm.com/docs/git-remote'>git remote</a></li>
+
+<li><a href='/documentation/commands/pull'>ppl pull</a></li>
+
+<li><a href='/documentation/commands/push'>ppl push</a></li>
+</ul>
   </div>
 
 </div>
