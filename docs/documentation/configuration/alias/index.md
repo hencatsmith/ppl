@@ -28,10 +28,18 @@ ppl as follows:
     Email Addresses
       jdoe@example.org
 
-### Planned Functionality
+### Bang Aliases
 
-While this may look similar to git's alias system, it's not yet as complete.
-Only pure command names can be aliased at this point. There is not yet any
-support, for example, for aliasing commands *with* arguments or shell commands.
-The plan is to add this functionality eventually though.
+ppl's alias system is similar to git's in that it supports executing external
+commands via aliases prefixed with an exclamation mark, or "bang". In your
+`~/.pplconfig`, this would look something like the following:
+
+    [alias]
+        lsx = !ppl ls | grep -i x
+
+The above example creates an alias `lsx` that pipes the output of [ppl
+ls](/documentation/commands/ls) through `grep -i x`. This means that you
+effectively create a new command - `ppl lsx` - which is identical to `ppl ls`
+except that it only displays lines containing the letter x.
+
 

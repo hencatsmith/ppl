@@ -4,6 +4,14 @@ layout: development
 section: development
 ---
 
+### 1.14.0
+
+Hot on the heels of `1.13.0`, this release brings the git-style bang alias
+functionality facilitated by the previous release's code changes. This allows
+the creation of aliases which execute a shell command.
+
+* Add bang alias support
+
 ### 1.13.0
 
 The result of a lot of thought, this is the long-awaited git synchronisation
