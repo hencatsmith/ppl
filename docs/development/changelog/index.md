@@ -4,6 +4,17 @@ layout: development
 section: development
 ---
 
+### 1.14.1
+
+The release of `1.14.0` exposed a small screw-up in ppl's alias support. The
+`[alias]` section of the `~/.pplconfig` file was not being picked up at all.
+Instead it was looking for a section called `[aliases]`, which was insconsistent
+with the documentation and with git, on which the functionality is based. This
+release, therefore, is a fix for this issue: an `[alias]` section in
+`.pplconfig` should now work as described.
+
+* Fixed `[alias]` configuration
+
 ### 1.14.0
 
 Hot on the heels of `1.13.0`, this release brings the git-style bang alias
