@@ -6,8 +6,8 @@
     <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
 
-    <link href="{{site.url}}/stylesheets/flatstrap/bootstrap.min.css" rel="stylesheet" />
-    <link href="{{site.url}}/stylesheets/ppl/{{site.version}}.css" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/flatstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="/stylesheets/ppl/{{site.version}}.css" rel="stylesheet" type="text/css" />
 
     {% if site.url == "http://ppladdressbook.org" %}
       {% include google-analytics.html %}
@@ -21,18 +21,18 @@
         <div class="container">
 
           {% if page.url != "/index.html" %}
-            <a class="brand" href="{{site.url}}">ppl</a>
+            <a class="brand" href="">ppl</a>
           {% endif %}
 
           <ul class="nav pull-right">
             {% if page.section == "documentation" %}<li class="active">{% else %}<li>{% endif %}
-              <a href="{{site.url}}/documentation">Documentation</a>
+              <a href="/documentation">Documentation</a>
             </li>
             {% if page.section == "news" %}<li class="active">{% else %}<li>{% endif %}
-              <a href="{{site.url}}/news">News</a>
+              <a href="/news">News</a>
             </li>
             {% if page.section == "development" %}<li class="active">{% else %}<li>{% endif %}
-              <a href="{{site.url}}/development">Development</a>
+              <a href="/development">Development</a>
             </li>
           </ul>
         </div>
