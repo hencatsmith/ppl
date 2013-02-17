@@ -86,10 +86,16 @@ pre {
   color: @base3;
 }
 
-.nav-tabs.nav-stacked > li > a {
+.nav-list  {
   background-color: @darkGrey;
+  border: 1px solid rgb(221, 221, 221);
 }
-.nav-tabs.nav-stacked > li.active > a {
+.nav-list > li:hover > a {
+  background-color: inherit;
+  color: inherit;
+}
+.nav-list > li.active:hover > a,
+.nav-list > li.active > a {
   background-color: @orange;
   color: @base3;
 }
