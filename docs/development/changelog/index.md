@@ -4,6 +4,27 @@ layout: development
 section: development
 ---
 
+### 1.15.0
+
+This adds support for colourised output to most ppl commands. The following
+commands are affected by this change:
+
+* [age](/documentation/configuration/color_age)
+* [bday](/documentation/configuration/color_bday)
+* [email](/documentation/configuration/color_email)
+* [ls](/documentation/configuration/color_ls)
+* [name](/documentation/configuration/color_name)
+* [nick](/documentation/configuration/color_nick)
+* [org](/documentation/configuration/color_org)
+* [phone](/documentation/configuration/color_phone)
+* [post](/documentation/configuration/color_post)
+* [url](/documentation/configuration/color_url)
+
+Internally, this release depends on two new gems:
+
+* [morphine](https://github.com/bkeepers/morphine)
+* [colored](https://github.com/defunkt/colored)
+
 ### 1.14.1
 
 The release of `1.14.0` exposed a small screw-up in ppl's alias support. The

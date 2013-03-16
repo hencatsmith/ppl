@@ -133,9 +133,9 @@ Phone Numbers:
       <h3>Latest Version</h3>
       <div class="well">
         <h2>
-          1.14.1
+          1.15.0
           <small>
-            (2013-02-17)
+            (2013-03-16)
           </small>
         </h2>
         <p>
@@ -149,18 +149,18 @@ Phone Numbers:
 
     <div class="span8">
       <h3>
-        Two Months In
+        Coloured Output Released
         <small>
-          <a href="/news/two-months-in">
-            2013-02-17
+          <a href="/news/coloured-output-released">
+            2013-03-16
           </a>
         </small>
       </h3>
-      <p>It&#8217;s been almost two months now since the big day of <a href='news/thank-you-for-your-all-your-feedback/'>ppl&#8217;s public release</a>. In that time, development has continued at a more steady, sustainable pace than during the period leading up to the release itself. New functionality has been added, and a few bugs have been fixed, as <a href='/development/changelog'>the changelog</a> will attest.</p>
+      <p>It&#8217;s been about a month since the last release, but that&#8217;s not because of any lack of internal activity. Today marks the release of support for git-style coloured output, configurable in <code>~/.pplconfig</code>.</p>
 
-<p>One particularly nasty bug has been reported whose solution eludes me for the moment. It seems ppl does not cope well with <a href='https://github.com/h2s/ppl/issues/17'>non-ASCII characters</a>. The error itself is coming from within vpim - although it is almost certainly not a vpim bug - and is proving a tough nut to crack. Encodings in Ruby 1.9 are <a href='http://yehudakatz.com/2010/05/05/ruby-1-9-encodings-a-primer-and-the-solution-for-rails/'>fraught with complexity</a>, but I&#8217;m optimistic about the existence of a simple solution.</p>
+<p>This has taken a while to achieve just because I wanted to take my time over it and try to really get it right the first time. Some refactoring was necessary in order to get config data into the code responsible for formatting output, but hopefully the resulting usage of the <a href='https://github.com/bkeepers/morphine'>morphine</a> dependency injection container should reduce such code churn in future.</p>
 
-<p>On a more positive note, it&#8217;s worth mentioning that the overall health of the project seems to be good. I continue to enjoy building and maintaining ppl, and public interest in a command-line address book is as strong as could be expected for such a niche piece of software. Thanks for all your patience and support!</p>
+<p>In other news, the <a href='https://github.com/h2s/ppl/issues/17'>UTF-8 bug</a> mentioned in <a href='/news/two-months-in/'>last month&#8217;s update</a> should be gone soon. I&#8217;ve spoken to the maintainer of vpim about it, and <a href='http://rubyforge.org/pipermail/vpim-talk/2013/000185.html'>his response</a> was positive. Apparently vpim just doesn&#8217;t quite support Ruby 1.9.1&#8217;s String class yet, but will do soon.</p>
     </div>
 
   </div>

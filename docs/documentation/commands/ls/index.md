@@ -23,3 +23,7 @@ List all the contacts in the address book.
     jdoe: John Doe <jdoe@example.org>
     kdoe: Kent Doe <kdoe@example.org>
 
+### See Also
+
+* [color output](/documentation/configuration/color_ls)
+

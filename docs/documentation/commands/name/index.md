@@ -35,3 +35,6 @@ full name of the contact.
     adam:  Adam West
     jdoe:  John Doe
 
+### See Also
+
+* [color output](/documentation/configuration/color_name)

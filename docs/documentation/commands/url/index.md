@@ -38,3 +38,7 @@ deleted from the specified `<contact>`.
     adam:  http://adamswebsite.com
     jdoe:  http://facebook.com/jdoe
 
+### See Also
+
+* [color output](/documentation/configuration/color_url)
+

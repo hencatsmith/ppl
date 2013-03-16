@@ -40,5 +40,5 @@ function.
 
 ### See Also
 
-[Date.parse](http://ruby-doc.org/stdlib-1.9.3/libdoc/date/rdoc/Date.html\#method-c-parse)
-
+* [Date.parse](http://ruby-doc.org/stdlib-1.9.3/libdoc/date/rdoc/Date.html\#method-c-parse)
+* [color output](/documentation/configuration/color_bday)

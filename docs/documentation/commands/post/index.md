@@ -48,3 +48,7 @@ properties are stored as part of the postal address of that contact.
     alice:  3701 Southwest 12th Street, Topeka, Kansas, USA
     bob:    1600 Pennsylvania Avenue Northwest, Washington, D.C., USA, 20500
 
+### See Also
+
+* [color output](/documentation/configuration/color_post)
+
