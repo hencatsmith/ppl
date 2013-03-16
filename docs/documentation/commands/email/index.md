@@ -39,3 +39,7 @@ deleted from the specified `<contact>`.
     adam:  adam@example.com
     jdoe:  jdoe@example.org
 
+### See Also
+
+* [color output](/documentation/configuration/color_email)
+

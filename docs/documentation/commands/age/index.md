@@ -34,5 +34,5 @@ ages. If a `<contact>` is specified, only the age of that contact will be shown.
 
 ### See Also
 
-[ppl bday](../bday)
-
+* [ppl bday](../bday)
+* [color output](/documentation/configuration/color_age)

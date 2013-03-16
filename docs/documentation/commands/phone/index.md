@@ -39,3 +39,6 @@ deleted from the specified `<contact>`.
     adam:  0777111222
     jdoe:  0123456789
 
+### See Also
+
+* [color output](/documentation/configuration/color_phone)

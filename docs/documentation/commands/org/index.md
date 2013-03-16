@@ -39,3 +39,7 @@ deleted from the specified `<contact>`.
     adam:  Microsoft Corporation
     jdoe:  Free Software Foundation
 
+### See Also
+
+* [color output](/documentation/configuration/color_org)
+

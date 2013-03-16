@@ -35,3 +35,7 @@ deleted from the specified `<contact>`.
     fred:  Freddy
     jdoe:  Johnny
 
+### See Also
+
+* [color output](/documentation/configuration/color_nick)
+
