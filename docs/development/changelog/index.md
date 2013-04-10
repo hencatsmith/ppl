@@ -4,6 +4,12 @@ layout: development
 section: development
 ---
 
+### 1.15.1
+
+Heralding support for Ruby 2.0 and beyond, this version of ppl also sees the
+replacement of the vpim gem dependency with greencard. See the [news
+post](/news/ruby-2.0-compatibility/) for more details.
+
 ### 1.15.0
 
 This adds support for colourised output to most ppl commands. The following
