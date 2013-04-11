@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Coloured Output Released</title>
+    <title>Ruby 2.0 Compatibility</title>
 
     <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
@@ -64,18 +64,20 @@
 
 
   <h2>
-    Coloured Output Released
+    Ruby 2.0 Compatibility
   </h2>
 
 
 <div class="row">
 
   <div class="span8">
-    <p>It&#8217;s been about a month since the last release, but that&#8217;s not because of any lack of internal activity. Today marks the release of support for git-style coloured output, configurable in <code>~/.pplconfig</code>.</p>
+    <p>The latest version of ppl is available now, and it&#8217;s one of those tiny, pointless-sounding ones: <code>1.15.1</code>. This release is all about Ruby 2.0 compatibility. A recent issue reported on GitHub by <a href='https://github.com/pigmonkey'>@pigmonkey</a> brought to my attention that vpim, ppl&#8217;s underlying vCard library, <a href='https://github.com/h2s/ppl/issues/19'>doesn&#8217;t work at all in Ruby 2.0</a>.</p>
 
-<p>This has taken a while to achieve just because I wanted to take my time over it and try to really get it right the first time. Some refactoring was necessary in order to get config data into the code responsible for formatting output, but hopefully the resulting usage of the <a href='https://github.com/bkeepers/morphine'>morphine</a> dependency injection container should reduce such code churn in future.</p>
+<pre><code>invalid multibyte escape: /^\xFF\xFE/</code></pre>
 
-<p>In other news, the <a href='https://github.com/h2s/ppl/issues/17'>UTF-8 bug</a> mentioned in <a href='/news/two-months-in/'>last month&#8217;s update</a> should be gone soon. I&#8217;ve spoken to the maintainer of vpim about it, and <a href='http://rubyforge.org/pipermail/vpim-talk/2013/000185.html'>his response</a> was positive. Apparently vpim just doesn&#8217;t quite support Ruby 1.9.1&#8217;s String class yet, but will do soon.</p>
+<p>This is all better now, and ppl works as well in Ruby 2.0 as it does in the 1.9.* range. This was a bit of a seismic change behind the scenes, and it almost seems misleading to increment only the patch version number.</p>
+
+<p>Essentially, I forked vpim in order to get this done. While this is an unexpected turn of events, it does mean I&#8217;m now quite well-placed to fix its UTF-8 issues myself instead of depending on the mercy of upstream. By the way, if you&#8217;re interested in helping with this, go take a look at <a href='https://github.com/h2s/greencard'>greencard</a>. It&#8217;s vpim stripped down to just the vCard functionality used by ppl. Go fork it!</p>
   </div>
 
   <div class="span4">
@@ -83,11 +85,20 @@
     <dl class="nav-sidebar">
       
         <dt class="active">
+          <a href="/news/ruby-2.0-compatibility">
+            Ruby 2.0 Compatibility
+          </a>
+        </dt>
+        <dd class="active">
+          2013-04-10
+        </dd>
+      
+        <dt>
           <a href="/news/coloured-output-released">
             Coloured Output Released
           </a>
         </dt>
-        <dd class="active">
+        <dd>
           2013-03-16
         </dd>
       
