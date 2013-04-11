@@ -16,5 +16,5 @@ This section dictates the color of the output of the
 
 ### See Also
 
-* [List of supported colors](http://ppladdressbook.blueprint/documentation/configuration/color#list_of_supported_colors)
+* [List of supported colors](/documentation/configuration/color#list_of_supported_colors)
 
