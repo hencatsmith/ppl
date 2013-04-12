@@ -4,6 +4,21 @@ layout: development
 section: development
 ---
 
+### 1.16.0
+
+With a couple of tweaks to the way ppl handles mutt queries, `1.16.0` should be
+a nice improvement for anybody using ppl to autocomplete email addresses in the
+mail client that "just sucks less".
+
+* Added missing functionality to the [mutt](/documentation/commands/mutt)
+  command enabling it to output *all* of a contact's matching email addresses
+  instead of just the first.
+* Added the `-i` flag to the [mutt](/documentation/commands/mutt) command
+  enabling it to perform case-insensitive search of the address book.
+
+Many thanks to [@pigmonkey](https://github.com/pigmonkey) on GitHub for the
+cooperation that made this release happen.
+
 ### 1.15.1
 
 Heralding support for Ruby 2.0 and beyond, this version of ppl also sees the

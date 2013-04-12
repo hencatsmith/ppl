@@ -11,7 +11,8 @@ ppl mutt - Integration with mutt's query_command
 
 ### Synopsis
 
-    ppl mutt <query>
+    ppl mutt [<options>] <query>
+        -i, --ignore-case     Turn off case sensitivity
 
 ### Description
 
@@ -22,6 +23,9 @@ option](http://www.mutt.org/doc/manual/manual-4.html#ss4.5).
 
 This is intended to enable mutt users to integrate ppl as the search backend for
 recipient autocompletion.
+
+If the `-i` flag is given, the search will be case-insensitive, ignoring case
+differences between the query given and the contacts' names and email addresses.
 
 ### Examples
 
