@@ -4,6 +4,14 @@ layout: development
 section: development
 ---
 
+### 1.17.0
+
+This is a pecular version in that it doesn't change any code in ppl itself, but
+simultaneously fixes a really major issue that's been affecting it. All this
+version does is to increment the greencard gem dependency version number to a
+version that copes with UTF-8 input. It's a *tiny* change, but it's a major
+improvement.
+
 ### 1.16.0
 
 With a couple of tweaks to the way ppl handles mutt queries, `1.16.0` should be
