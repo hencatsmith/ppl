@@ -4,6 +4,19 @@ layout: development
 section: development
 ---
 
+### 1.17.1
+
+Two fairly minor issues are fixed in this version. The first is a tweak to the
+output of the [mutt](/documentation/commands/mutt) command, improving the
+[understandability and usefulness of the user-facing
+text](https://github.com/h2s/ppl/issues/20#issuecomment-16302428). The second is
+a bit of output sanitisation to help out people unlucky enough to have an
+address book where some of the contacts' fields contain `^M` [carriage return
+characters](https://github.com/h2s/ppl/issues/27).
+
+* Tweaked the output of the [mutt](/documentation/commands/mutt) command
+* Add output sanitisation removing all `^M` characters from all output
+
 ### 1.17.0
 
 This is a pecular version in that it doesn't change any code in ppl itself, but
