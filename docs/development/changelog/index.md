@@ -4,6 +4,12 @@ layout: development
 section: development
 ---
 
+### 1.17.2
+
+An embarrassing "quick follow-up" release, this unbreaks a couple of things that
+1.17.1 broke. Displaying the "Contact '%s' not found" message has been fixed, as
+has the command list help text displayed by `ppl` and `ppl help`.
+
 ### 1.17.1
 
 Two fairly minor issues are fixed in this version. The first is a tweak to the
