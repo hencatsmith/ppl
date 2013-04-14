@@ -66,7 +66,17 @@
 <div class="row">
 
   <div class="span8">
-    <h3 id='1170'>1.17.0</h3>
+    <h3 id='1171'>1.17.1</h3>
+
+<p>Two fairly minor issues are fixed in this version. The first is a tweak to the output of the <a href='/documentation/commands/mutt'>mutt</a> command, improving the <a href='https://github.com/h2s/ppl/issues/20#issuecomment-16302428'>understandability and usefulness of the user-facing text</a>. The second is a bit of output sanitisation to help out people unlucky enough to have an address book where some of the contacts&#8217; fields contain <code>^M</code> <a href='https://github.com/h2s/ppl/issues/27'>carriage return characters</a>.</p>
+
+<ul>
+<li>Tweaked the output of the <a href='/documentation/commands/mutt'>mutt</a> command</li>
+
+<li>Add output sanitisation removing all <code>^M</code> characters from all output</li>
+</ul>
+
+<h3 id='1170'>1.17.0</h3>
 
 <p>This is a pecular version in that it doesn&#8217;t change any code in ppl itself, but simultaneously fixes a really major issue that&#8217;s been affecting it. All this version does is to increment the greencard gem dependency version number to a version that copes with UTF-8 input. It&#8217;s a <em>tiny</em> change, but it&#8217;s a major improvement.</p>
 
