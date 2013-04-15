@@ -5,21 +5,22 @@ section: documentation
 integration: google
 ---
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis
-autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
-consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et
-accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit
-augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta
-nobis eleifend option congue nihil imperdiet doming id quod mazim placerat
-facer possim assum. Typi non habent claritatem insitam; est usus legentis in
-iis qui facit eorum claritatem. Investigationes demonstraverunt lectores
-legere me lius quod ii legunt saepius. Claritas est etiam processus
-dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare
-quam littera gothica, quam nunc putamus parum claram, anteposuerit
-litterarum formas humanitatis per seacula quarta decima et quinta decima.
-Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in
-futurum.
+Many people have a large set of address book data stored in Google Contacts,
+usually under the hood of GMail itself. If you fall in this category, and you
+want to copy over that data as a starting point for your ppl address book, you
+have a few options thanks to the enterprising work of some generous ppl users.
+
+### gv-contacts
+
+Part of an npm package called [gv](https://github.com/matthewp/gv-app/), the `gv
+contacts` command is a way of importing contacts directly from your Google
+account into ppl. It imports contacts' names, phone numbers and email addresses. 
+
+### goog2ppl
+
+[goog2ppl](https://github.com/shushcat/goog2ppl) is a python script for
+converting a contacts.vcf file [exported from
+Google](http://support.google.com/mail/answer/24911?hl=en) and breaking it up
+into pieces suitable for initialization as the contents of a ppl address book
+directory.
 
