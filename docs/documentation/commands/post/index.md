@@ -34,19 +34,20 @@ properties are stored as part of the postal address of that contact.
 
 ### Examples
 
-    $ ppl post jdoe --street "1600 Pennsylvania Avenue Northwest"
-    $ ppl post jdoe --postal-code 20500
-    $ ppl post jdoe --locality "Washington, D.C."
+    $ ppl post jdoe --street "350 5th Avenue"
+    $ ppl post jdoe --postal-code 10118
+    $ ppl post jdoe --locality "New York City"
+    $ ppl post jdoe --region "New York"
     $ ppl post jdoe --country "USA"
     $ ppl post jdoe
-    Street:       1600 Pennsylvania Avenue Northwest
-    Postal Code:  20500
-    Locality:     Washington, D.C.
-    Region:       Peshawar
+    Street:       350 5th Avenue 
+    Postal Code:  10118
+    Locality:     New York City
+    Region:       New York
     Country:      USA
     $ ppl post
     alice:  3701 Southwest 12th Street, Topeka, Kansas, USA
-    bob:    1600 Pennsylvania Avenue Northwest, Washington, D.C., USA, 20500
+    jdoe:   350 5th Avenue, New York City, New York, USA, 10118
 
 ### See Also
 
