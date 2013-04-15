@@ -5,21 +5,28 @@ section: documentation
 integration: bash
 ---
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis
-autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
-consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et
-accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit
-augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta
-nobis eleifend option congue nihil imperdiet doming id quod mazim placerat
-facer possim assum. Typi non habent claritatem insitam; est usus legentis in
-iis qui facit eorum claritatem. Investigationes demonstraverunt lectores
-legere me lius quod ii legunt saepius. Claritas est etiam processus
-dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare
-quam littera gothica, quam nunc putamus parum claram, anteposuerit
-litterarum formas humanitatis per seacula quarta decima et quinta decima.
-Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in
-futurum.
+If you've ever used a command-line program like Git, you've probably used tab
+completion before. For example, you type `git chec`, press the `<Tab>` key, and
+bash automatically completes the rest of the command for you: `git checkout`.
+Bash accomplishes this through the use of a [completion
+function](http://tldp.org/LDP/abs/html/tabexpansion.html), and the good news is
+that there's one available for ppl.
+
+There are plans to build a more streamlined integration process than this, but
+for now, here's how to set up autocompletion for ppl in Bash.
+
+### 1. Download the completion function
+
+    $ wget "https://raw.github.com/h2s/ppl/master/completions/bash" -O ppl
+
+Use a command such as the above to obtain a copy of the latest completion
+function code.
+
+### 2. Install the completion function
+
+    $ sudo mv ppl /etc/bash_completion.d/
+
+In order for Bash to be able to use the code, it needs to be placed in the
+correct location in the file system. If you're a Linux user, that's probably the
+`/etc/bash_completion.d` directory.
 
