@@ -4,7 +4,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Ruby 2.0 Compatibility</title>
+    <meta charset="utf-8" />
+    <title>UTF-8 Fixed And More</title>
 
     <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
@@ -64,20 +65,20 @@
 
 
   <h2>
-    Ruby 2.0 Compatibility
+    UTF-8 Fixed And More
   </h2>
 
 
 <div class="row">
 
   <div class="span8">
-    <p>The latest version of ppl is available now, and it&#8217;s one of those tiny, pointless-sounding ones: <code>1.15.1</code>. This release is all about Ruby 2.0 compatibility. A recent issue reported on GitHub by <a href='https://github.com/pigmonkey'>@pigmonkey</a> brought to my attention that vpim, ppl&#8217;s underlying vCard library, <a href='https://github.com/h2s/ppl/issues/19'>doesn&#8217;t work at all in Ruby 2.0</a>.</p>
+    <p>Over the weekend, in an uncharacteristically late night of coding, I finally put an end to that UTF-8 issue that had been preventing the <a href='https://github.com/h2s/ppl/issues/17'>use of ppl with non-ASCII characters</a> such as ß or ñ. My apologies to anyone who wanted to try ppl and couldn&#8217;t during the <em>two entire months</em> that issue sat open. If it&#8217;s any consolation, fixing it gave me many headaches.</p>
 
-<pre><code>invalid multibyte escape: /^\xFF\xFE/</code></pre>
+<p>Even though it&#8217;s only been a few days since the previous news post, there has been a lot of progress in that time, thanks largely to the involvement and encouragement of <a href='https://github.com/pigmonkey'>@pigmonkey</a> and <a href='https://github.com/shushcat'>@shushcat</a> on GitHub. Some good refinements to the <a href='/documentation/integration/mutt/'>mutt integration</a> have already made it into recent versions of ppl, and there&#8217;s some good discussion happening about what needs doing to keep improving ppl in the near future.</p>
 
-<p>This is all better now, and ppl works as well in Ruby 2.0 as it does in the 1.9.* range. This was a bit of a seismic change behind the scenes, and it almost seems misleading to increment only the patch version number.</p>
+<p>The <a href='/documentation'>documentation</a> has had some much-needed attention invested in it, too. A few bits and pieces have been tidied up, and a couple of entirely new sections have been added as well. The <a href='/documentation/integration/bash/'>Integration Guide</a> covers the growing number of ways of using ppl with other software, and the <a href='documentation/tips/'>Tips Section</a> should prove to be a good catch-all place for helpful advice about using ppl.</p>
 
-<p>Essentially, I forked vpim in order to get this done. While this is an unexpected turn of events, it does mean I&#8217;m now quite well-placed to fix its UTF-8 issues myself instead of depending on the mercy of upstream. By the way, if you&#8217;re interested in helping with this, go take a look at <a href='https://github.com/h2s/greencard'>greencard</a>. It&#8217;s vpim stripped down to just the vCard functionality used by ppl. Go fork it!</p>
+<p>Contributions are welcome, so get in touch if you spot any mistakes, have any tips to contribute, or know of any tools for integrating ppl into other software. Big thanks to everyone for your input so far. Shout out to <a href='https://github.com/axelGschaider'>@alexGschaider</a>, <a href='https://github.com/matthewp/'>@matthewp</a>, and <a href='https://github.com/storge'>@storge</a> for their help as well.</p>
   </div>
 
   <div class="span4">
@@ -85,11 +86,20 @@
     <dl class="nav-sidebar">
       
         <dt class="active">
+          <a href="/news/wtf">
+            UTF-8 Fixed And More
+          </a>
+        </dt>
+        <dd class="active">
+          2013-04-15
+        </dd>
+      
+        <dt>
           <a href="/news/ruby-2.0-compatibility">
             Ruby 2.0 Compatibility
           </a>
         </dt>
-        <dd class="active">
+        <dd>
           2013-04-10
         </dd>
       
