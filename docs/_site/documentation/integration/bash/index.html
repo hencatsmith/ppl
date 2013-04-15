@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bash Integration Guide</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+
+    <link href="/stylesheets/flatstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="/stylesheets/ppl/5.css" rel="stylesheet" type="text/css" />
+
+    
+      
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37188158-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+    
+
+  </head>
+  <body>
+
+    <div class="navbar navbar-static-top">
+      <div class="navbar-inner">
+        <div class="container">
+
+          
+            <a class="brand" href="/">ppl</a>
+          
+
+          <ul class="nav pull-right">
+            <li class="active">
+              <a href="/documentation">Documentation</a>
+            </li>
+            <li>
+              <a href="/news">News</a>
+            </li>
+            <li>
+              <a href="/development">Development</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+    <div class="container global">
+
+
+
+<div class="integration">
+
+<div class="row">
+
+  <div class="span4 command-list">
+    <h2>
+      Integration
+    </h2>
+
+    <ul class="nav nav-list">
+      <li class="active">
+        <a href="/documentation/integration/bash">Bash</a>
+      </li>
+      <li>
+        <a href="/documentation/integration/google">Google</a>
+      </li>
+      <li>
+        <a href="/documentation/integration/mutt">Mutt</a>
+      </li>
+      <li>
+        <a href="/documentation/integration/zsh">ZSH</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="span8">
+
+    
+      <h2>
+        Bash Integration Guide
+      </h2>
+    
+
+    <p>If you&#8217;ve ever used a command-line program like Git, you&#8217;ve probably used tab completion before. For example, you type <code>git chec</code>, press the <code>&lt;Tab&gt;</code> key, and bash automatically completes the rest of the command for you: <code>git checkout</code>. Bash accomplishes this through the use of a <a href='http://tldp.org/LDP/abs/html/tabexpansion.html'>completion function</a>, and the good news is that there&#8217;s one available for ppl.</p>
+
+<p>There are plans to build a more streamlined integration process than this, but for now, here&#8217;s how to set up autocompletion for ppl in Bash.</p>
+
+<h3 id='1_download_the_completion_function'>1. Download the completion function</h3>
+
+<pre><code>$ wget &quot;https://raw.github.com/h2s/ppl/master/completions/bash&quot; -O ppl</code></pre>
+
+<p>Use a command such as the above to obtain a copy of the latest completion function code.</p>
+
+<h3 id='2_install_the_completion_function'>2. Install the completion function</h3>
+
+<pre><code>$ sudo mv ppl /etc/bash_completion.d/</code></pre>
+
+<p>In order for Bash to be able to use the code, it needs to be placed in the correct location in the file system. If you&#8217;re a Linux user, that&#8217;s probably the <code>/etc/bash_completion.d</code> directory.</p>
+  </div>
+
+</div>
+
+</div>
+
+
+    </div>
+    </div>
+
+    <footer class="global">
+      <div class="footer container">
+        <div class="row">
+          <div class="span12">
+            The contents of this site are available under the terms of the <a
+            href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation
+            License</a>.
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/javascript/flatstrap/jquery.js"></script>
+    <script src="/javascript/flatstrap/bootstrap.min.js"></script>
+
+  </body>
+</html>
+
+
+
