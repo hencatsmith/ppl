@@ -1,8 +1,8 @@
 ---
-title: ZSH Integration Guide
+title: Google Integration Guide
 layout: integration
 section: documentation
-integration: zsh
+integration: google
 ---
 
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam

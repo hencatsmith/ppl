@@ -1,0 +1,45 @@
+
+{% include header.html %}
+
+<div class="integration">
+
+<div class="row">
+
+  <div class="span4 command-list">
+    <h2>
+      Integration
+    </h2>
+
+    <ul class="nav nav-list">
+      <li{%if page.integration == "bash"%} class="active"{% endif %}>
+        <a href="/documentation/integration/bash">Bash</a>
+      </li>
+      <li{%if page.integration == "google"%} class="active"{% endif %}>
+        <a href="/documentation/integration/google">Google</a>
+      </li>
+      <li{%if page.integration == "mutt"%} class="active"{% endif %}>
+        <a href="/documentation/integration/mutt">Mutt</a>
+      </li>
+      <li{%if page.integration == "zsh"%} class="active"{% endif %}>
+        <a href="/documentation/integration/zsh">ZSH</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="span8">
+
+    {% if page.title %}
+      <h2>
+        {{page.title}}
+      </h2>
+    {% endif %}
+
+    {{content}}
+  </div>
+
+</div>
+
+</div>
+
+{% include footer.html %}
+

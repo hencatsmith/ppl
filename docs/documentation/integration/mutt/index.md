@@ -1,8 +1,8 @@
 ---
-title: ZSH Integration Guide
+title: Mutt Integration Guide
 layout: integration
 section: documentation
-integration: zsh
+integration: mutt
 ---
 
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
