@@ -4,11 +4,22 @@ layout: development
 section: development
 ---
 
-### Proper UTF-8 Support
+### Improved Expressiveness
 
-Right now, ppl's UTF-8 support is patchy at best. Ruby's newfound strictness
-about combining strings of different encodings is causing a very nasty fatal
-error in many cases involving UTF-8 characters. Fixing this bug is absolutely
-vital for truly supporting unicode. Until then, ppl's usefulness for non English
-speakers is embarrassingly lacklustre.
+Some small amount of demand has arisen on GitHub for the ability to mark email
+addresses and phone numbers as
+[preferred](https://github.com/h2s/ppl/issues/25), and to be able to mark phone
+numbers with a [type](https://github.com/h2s/ppl/issues/24). These are helpful
+as concrete examples of the sort of expressiveness still lacking from ppl's
+commands which will be addressed in the not-too-distant future.
+
+### Improved Integrability
+
+There has been talk on GitHub of providing a means of [scraping email
+addresses](https://github.com/h2s/ppl/issues/23) out of email messages, and of
+[importing already-encoded vCard
+data](https://github.com/h2s/ppl/issues/27#issuecomment-16373162) directly using
+ppl add. These, and other such additions, are likely to arrive with the passage
+of time as ppl works to become easier to integrate into existing systems and
+workflows.
 
