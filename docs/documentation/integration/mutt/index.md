@@ -5,21 +5,14 @@ section: documentation
 integration: mutt
 ---
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis
-autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
-consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et
-accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit
-augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta
-nobis eleifend option congue nihil imperdiet doming id quod mazim placerat
-facer possim assum. Typi non habent claritatem insitam; est usus legentis in
-iis qui facit eorum claritatem. Investigationes demonstraverunt lectores
-legere me lius quod ii legunt saepius. Claritas est etiam processus
-dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare
-quam littera gothica, quam nunc putamus parum claram, anteposuerit
-litterarum formas humanitatis per seacula quarta decima et quinta decima.
-Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in
-futurum.
+The [Mutt E-Mail Client](http://www.mutt.org/) supports the use of external
+address book programs as a source of [email address autocompletion
+suggestions](http://www.mutt.org/doc/manual/manual-4.html#ss4.5). You can use
+this to integrate ppl into mutt by adding the following to your `~/.muttrc`:
+
+    set query_command = "ppl mutt '%s'"
+
+With that configured, you can then invoke ppl from within mutt as a means of
+quickly finding email addresses by pressing `Q` in the index menu, or by
+pressing `^T` in any prompt for address entry.
 
