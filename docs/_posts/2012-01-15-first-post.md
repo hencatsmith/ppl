@@ -3,6 +3,7 @@ title: Version 1.0.0 released
 date: 2012-12-12
 layout: news
 section: news
+categories: [news]
 ---
 
 After a solid month or so of work, the first stable version of ppl has been

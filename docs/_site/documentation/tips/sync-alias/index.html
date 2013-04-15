@@ -1,8 +1,9 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>ppl - The Command Line Address Book</title>
+    <title>Sync Alias</title>
 
     <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
@@ -37,6 +38,8 @@
         <div class="container">
 
           
+            <a class="brand" href="/">ppl</a>
+          
 
           <ul class="nav pull-right">
             <li>
@@ -58,105 +61,16 @@
 
 
 
-<div class="front-page">
 
-  <div class="row welcome">
+  <h2>
+    Sync Alias
+  </h2>
 
-    <div class="span4">
 
-      <h1 class="big-welcome">
-        ppl
-      </h1>
+<div class="row">
 
-      <p class="little-welcome">
-        The command line address book
-      </p>
-      <p class="little-welcome">
-        <a href="/documentation/quick-start">
-          Try it!
-        </a>
-      </p>
-
-    </div>
-
-    <div class="span8">
-      <pre class="welcome-example"><code><span class="bash-prompt">$</span> ppl add henry "Henry Smith"
-<span class="bash-prompt">$</span> ppl phone henry 0123456789
-<span class="bash-prompt">$</span> ppl email henry henry@henrysmith.org
-<span class="bash-prompt">$</span> ppl show henry
-Henry Smith &lt;henry@henrysmith.org&gt;
-
-Email Addresses:
-  henry@henrysmith.org
-
-Phone Numbers:
-  0123456789
-</code></pre>
-    </div>
-
-  </div>
-
-  <div class="row what">
-
-    <div class="span4">
-      <h2>Free</h2>
-      <p>
-        ppl is free software made out of other free software. It's built on top of
-        Ruby and Git, and the completely free vcard address book format. Even your
-        phone can probably speak vcard.
-      </p>
-    </div>
-
-    <div class="span4">
-      <h2>Decentralized</h2>
-      <p>
-        ppl is built on top of Git, the world's most popular decentralized version
-        control system. Store and maintain your address book in as many places as
-        you like and let Git worry about making sense of it all.
-      </p>
-    </div>
-
-    <div class="span4">
-      <h2>Good</h2>
-      <p>
-        ppl does its best to be a proper UNIX-style comand line program. Proper
-        exit codes, no superfluous output, that sort of thing. The idea is to give
-        you another powerful tool that plays nice with other powerful tools.
-      </p>
-    </div>
-
-  </div>
-
-  <div class="row latest">
-
-    <div class="span4">
-      <h3>Latest Version</h3>
-      <div class="well">
-        <h2>
-	  1.17.2
-          <small>
-            (2013-04-14)
-          </small>
-        </h2>
-        <p>
-          More details in the
-          <a href="/development/changelog">
-            changelog
-          </a>
-        </p>
-      </div>
-    </div>
-
-    <div class="span8">
-      <h3>
-        Sync Alias
-        <small>
-          <a href="/documentation/tips/sync-alias">
-            2013-04-15
-          </a>
-        </small>
-      </h3>
-      <p>If your ppl address book is cloned on multiple computers, you&#8217;re probably accustomed to using <a href='/documentation/commands/pull/'>pull</a> and <a href='/documentation/commands/pull/'>push</a> to synchronise your data using Git. If so, that&#8217;s great. You&#8217;re making the most of ppl&#8217;s core functionality. But you could probably be making more of its convenience-oriented features.</p>
+  <div class="span8">
+    <p>If your ppl address book is cloned on multiple computers, you&#8217;re probably accustomed to using <a href='/documentation/commands/pull/'>pull</a> and <a href='/documentation/commands/pull/'>push</a> to synchronise your data using Git. If so, that&#8217;s great. You&#8217;re making the most of ppl&#8217;s core functionality. But you could probably be making more of its convenience-oriented features.</p>
 
 <p>ppl allows you to configure <a href='/documentation/configuration/alias/'>aliases</a> as shorcuts for often-used commands, or as a way of composing commands together. Here&#8217;s an alias called <code>sync</code> which does the latter.</p>
 
@@ -166,13 +80,26 @@ Phone Numbers:
 master</code> in your address book directory by simply entering <code>ppl sync</code>. For most users, this probably automates the entire synchronisation process.</p>
 
 <p>Bear in mind that this alias will only work if you keep your contacts on the <code>master</code> branch and have a remote called <code>origin</code>. If your setup is more complex than that, you may have to get creative with your aliases to achieve this level of laziness.</p>
-    </div>
+  </div>
+
+  <div class="span4">
+
+    <dl class="nav-sidebar">
+      
+        <dt class="active">
+          <a href="/documentation/tips/sync-alias">
+            Sync Alias
+          </a>
+        </dt>
+        <dd class="active">
+          2013-04-15
+        </dd>
+      
+    </dl>
 
   </div>
 
 </div>
-
-
 
 
     </div>
@@ -195,6 +122,8 @@ master</code> in your address book directory by simply entering <code>ppl sync</
 
   </body>
 </html>
+
+
 
 
 

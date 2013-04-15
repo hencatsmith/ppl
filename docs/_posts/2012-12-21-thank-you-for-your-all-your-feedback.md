@@ -3,6 +3,7 @@ title: Thanks For All Your Feedback
 date: 2012-12-21
 layout: news
 section: news
+categories: [news]
 ---
 
 Yesterday I worked up the courage to submit this project to Hacker News under

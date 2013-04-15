@@ -3,6 +3,7 @@ title: Coloured Output Released
 date: 2013-03-16
 layout: news
 section: news
+categories: [news]
 ---
 
 It's been about a month since the last release, but that's not because of any
