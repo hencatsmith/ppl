@@ -3,6 +3,7 @@ title: Two Months In
 date: 2013-02-17
 layout: news
 section: news
+categories: [news]
 ---
 
 It's been almost two months now since the big day of [ppl's public
