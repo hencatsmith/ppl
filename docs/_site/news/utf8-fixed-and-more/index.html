@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Coloured Output Released</title>
+    <title>UTF-8 Fixed And More</title>
 
     <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
@@ -63,30 +63,32 @@
 
 
   <h2>
-    Coloured Output Released
+    UTF-8 Fixed And More
   </h2>
 
 
 <div class="row">
 
   <div class="span8">
-    <p>It&#8217;s been about a month since the last release, but that&#8217;s not because of any lack of internal activity. Today marks the release of support for git-style coloured output, configurable in <code>~/.pplconfig</code>.</p>
+    <p>Over the weekend, in an uncharacteristically late night of coding, I finally put an end to that UTF-8 issue that had been preventing the <a href='https://github.com/h2s/ppl/issues/17'>use of ppl with non-ASCII characters</a> such as ß or ñ. My apologies to anyone who wanted to try ppl and couldn&#8217;t during the <em>two entire months</em> that issue sat open. If it&#8217;s any consolation, fixing it gave me many headaches.</p>
 
-<p>This has taken a while to achieve just because I wanted to take my time over it and try to really get it right the first time. Some refactoring was necessary in order to get config data into the code responsible for formatting output, but hopefully the resulting usage of the <a href='https://github.com/bkeepers/morphine'>morphine</a> dependency injection container should reduce such code churn in future.</p>
+<p>Even though it&#8217;s only been a few days since the previous news post, there has been a lot of progress in that time, thanks largely to the involvement and encouragement of <a href='https://github.com/pigmonkey'>@pigmonkey</a> and <a href='https://github.com/shushcat'>@shushcat</a> on GitHub. Some good refinements to the <a href='/documentation/integration/mutt/'>mutt integration</a> have already made it into recent versions of ppl, and there&#8217;s some good discussion happening about what needs doing to keep improving ppl in the near future.</p>
 
-<p>In other news, the <a href='https://github.com/h2s/ppl/issues/17'>UTF-8 bug</a> mentioned in <a href='/news/two-months-in/'>last month&#8217;s update</a> should be gone soon. I&#8217;ve spoken to the maintainer of vpim about it, and <a href='http://rubyforge.org/pipermail/vpim-talk/2013/000185.html'>his response</a> was positive. Apparently vpim just doesn&#8217;t quite support Ruby 1.9.1&#8217;s String class yet, but will do soon.</p>
+<p>The <a href='/documentation'>documentation</a> has had some much-needed attention invested in it, too. A few bits and pieces have been tidied up, and a couple of entirely new sections have been added as well. The <a href='/documentation/integration/bash/'>Integration Guide</a> covers the growing number of ways of using ppl with other software, and the <a href='documentation/tips/'>Tips Section</a> should prove to be a good catch-all place for helpful advice about using ppl.</p>
+
+<p>Contributions are welcome, so get in touch if you spot any mistakes, have any tips to contribute, or know of any tools for integrating ppl into other software. Big thanks to everyone for your input so far. Shout out to <a href='https://github.com/axelGschaider'>@alexGschaider</a>, <a href='https://github.com/matthewp/'>@matthewp</a>, and <a href='https://github.com/storge'>@storge</a> for their help as well.</p>
   </div>
 
   <div class="span4">
 
     <dl class="nav-sidebar">
       
-        <dt>
+        <dt class="active">
           <a href="/news/utf8-fixed-and-more">
             UTF-8 Fixed And More
           </a>
         </dt>
-        <dd>
+        <dd class="active">
           2013-04-15
         </dd>
       
@@ -99,12 +101,12 @@
           2013-04-10
         </dd>
       
-        <dt class="active">
+        <dt>
           <a href="/news/coloured-output-released">
             Coloured Output Released
           </a>
         </dt>
-        <dd class="active">
+        <dd>
           2013-03-16
         </dd>
       
