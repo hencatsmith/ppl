@@ -80,13 +80,9 @@ functionality, steer clear of complex language where possible. That being said,
 don't be discouraged from submitting some really complex alias hack if you've
 come up with something cool. Not everything has to be for newbies!
 
-#### Licensing & Attribution
+#### Licensing
 
 Anything you submit will be licensed under the [GNU
 FDL](http://www.gnu.org/copyleft/fdl.html). Hopefully you agree that this is a
 good thing!
-
-Also note that your attribution URL will have a
-[nofollow](http://en.wikipedia.org/wiki/Nofollow) `rel` on it. This is to
-discourage any [w3schools](http://w3fools.com/)-esque black hat SEO bullshit.
 
