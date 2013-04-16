@@ -12,21 +12,12 @@ Bash accomplishes this through the use of a [completion
 function](http://tldp.org/LDP/abs/html/tabexpansion.html), and the good news is
 that there's one available for ppl.
 
-There are plans to build a more streamlined integration process than this, but
-for now, here's how to set up autocompletion for ppl in Bash.
+### Install the completion function globally
 
-### 1. Download the completion function
+    $ ppl completion bash | sudo tee /etc/bash_completion.d/ppl
 
-    $ wget "https://raw.github.com/h2s/ppl/master/completions/bash" -O ppl
+The [completion](/documentation/commands/completion) command simply outputs the
+completion function code in its entirety. The above line pipes that code into
+its rightful place in your system's Bash completion function config directory.
 
-Use a command such as the above to obtain a copy of the latest completion
-function code.
-
-### 2. Install the completion function
-
-    $ sudo mv ppl /etc/bash_completion.d/
-
-In order for Bash to be able to use the code, it needs to be placed in the
-correct location in the file system. If you're a Linux user, that's probably the
-`/etc/bash_completion.d` directory.
 

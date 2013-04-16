@@ -96,15 +96,9 @@
 
     <p>Similarly to the <a href='/documentation/integration/bash/'>Bash completion</a> functionality also available, ppl comes ready with a ZSH completion function as well. Here&#8217;s how to get it set up:</p>
 
-<h3 id='1_download_the_completion_function'>1. Download the completion function</h3>
+<h3 id='install_the_completion_function'>Install the completion function</h3>
 
-<pre><code>$ wget &quot;https://raw.github.com/h2s/ppl/master/completions/zsh&quot; -O ppl</code></pre>
-
-<p>Use a command such as the above to obtain a copy of the latest completion function code.</p>
-
-<h3 id='2_install_the_completion_function'>2. Install the completion function</h3>
-
-<pre><code>$ sudo mv ppl /usr/share/zsh/site-functions/</code></pre>
+<pre><code>$ ppl completion zsh | sudo tee /usr/share/zsh/site-functions/</code></pre>
 
 <p>Depending on your choice of operating system, the target directory in the above code may differ. The above is certainly correct for Arch Linux, but on Debian, for example, the target would be <code>/usr/local/share/zsh/site-functions/</code>.</p>
   </div>
