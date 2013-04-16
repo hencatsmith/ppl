@@ -94,14 +94,14 @@ Phone Numbers:
 
     <div class="span8">
       <h3>
-        {{site.posts.first.title}}
+        {{site.categories.news.first.title}}
         <small>
-          <a href="{{site.posts.first.url}}">
-            {{site.posts.first.date | date: '%Y-%m-%d'}}
+          <a href="{{site.categories.news.first.url}}">
+            {{site.categories.news.first.date | date: '%Y-%m-%d'}}
           </a>
         </small>
       </h3>
-      {{site.posts.first.content}}
+      {{site.categories.news.first.content}}
     </div>
 
   </div>

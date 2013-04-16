@@ -150,31 +150,20 @@ Phone Numbers:
 
     <div class="span8">
       <h3>
-        Set Up Color Output
+        UTF-8 Fixed And More
         <small>
-          <a href="/documentation/tips/set-up-color-output">
-            2013-04-16
+          <a href="/news/wtf">
+            2013-04-15
           </a>
         </small>
       </h3>
-      <p>ppl provides a system for configuring the output of many of its commands in a way that&#8217;s almost identical to git&#8217;s color output configuration. While not an essential piece of functionality, a small amount of color can go a long way towards improving your experience using ppl.</p>
+      <p>Over the weekend, in an uncharacteristically late night of coding, I finally put an end to that UTF-8 issue that had been preventing the <a href='https://github.com/h2s/ppl/issues/17'>use of ppl with non-ASCII characters</a> such as ß or ñ. My apologies to anyone who wanted to try ppl and couldn&#8217;t during the <em>two entire months</em> that issue sat open. If it&#8217;s any consolation, fixing it gave me many headaches.</p>
 
-<p>Personally, I try to rein in the temptation to go to town and assign a color to absolutely everything. My <code>~/.pplconfig</code> simply colorizes all contact IDs in all output, highlighting them in cyan to maximize their visibility.</p>
-<pre><code>$ ppl ls</code>
-<code><span style='color: #2AA198;'>alice:</span>  Alice  alice@example.org</code>
-<code><span style='color: #2AA198;'>bob:</span>    Bob    bob@example.org</code>
-<code><span style='color: #2AA198;'>eve:</span>    Eve    eve@example.org</code></pre>
-<p>Configuring ppl to colorize the output of ls like in the above example is extremely easy, and will be especially familiar to you if you&#8217;re already used to configuring git. Here are the exact config file contents necesssary to show contact IDs in cyan in the output of <a href='/documentation/commands/ls'>ppl ls</a>.</p>
+<p>Even though it&#8217;s only been a few days since the previous news post, there has been a lot of progress in that time, thanks largely to the involvement and encouragement of <a href='https://github.com/pigmonkey'>@pigmonkey</a> and <a href='https://github.com/shushcat'>@shushcat</a> on GitHub. Some good refinements to the <a href='/documentation/integration/mutt/'>mutt integration</a> have already made it into recent versions of ppl, and there&#8217;s some good discussion happening about what needs doing to keep improving ppl in the near future.</p>
 
-<pre><code>[color]
-    ls = true
+<p>The <a href='/documentation'>documentation</a> has had some much-needed attention invested in it, too. A few bits and pieces have been tidied up, and a couple of entirely new sections have been added as well. The <a href='/documentation/integration/bash/'>Integration Guide</a> covers the growing number of ways of using ppl with other software, and the <a href='documentation/tips/'>Tips Section</a> should prove to be a good catch-all place for helpful advice about using ppl.</p>
 
-[color &quot;ls&quot;]
-    id = cyan</code></pre>
-
-<p>Simply add the above to your <code>~/.pplconfig</code>, run <code>ppl ls</code>, and you should see contact IDs in cyan. If not, double-check whether you&#8217;re running an up-to-date version of ppl. This feature has been supported since <code>1.15.0</code>, making it only about a month old at the time of writing.</p>
-
-<p>Now that you know the basic gist of how to configure color, you&#8217;ll probably be glad to know that there&#8217;s some fairly extensive <a href='/documentation/configuration/color'>reference documentation for this functionality</a>, including a <a href='/documentation/configuration/color/#list_of_supported_colors'>list of supported colors</a> and an example for each command which shows the <a href='/documentation/configuration/color_ls'>full list of configurable text elements</a>.</p>
+<p>Contributions are welcome, so get in touch if you spot any mistakes, have any tips to contribute, or know of any tools for integrating ppl into other software. Big thanks to everyone for your input so far. Shout out to <a href='https://github.com/axelGschaider'>@alexGschaider</a>, <a href='https://github.com/matthewp/'>@matthewp</a>, and <a href='https://github.com/storge'>@storge</a> for their help as well.</p>
     </div>
 
   </div>
