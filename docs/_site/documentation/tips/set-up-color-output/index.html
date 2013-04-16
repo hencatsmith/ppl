@@ -4,7 +4,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Sync Alias</title>
+    <title>Set Up Color Output</title>
 
     <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
@@ -64,44 +64,52 @@
 
 
   <h2>
-    Sync Alias
+    Set Up Color Output
   </h2>
 
 
 <div class="row">
 
   <div class="span8">
-    <p>If your ppl address book is cloned on multiple computers, you&#8217;re probably accustomed to using <a href='/documentation/commands/pull/'>pull</a> and <a href='/documentation/commands/pull/'>push</a> to synchronise your data using Git. If so, that&#8217;s great. You&#8217;re making the most of ppl&#8217;s core functionality. But you could probably be making more of its convenience-oriented features.</p>
+    <p>ppl provides a system for configuring the output of many of its commands in a way that&#8217;s almost identical to git&#8217;s color output configuration. While not an essential piece of functionality, a small amount of color can go a long way towards improving your experience using ppl.</p>
 
-<p>ppl allows you to configure <a href='/documentation/configuration/alias/'>aliases</a> as shorcuts for often-used commands, or as a way of composing commands together. Here&#8217;s an alias called <code>sync</code> which does the latter.</p>
+<p>Personally, I try to rein in the temptation to go to town and assign a color to absolutely everything. My <code>~/.pplconfig</code> simply colorizes all contact IDs in all output, highlighting them in cyan to maximize their visibility.</p>
+<pre><code>$ ppl ls</code>
+<code><span style='color: #2AA198;'>alice:</span>  Alice  alice@example.org</code>
+<code><span style='color: #2AA198;'>bob:</span>    Bob    bob@example.org</code>
+<code><span style='color: #2AA198;'>eve:</span>    Eve    eve@example.org</code></pre>
+<p>Configuring ppl to colorize the output of ls like in the above example is extremely easy, and will be especially familiar to you if you&#8217;re already used to configuring git. Here are the exact config file contents necesssary to show contact IDs in cyan in the output of <a href='/documentation/commands/ls'>ppl ls</a>.</p>
 
-<pre><code>sync = !ppl pull origin master &amp;&amp; ppl push origin master</code></pre>
+<pre><code>[color]
+    ls = true
 
-<p>This allows you to execute <code>git pull origin master</code> and then <code>git push origin
-master</code> in your address book directory by simply entering <code>ppl sync</code>. For most users, this probably automates the entire synchronisation process.</p>
+[color &quot;ls&quot;]
+    id = cyan</code></pre>
 
-<p>Bear in mind that this alias will only work if you keep your contacts on the <code>master</code> branch and have a remote called <code>origin</code>. If your setup is more complex than that, you may have to get creative with your aliases to achieve this level of laziness.</p>
+<p>Simply add the above to your <code>~/.pplconfig</code>, run <code>ppl ls</code>, and you should see contact IDs in cyan. If not, double-check whether you&#8217;re running an up-to-date version of ppl. This feature has been supported since <code>1.15.0</code>, making it only about a month old at the time of writing.</p>
+
+<p>Now that you know the basic gist of how to configure color, you&#8217;ll probably be glad to know that there&#8217;s some fairly extensive <a href='/documentation/configuration/color'>reference documentation for this functionality</a>, including a <a href='/documentation/configuration/color/#list_of_supported_colors'>list of supported colors</a> and an example for each command which shows the <a href='/documentation/configuration/color_ls'>full list of configurable text elements</a>.</p>
   </div>
 
   <div class="span4">
 
     <dl class="nav-sidebar">
       
-        <dt>
+        <dt class="active">
           <a href="/documentation/tips/set-up-color-output">
             Set Up Color Output
           </a>
         </dt>
-        <dd>
+        <dd class="active">
           2013-04-16
         </dd>
       
-        <dt class="active">
+        <dt>
           <a href="/documentation/tips/sync-alias">
             Sync Alias
           </a>
         </dt>
-        <dd class="active">
+        <dd>
           2013-04-15
         </dd>
       
