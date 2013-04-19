@@ -4,6 +4,20 @@ layout: development
 section: development
 ---
 
+### 1.19.0
+
+Following a [feature request](https://github.com/h2s/ppl/issues/23) on GitHub,
+this release adds the [scrape](/documentation/commands/scrape) command for
+automatically adding contacts to an address book from an email message.
+
+### 1.18.0
+
+With the intention of streamlining the integration process with
+[Bash](/documentation/integration/bash), and
+[ZSH](/documentation/integration/zsh), this release adds the
+[completion](/documentation/commands/completion) command. This new command
+simply outputs the chosen shell autocompletion function to stdout.
+
 ### 1.17.2
 
 An embarrassing "quick follow-up" release, this unbreaks a couple of things that
