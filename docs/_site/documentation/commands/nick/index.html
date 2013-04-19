@@ -157,7 +157,7 @@
 
 <h3 id='synopsis'>Synopsis</h3>
 
-<pre><code>ppl nick
+<pre><code>ppl nick (--no-color)
 ppl nick &lt;contact&gt;
 ppl nick &lt;contact&gt; &lt;nickname&gt;
 ppl nick &lt;contact&gt; (-d | --delete) &lt;nickname&gt;</code></pre>
@@ -167,6 +167,8 @@ ppl nick &lt;contact&gt; (-d | --delete) &lt;nickname&gt;</code></pre>
 <p>With no arguments, the nicknames of each contact in the address book are listed.</p>
 
 <p>If a <code>&lt;contact&gt;</code> is specified, their nicknames are shown. If both a <code>&lt;contact&gt;</code> and a <code>&lt;nickname&gt;</code> are given, then the nickname is added to the contact. If the <code>--delete</code> or <code>-d</code> flag is set, then the given <code>&lt;nickname&gt;</code> is deleted from the specified <code>&lt;contact&gt;</code>.</p>
+
+<p>If the <code>--no-color</code> flag is set, then the list of nicknames will be printed without any ANSI color escape codes, regardless of any configuration settings.</p>
 
 <h3 id='examples'>Examples</h3>
 

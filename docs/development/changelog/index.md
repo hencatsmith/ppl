@@ -4,6 +4,14 @@ layout: development
 section: development
 ---
 
+### 1.20.0
+
+In order to fix a [compatibility issue with OS
+X](https://github.com/h2s/ppl/issues/22#issuecomment-16622923), the usage of sed
+to strip ANSI color escape codes in the autocompletion functions has been
+replaced with a `--no-color` option which has been added to [ppl
+nick](/documentation/commands/nick).
+
 ### 1.19.0
 
 Following a [feature request](https://github.com/h2s/ppl/issues/23) on GitHub,
