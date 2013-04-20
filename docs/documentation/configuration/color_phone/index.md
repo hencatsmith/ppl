@@ -13,6 +13,7 @@ This section dictates the color of the output of the
     [color "phone"]
         id            = green
         phone_numbers = blue
+        type          = red
 
 ### See Also
 

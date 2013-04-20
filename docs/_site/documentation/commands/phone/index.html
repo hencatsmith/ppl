@@ -160,7 +160,8 @@
 <pre><code>ppl phone
 ppl phone &lt;contact&gt;
 ppl phone &lt;contact&gt; &lt;number&gt;
-ppl phone &lt;contact&gt; (-d | --delete) &lt;phone-number&gt;</code></pre>
+ppl phone &lt;contact&gt; (-d | --delete) &lt;phone-number&gt;
+ppl phone &lt;contact&gt; &lt;phone-number&gt; (-t | --type) &lt;type&gt;</code></pre>
 
 <h3 id='description'>Description</h3>
 
@@ -172,12 +173,14 @@ ppl phone &lt;contact&gt; (-d | --delete) &lt;phone-number&gt;</code></pre>
 
 <p>It the <code>--delete</code> or <code>-d</code> flag is set, then the given <code>&lt;phone-number&gt;</code> is deleted from the specified <code>&lt;contact&gt;</code>.</p>
 
+<p>Use the <code>--type &lt;type&gt;</code> option to assign a type to the phone number. You can use this option both when adding a new number or to amend an existing number.</p>
+
 <h3 id='examples'>Examples</h3>
 
-<pre><code>$ ppl phone jdoe 0123456789
+<pre><code>$ ppl phone jdoe 0123456789 --type cell
 $ ppl phone adam 0777111222
 $ ppl phone jdoe
-0123456789
+0123456789 (cell)
 $ ppl phone
 adam:  0777111222
 jdoe:  0123456789</code></pre>
