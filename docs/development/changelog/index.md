@@ -4,6 +4,13 @@ layout: development
 section: development
 ---
 
+### 1.22.0
+
+In this version of ppl, one particularly egregious performance issue has been
+fixed. Upgrading is *highly* recommended. Even if you haven't noticed any
+problems worth complaining about, you should hopefully enjoy quite a boost with
+this new version.
+
 ### 1.21.0
 
 Further increasing the expressiveness of ppl's commands, this release brings the
