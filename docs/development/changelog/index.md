@@ -4,6 +4,15 @@ layout: development
 section: development
 ---
 
+### 1.21.0
+
+Further increasing the expressiveness of ppl's commands, this release brings the
+`--type` option to [ppl phone](/documentation/commands/phone). With this option,
+the vCard format's `TYPE` parameter in the `TEL` field is now exposed to users.
+This allows you to label phone numbers in a way that doesn't [break
+compatibility with other
+software](https://github.com/h2s/ppl/issues/24#issuecomment-16623136).
+
 ### 1.20.0
 
 In order to fix a [compatibility issue with OS
