@@ -4,6 +4,12 @@ layout: development
 section: development
 ---
 
+### 1.22.1
+
+This version simply fixes a minor bug in the outputting format code, which was
+introduced in `1.21.0`. Nothing serious, but a warning sign that I need to slow
+myself down and perhaps look at automating more of the testing process.
+
 ### 1.22.0
 
 In this version of ppl, one particularly egregious performance issue has been
