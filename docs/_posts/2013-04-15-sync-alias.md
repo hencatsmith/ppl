@@ -4,6 +4,8 @@ date: 2013-04-15
 layout: tip
 categories: [tips]
 permalink: /documentation/tips/sync-alias
+author_name: h2s
+author_url: http://henrysmith.org/
 ---
 
 If your ppl address book is cloned on multiple computers, you're probably

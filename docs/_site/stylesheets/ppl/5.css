@@ -99,6 +99,9 @@ h2 {
   font-size: 22px;
   font-weight: bold;
 }
+h2 small {
+  font-size: 16px;
+}
 h3 {
   font-size: 18px;
   font-weight: bold;
@@ -264,6 +267,9 @@ h6 {
 h2 {
   font-size: 22px;
   font-weight: bold;
+}
+h2 small {
+  font-size: 16px;
 }
 h3 {
   font-size: 18px;

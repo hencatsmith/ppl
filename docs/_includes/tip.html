@@ -4,6 +4,12 @@
 {% if page.title %}
   <h2>
     {{page.title}}
+    <small>
+      from
+      <a href="{{page.author_url}}">
+        {{page.author_name}}
+      </a>
+    </small>
   </h2>
 {% endif %}
 
