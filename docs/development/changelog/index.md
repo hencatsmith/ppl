@@ -29,6 +29,9 @@ For example, if you're attempting to amend the `--type` of a contact's phone
 number, you can now enter `ppl phone adam 071<Tab>` and Bash will autocomplete
 the rest of the phone number.
 
+See the [Bash integration guide](/documentation/integration/bash) for details of
+how to install the updated completion function to your system.
+
 ### 1.22.2
 
 Another bugfix release, fixing the [broken `--delete`
