@@ -4,6 +4,31 @@ layout: development
 section: development
 ---
 
+### 1.23.0
+
+Unusually for a ppl release, this one doesn't add any new core functionality or
+fix any bugs. Instead, this release is solely an update to the [Bash
+integration](/documentation/integration/bash/). The following improvements have
+been made to the bash completion.
+
+* It now returns command name suggestions much more quickly
+* It can autocomplete email addresses for use with [`ppl
+  email`](/documentation/commands/email)
+* It can autocomplete nicknames for use with [`ppl
+  nick`](/documentation/commands/nick)
+* It can autocomplete organizations for use with [`ppl
+  org`](/documentation/commands/org)
+* It can autocomplete phone numbers for use with [`ppl
+  phone`](/documentation/commands/phone)
+* It can autocomplete URLs for use with [`ppl url`](/documentation/commands/url)
+* It can autocomplete git remotes for use with
+  [`pull`](/documentation/commands/pull) and
+  [`push`](/documentation/commands/push)
+
+For example, if you're attempting to amend the `--type` of a contact's phone
+number, you can now enter `ppl phone adam 071<Tab>` and Bash will autocomplete
+the rest of the phone number.
+
 ### 1.22.2
 
 Another bugfix release, fixing the [broken `--delete`
