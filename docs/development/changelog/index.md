@@ -34,7 +34,10 @@ how to install the updated completion function to your system.
 
 ### 1.22.2
 
-Another bugfix release, fixing the [broken `--delete`
+
+See the [Bash integration guide](/documentation/integration/bash) for details of
+how to install the updated completion function to your system.  Another bugfix
+release, fixing the [broken `--delete`
 option](https://github.com/h2s/ppl/issues/33) of [`ppl
 phone`](/documentation/commands/phone).
 
@@ -103,7 +106,7 @@ characters](https://github.com/h2s/ppl/issues/27).
 
 ### 1.17.0
 
-This is a pecular version in that it doesn't change any code in ppl itself, but
+This is a peculiar version in that it doesn't change any code in ppl itself, but
 simultaneously fixes a really major issue that's been affecting it. All this
 version does is to increment the greencard gem dependency version number to a
 version that copes with UTF-8 input. It's a *tiny* change, but it's a major
