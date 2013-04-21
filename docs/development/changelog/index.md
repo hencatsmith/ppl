@@ -4,6 +4,12 @@ layout: development
 section: development
 ---
 
+### 1.22.2
+
+Another bugfix release, fixing the [broken `--delete`
+option](https://github.com/h2s/ppl/issues/33) of [`ppl
+phone`](/documentation/commands/phone).
+
 ### 1.22.1
 
 This version simply fixes a minor bug in the outputting format code, which was
