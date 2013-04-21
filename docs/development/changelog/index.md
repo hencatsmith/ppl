@@ -34,7 +34,6 @@ how to install the updated completion function to your system.
 
 ### 1.22.2
 
-
 See the [Bash integration guide](/documentation/integration/bash) for details of
 how to install the updated completion function to your system.  Another bugfix
 release, fixing the [broken `--delete`
