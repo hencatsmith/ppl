@@ -159,9 +159,12 @@
 
 <pre><code>ppl phone
 ppl phone &lt;contact&gt;
-ppl phone &lt;contact&gt; &lt;number&gt;
-ppl phone &lt;contact&gt; (-d | --delete) &lt;phone-number&gt;
-ppl phone &lt;contact&gt; &lt;phone-number&gt; (-t | --type) &lt;type&gt;</code></pre>
+ppl phone &lt;contact&gt; &lt;phone-number&gt;
+ppl phone &lt;contact&gt; &lt;phone-number&gt;
+    -d, --delete         delete email address
+    -t, --type &lt;type&gt;    set the number&#39;s type
+    -p, --preferred      mark as preferred
+    -P, --not-preferred  mark as not preferred</code></pre>
 
 <h3 id='description'>Description</h3>
 
@@ -174,6 +177,8 @@ ppl phone &lt;contact&gt; &lt;phone-number&gt; (-t | --type) &lt;type&gt;</code>
 <p>It the <code>--delete</code> or <code>-d</code> flag is set, then the given <code>&lt;phone-number&gt;</code> is deleted from the specified <code>&lt;contact&gt;</code>.</p>
 
 <p>Use the <code>--type &lt;type&gt;</code> option to assign a type to the phone number. You can use this option both when adding a new number or to amend an existing number.</p>
+
+<p>The <code>--preferred</code> and <code>--not-preferred</code> flags are for marking a given phone number as &#8220;preferred&#8221; or not. Internally, this status is represented with vCard&#8217;s <code>TYPE=pref</code> parameter in the <code>TEL</code> field. Preferred phone numbers are shown with a <code>*</code> next to them in the output of <code>ppl phone &lt;contact&gt;</code>.</p>
 
 <h3 id='examples'>Examples</h3>
 

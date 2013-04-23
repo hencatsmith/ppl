@@ -4,6 +4,15 @@ layout: development
 section: development
 ---
 
+### 1.24.0
+
+Preferred email addresses and phone numbers can be marked as such as of
+`1.24.0`. This is good news if you have contacts with several similar addresses
+or numbers who only tend to check one of them. Now you can mark their preferred
+contact details with the `--preferred` flag and ppl will remember this
+preferential status for you. Preferred numbers and addresses are displayed with
+a `*` before them.
+
 ### 1.23.0
 
 Unusually for a ppl release, this one doesn't add any new core functionality or

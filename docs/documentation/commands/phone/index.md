@@ -13,9 +13,12 @@ ppl phone - List, show or change phone numbers
 
     ppl phone
     ppl phone <contact>
-    ppl phone <contact> <number>
-    ppl phone <contact> (-d | --delete) <phone-number>
-    ppl phone <contact> <phone-number> (-t | --type) <type>
+    ppl phone <contact> <phone-number>
+    ppl phone <contact> <phone-number>
+        -d, --delete         delete email address
+        -t, --type <type>    set the number's type
+        -p, --preferred      mark as preferred
+        -P, --not-preferred  mark as not preferred
 
 ### Description
 
@@ -32,6 +35,11 @@ deleted from the specified `<contact>`.
 
 Use the `--type <type>` option to assign a type to the phone number. You can use
 this option both when adding a new number or to amend an existing number.
+
+The `--preferred` and `--not-preferred` flags are for marking a given phone
+number as "preferred" or not. Internally, this status is represented with
+vCard's `TYPE=pref` parameter in the `TEL` field. Preferred phone numbers are
+shown with a `*` next to them in the output of `ppl phone <contact>`.
 
 ### Examples
 
