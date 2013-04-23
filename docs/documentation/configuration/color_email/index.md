@@ -11,6 +11,7 @@ This section dictates the color of the output of the
 ### Example
 
     [color "email"]
+        star            = red
         id              = green
         email_addresses = blue
 

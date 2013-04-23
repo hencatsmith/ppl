@@ -11,6 +11,7 @@ This section dictates the color of the output of the
 ### Example
 
     [color "phone"]
+        star          = red
         id            = green
         phone_numbers = blue
         type          = red
