@@ -4,6 +4,20 @@ layout: development
 section: development
 ---
 
+### 1.25.0
+
+This release brings the very basic first customizability to the output of ppl's
+commands. As of this version, it's possible to pass a `--format` option to [`ppl
+email`](/documentation/commands/email) and [`ppl
+ls`](/documentation/commands/ls) to specify the exact nature of the output
+required. Also part of this new version is the ability to configure preset
+format strings for [`ppl ls`](/documentation/commands/ls)  in `~/.pplconfig` and
+invoke them by name using the `--pretty` option.
+
+Obviously, this type of functionality has the potential to be added to just
+about all of ppl's output. In time, that will happen. For now, this gets the
+basic functionality out there for use.
+
 ### 1.24.0
 
 Preferred email addresses and phone numbers can be marked as such as of
