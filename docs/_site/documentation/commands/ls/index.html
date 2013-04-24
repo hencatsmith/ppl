@@ -157,11 +157,32 @@
 
 <h3 id='synopsis'>Synopsis</h3>
 
-<pre><code>ppl ls</code></pre>
+<pre><code>ppl ls [&lt;options&gt;]
+    --format &lt;format&gt;  specify a custom output format
+    --pretty &lt;preset&gt;  specify a preset output format</code></pre>
 
 <h3 id='description'>Description</h3>
 
 <p>List all the contacts in the address book.</p>
+
+<h3 id='formatting_options'>Formatting Options</h3>
+
+<p>Using the <code>--format</code> option, <code>ppl ls</code> can be customized to produce output in a user-specified format. This is similar functionality to <code>printf</code> or the customizability of other software such as <a href='http://git-scm.com/docs/git-log'>git log</a>. Here are the placeholders.</p>
+
+<pre><code>%n   Newline
+%i   Contact ID
+%N   Name
+%a   Age
+%b   Birthday
+%k   Nickname      (first)
+%e   Email address (preferred/first)
+%p   Phone number  (preferred/first)
+%o   Organization  (first)</code></pre>
+
+<p>Commonly used output formats can be stored in <code>~/.pplconfig</code> and invoked by name using the <code>--pretty</code> option. For example, the following configuration would allow the format to be used by running <code>ppl ls --pretty age_info</code>.</p>
+
+<pre><code>[pretty]
+    age_info = &quot;%i: %a (%b)&quot;</code></pre>
 
 <h3 id='examples'>Examples</h3>
 

@@ -14,9 +14,10 @@ ppl email - List, show or change email addresses
     ppl email
     ppl email <contact>
     ppl email <contact> <email-address>
-        -d, --delete         delete email address
-        -p, --preferred      mark as preferred
-        -P, --not-preferred  mark as not preferred
+        -d, --delete           delete email address
+        -p, --preferred        mark as preferred
+        -P, --not-preferred    mark as not preferred
+            --format <format>  specify a custom output format
 
 ### Description
 
@@ -35,6 +36,17 @@ The `--preferred` and `--not-preferred` flags are for marking a given email
 address as "preferred" or not. Internally, this status is represented with
 vCard's `TYPE=pref` parameter in the `EMAIL` field. Preferred email addresses
 are shown with a `*` next to them in the output of `ppl email <contact>`.
+
+### Formatting Options
+
+Using the `--format` option, it is possible to customize the output of `ppl
+email` in several ways. This customizability is similar in usage to a typical
+`printf` function or [`git log`](http://git-scm.com/docs/git-log)'s own
+`--format` option. Here are the placeholders and their values.
+
+    %n   Newline
+    %a   Email address
+    %f   Preferred status ("*" if preferred)
 
 ### Examples
 
