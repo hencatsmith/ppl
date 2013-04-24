@@ -160,9 +160,10 @@
 <pre><code>ppl email
 ppl email &lt;contact&gt;
 ppl email &lt;contact&gt; &lt;email-address&gt;
-    -d, --delete         delete email address
-    -p, --preferred      mark as preferred
-    -P, --not-preferred  mark as not preferred</code></pre>
+    -d, --delete           delete email address
+    -p, --preferred        mark as preferred
+    -P, --not-preferred    mark as not preferred
+        --format &lt;format&gt;  specify a custom output format</code></pre>
 
 <h3 id='description'>Description</h3>
 
@@ -175,6 +176,15 @@ ppl email &lt;contact&gt; &lt;email-address&gt;
 <p>It the <code>--delete</code> or <code>-d</code> flag is set, then the given <code>&lt;email-address&gt;</code> is deleted from the specified <code>&lt;contact&gt;</code>.</p>
 
 <p>The <code>--preferred</code> and <code>--not-preferred</code> flags are for marking a given email address as &#8220;preferred&#8221; or not. Internally, this status is represented with vCard&#8217;s <code>TYPE=pref</code> parameter in the <code>EMAIL</code> field. Preferred email addresses are shown with a <code>*</code> next to them in the output of <code>ppl email &lt;contact&gt;</code>.</p>
+
+<h3 id='formatting_options'>Formatting Options</h3>
+
+<p>Using the <code>--format</code> option, it is possible to customize the output of <code>ppl
+email</code> in several ways. This customizability is similar in usage to a typical <code>printf</code> function or <a href='http://git-scm.com/docs/git-log'><code>git log</code></a>&#8217;s own <code>--format</code> option. Here are the placeholders and their values.</p>
+
+<pre><code>%n   Newline
+%a   Email address
+%f   Preferred status (&quot;*&quot; if preferred)</code></pre>
 
 <h3 id='examples'>Examples</h3>
 
