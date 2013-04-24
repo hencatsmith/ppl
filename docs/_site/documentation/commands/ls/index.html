@@ -157,11 +157,22 @@
 
 <h3 id='synopsis'>Synopsis</h3>
 
-<pre><code>ppl ls</code></pre>
+<pre><code>ppl ls [&lt;options&gt;]
+    --format &lt;format&gt;  specify a custom output format
+    --pretty &lt;format&gt;  specify a preset output format</code></pre>
 
 <h3 id='description'>Description</h3>
 
 <p>List all the contacts in the address book.</p>
+
+<h3 id='formatting_options'>Formatting Options</h3>
+
+<p>Using the <code>--format</code> option, <code>ppl ls</code> can be customized to produce output in a user-specified format. This is similar functionality to <code>printf</code> or the customizability of other software such as <a href='http://git-scm.com/docs/git-log'>git log</a>. Here are the placeholders.</p>
+
+<pre><code>%n   Newline
+%i   Contact ID
+%N   Name
+%b   Birthday</code></pre>
 
 <h3 id='examples'>Examples</h3>
 
