@@ -13,7 +13,7 @@ ppl ls - List all contacts
 
     ppl ls [<options>]
         --format <format>  specify a custom output format
-        --pretty <format>  specify a preset output format
+        --pretty <preset>  specify a preset output format
 
 ### Description
 
@@ -35,6 +35,13 @@ log](http://git-scm.com/docs/git-log). Here are the placeholders.
     %e   Email address (preferred/first)
     %p   Phone number  (preferred/first)
     %o   Organization  (first)
+
+Commonly used output formats can be stored in `~/.pplconfig` and invoked by name
+using the `--pretty` option. For example, the following configuration would
+allow the format to be used by running `ppl ls --pretty age_info`.
+
+    [pretty]
+        age_info = "%i: %a (%b)"
 
 ### Examples
 
