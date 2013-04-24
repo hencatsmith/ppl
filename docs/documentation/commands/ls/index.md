@@ -29,7 +29,12 @@ log](http://git-scm.com/docs/git-log). Here are the placeholders.
     %n   Newline
     %i   Contact ID
     %N   Name
+    %a   Age
     %b   Birthday
+    %k   Nickname      (first)
+    %e   Email address (preferred/first)
+    %p   Phone number  (preferred/first)
+    %o   Organization  (first)
 
 ### Examples
 
