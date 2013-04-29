@@ -8,7 +8,7 @@
     <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
 
     <link href="/stylesheets/flatstrap/bootstrap.min.css" rel="stylesheet" />
-    <link href="/stylesheets/ppl/6.css" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/ppl/7.css" rel="stylesheet" type="text/css" />
 
     
       
@@ -67,359 +67,353 @@
 <div class="row">
 
   <div class="span8">
-    <h3 id='1250'>1.25.0</h3>
-
-<p>This release brings the very basic first customizability to the output of ppl&#8217;s commands. As of this version, it&#8217;s possible to pass a <code>--format</code> option to <a href='/documentation/commands/email'><code>ppl
-email</code></a> and <a href='/documentation/commands/ls'><code>ppl
-ls</code></a> to specify the exact nature of the output required. Also part of this new version is the ability to configure preset format strings for <a href='/documentation/commands/ls'><code>ppl ls</code></a> in <code>~/.pplconfig</code> and invoke them by name using the <code>--pretty</code> option.</p>
-
-<p>Obviously, this type of functionality has the potential to be added to just about all of ppl&#8217;s output. In time, that will happen. For now, this gets the basic functionality out there for use.</p>
-
-<h3 id='1240'>1.24.0</h3>
-
-<p>Preferred email addresses and phone numbers can be marked as such as of <code>1.24.0</code>. This is good news if you have contacts with several similar addresses or numbers who only tend to check one of them. Now you can mark their preferred contact details with the <code>--preferred</code> flag and ppl will remember this preferential status for you. Preferred numbers and addresses are displayed with a <code>*</code> before them.</p>
-
-<h3 id='1230'>1.23.0</h3>
-
-<p>Unusually for a ppl release, this one doesn&#8217;t add any new core functionality or fix any bugs. Instead, this release is solely an update to the <a href='/documentation/integration/bash/'>Bash integration</a>. The following improvements have been made to the bash completion.</p>
-
-<ul>
-<li>It now returns command name suggestions much more quickly</li>
-
-<li>It can autocomplete email addresses for use with <a href='/documentation/commands/email'><code>ppl
-email</code></a></li>
-
-<li>It can autocomplete nicknames for use with <a href='/documentation/commands/nick'><code>ppl
-nick</code></a></li>
-
-<li>It can autocomplete organizations for use with <a href='/documentation/commands/org'><code>ppl
-org</code></a></li>
-
-<li>It can autocomplete phone numbers for use with <a href='/documentation/commands/phone'><code>ppl
-phone</code></a></li>
-
-<li>It can autocomplete URLs for use with <a href='/documentation/commands/url'><code>ppl url</code></a></li>
-
-<li>It can autocomplete git remotes for use with <a href='/documentation/commands/pull'><code>pull</code></a> and <a href='/documentation/commands/push'><code>push</code></a></li>
-</ul>
-
-<p>For example, if you&#8217;re attempting to amend the <code>--type</code> of a contact&#8217;s phone number, you can now enter <code>ppl phone adam 071&lt;Tab&gt;</code> and Bash will autocomplete the rest of the phone number.</p>
-
-<p>See the <a href='/documentation/integration/bash'>Bash integration guide</a> for details of how to install the updated completion function to your system.</p>
-
-<h3 id='1222'>1.22.2</h3>
-
-<p>See the <a href='/documentation/integration/bash'>Bash integration guide</a> for details of how to install the updated completion function to your system. Another bugfix release, fixing the <a href='https://github.com/h2s/ppl/issues/33'>broken <code>--delete</code> option</a> of <a href='/documentation/commands/phone'><code>ppl
-phone</code></a>.</p>
-
-<h3 id='1221'>1.22.1</h3>
-
-<p>This version simply fixes a minor bug in the outputting format code, which was introduced in <code>1.21.0</code>. Nothing serious, but a warning sign that I need to slow myself down and perhaps look at automating more of the testing process.</p>
-
-<h3 id='1220'>1.22.0</h3>
-
-<p>In this version of ppl, one particularly egregious performance issue has been fixed. Upgrading is <em>highly</em> recommended. Even if you haven&#8217;t noticed any problems worth complaining about, you should hopefully enjoy quite a boost with this new version.</p>
-
-<h3 id='1210'>1.21.0</h3>
-
-<p>Further increasing the expressiveness of ppl&#8217;s commands, this release brings the <code>--type</code> option to <a href='/documentation/commands/phone'>ppl phone</a>. With this option, the vCard format&#8217;s <code>TYPE</code> parameter in the <code>TEL</code> field is now exposed to users. This allows you to label phone numbers in a way that doesn&#8217;t <a href='https://github.com/h2s/ppl/issues/24#issuecomment-16623136'>break compatibility with other software</a>.</p>
-
-<h3 id='1200'>1.20.0</h3>
-
-<p>In order to fix a <a href='https://github.com/h2s/ppl/issues/22#issuecomment-16622923'>compatibility issue with OS X</a>, the usage of sed to strip ANSI color escape codes in the autocompletion functions has been replaced with a <code>--no-color</code> option which has been added to <a href='/documentation/commands/nick'>ppl nick</a>.</p>
-
-<h3 id='1190'>1.19.0</h3>
-
-<p>Following a <a href='https://github.com/h2s/ppl/issues/23'>feature request</a> on GitHub, this release adds the <a href='/documentation/commands/scrape'>scrape</a> command for automatically adding contacts to an address book from an email message.</p>
-
-<h3 id='1180'>1.18.0</h3>
-
-<p>With the intention of streamlining the integration process with <a href='/documentation/integration/bash'>Bash</a>, and <a href='/documentation/integration/zsh'>ZSH</a>, this release adds the <a href='/documentation/commands/completion'>completion</a> command. This new command simply outputs the chosen shell autocompletion function to stdout.</p>
-
-<h3 id='1172'>1.17.2</h3>
-
-<p>An embarrassing &#8220;quick follow-up&#8221; release, this unbreaks a couple of things that 1.17.1 broke. Displaying the &#8220;Contact &#8216;%s&#8217; not found&#8221; message has been fixed, as has the command list help text displayed by <code>ppl</code> and <code>ppl help</code>.</p>
-
-<h3 id='1171'>1.17.1</h3>
-
-<p>Two fairly minor issues are fixed in this version. The first is a tweak to the output of the <a href='/documentation/commands/mutt'>mutt</a> command, improving the <a href='https://github.com/h2s/ppl/issues/20#issuecomment-16302428'>understandability and usefulness of the user-facing text</a>. The second is a bit of output sanitisation to help out people unlucky enough to have an address book where some of the contacts&#8217; fields contain <code>^M</code> <a href='https://github.com/h2s/ppl/issues/27'>carriage return characters</a>.</p>
-
-<ul>
-<li>Tweaked the output of the <a href='/documentation/commands/mutt'>mutt</a> command</li>
-
-<li>Add output sanitisation removing all <code>^M</code> characters from all output</li>
-</ul>
-
-<h3 id='1170'>1.17.0</h3>
-
-<p>This is a peculiar version in that it doesn&#8217;t change any code in ppl itself, but simultaneously fixes a really major issue that&#8217;s been affecting it. All this version does is to increment the greencard gem dependency version number to a version that copes with UTF-8 input. It&#8217;s a <em>tiny</em> change, but it&#8217;s a major improvement.</p>
-
-<h3 id='1160'>1.16.0</h3>
-
-<p>With a couple of tweaks to the way ppl handles mutt queries, <code>1.16.0</code> should be a nice improvement for anybody using ppl to autocomplete email addresses in the mail client that &#8220;just sucks less&#8221;.</p>
-
-<ul>
-<li>Added missing functionality to the <a href='/documentation/commands/mutt'>mutt</a> command enabling it to output <em>all</em> of a contact&#8217;s matching email addresses instead of just the first.</li>
-
-<li>Added the <code>-i</code> flag to the <a href='/documentation/commands/mutt'>mutt</a> command enabling it to perform case-insensitive search of the address book.</li>
-</ul>
-
-<p>Many thanks to <a href='https://github.com/pigmonkey'>@pigmonkey</a> on GitHub for the cooperation that made this release happen.</p>
-
-<h3 id='1151'>1.15.1</h3>
-
-<p>Heralding support for Ruby 2.0 and beyond, this version of ppl also sees the replacement of the vpim gem dependency with greencard. See the <a href='/news/ruby-2.0-compatibility/'>news post</a> for more details.</p>
-
-<h3 id='1150'>1.15.0</h3>
-
-<p>This adds support for colourised output to most ppl commands. The following commands are affected by this change:</p>
-
-<ul>
-<li><a href='/documentation/configuration/color_age'>age</a></li>
-
-<li><a href='/documentation/configuration/color_bday'>bday</a></li>
-
-<li><a href='/documentation/configuration/color_email'>email</a></li>
-
-<li><a href='/documentation/configuration/color_ls'>ls</a></li>
-
-<li><a href='/documentation/configuration/color_name'>name</a></li>
-
-<li><a href='/documentation/configuration/color_nick'>nick</a></li>
-
-<li><a href='/documentation/configuration/color_org'>org</a></li>
-
-<li><a href='/documentation/configuration/color_phone'>phone</a></li>
-
-<li><a href='/documentation/configuration/color_post'>post</a></li>
-
-<li><a href='/documentation/configuration/color_url'>url</a></li>
-</ul>
-
-<p>Internally, this release depends on two new gems:</p>
-
-<ul>
-<li><a href='https://github.com/bkeepers/morphine'>morphine</a></li>
-
-<li><a href='https://github.com/defunkt/colored'>colored</a></li>
-</ul>
-
-<h3 id='1141'>1.14.1</h3>
-
-<p>The release of <code>1.14.0</code> exposed a small screw-up in ppl&#8217;s alias support. The <code>[alias]</code> section of the <code>~/.pplconfig</code> file was not being picked up at all. Instead it was looking for a section called <code>[aliases]</code>, which was insconsistent with the documentation and with git, on which the functionality is based. This release, therefore, is a fix for this issue: an <code>[alias]</code> section in <code>.pplconfig</code> should now work as described.</p>
-
-<ul>
-<li>Fixed <code>[alias]</code> configuration</li>
-</ul>
-
-<h3 id='1140'>1.14.0</h3>
-
-<p>Hot on the heels of <code>1.13.0</code>, this release brings the git-style bang alias functionality facilitated by the previous release&#8217;s code changes. This allows the creation of aliases which execute a shell command.</p>
-
-<ul>
-<li>Add bang alias support</li>
-</ul>
-
-<h3 id='1130'>1.13.0</h3>
-
-<p>The result of a lot of thought, this is the long-awaited git synchronisation functionality. What&#8217;s been added are three new commands, <a href='/documentation/commands/pull'>pull</a>, <a href='/documentation/commands/push'>push</a>, and <a href='/documentation/commands/remote'>remote</a>. These commands have no behaviour of their own, and are effectively aliases that execute their git counterparts inside the address book&#8217;s directory.</p>
-
-<p>I think that this functionality is a good compromise: synchronising address book data can be accomplished using simple, familiar commands such as <code>ppl pull
-origin master</code>, and ppl itself is not unduly burdened with duplicating any git functionality.</p>
-
-<p>Another positive outcome of this work is that it brings proper git-style &#8220;bang&#8221; aliases closer to being a reality. The code changes required for these three commands lay a lot of the foundations necessary for bang aliases.</p>
-
-<ul>
-<li>Added <code>ppl pull</code> command</li>
-
-<li>Added <code>ppl push</code> command</li>
-
-<li>Added <code>ppl remote</code> command</li>
-</ul>
-
-<h3 id='1120'>1.12.0</h3>
-
-<p>This release adds the <a href='/documentation/commands/age'>age</a> command, which provides easy access to the ages of all contacts based on their dates of birth.</p>
-
-<ul>
-<li>Added <code>ppl age</code> command</li>
-</ul>
-
-<h3 id='1110'>1.11.0</h3>
-
-<p>This is a simple release that just adds new functionality in the form of support for another vCard property: <a href='/documentation/commands/nick'>nicknames</a>.</p>
-
-<ul>
-<li>Added <code>ppl nick</code> command</li>
-</ul>
-
-<h3 id='1100'>1.10.0</h3>
-
-<p>A lot of the work in this release went into some much-needed refactoring as a precautionary measure against accumulating too much technical debt early on. The code reuse enabled by this refactor facilitated the addition of some key functionality, too.</p>
-
-<ul>
-<li>Added support for storing multiple organizations with <code>ppl org</code> command</li>
-
-<li>Added support for storing multiple phone numbers with <code>ppl phone</code> command</li>
-
-<li>Added support for deleting phone numbers with <code>ppl phone</code> command</li>
-</ul>
-
-<h3 id='190'>1.9.0</h3>
-
-<p>This release adds two new features: the <a href='/documentation/commands/version'>version command</a>, and support for <a href='/documentation/configuration/alias'>aliases</a>. Both features function similarly to their git counterparts, albeit in a less complete way. For now the aliasing only supports simple aliasing of plain command names, and doesn&#8217;t allow things like aliasing long chains of arguments or git&#8217;s <code>!f() {}</code> style commands. These things will come in time.</p>
-
-<ul>
-<li>Added <code>ppl version</code> command</li>
-
-<li>Added rudimentary alias support</li>
-</ul>
-
-<h3 id='180'>1.8.0</h3>
-
-<p>Added another attribute that contacts often have: URLs. For example, a given contact may have a profile page on some social network, a personal website, or any number of different possibilities. The new comand, <a href='/documentation/commands/url'>ppl url</a>, works similarly to <a href='/documentation/commands/email'>ppl email</a> and allows you to store these URLs in your address book.</p>
-
-<ul>
-<li>Added <code>ppl url</code> command</li>
-</ul>
-
-<h3 id='170'>1.7.0</h3>
-
-<p>This version contains some fairly substantial changes to the way the <a href='/documentation/commands/show'>ppl show</a> command formats its output. The need for this change was unearthed by a <a href='https://github.com/h2s/ppl/issues/14'>question from @storge</a> on GitHub. In short, the command was only showing one of the given contact&#8217;s email addresses, giving the impression that this was all that ppl supported storing.</p>
-
-<ul>
-<li>Improved the output format of <code>ppl show</code></li>
-</ul>
-
-<h3 id='160'>1.6.0</h3>
-
-<p>This release contains a bugfix and the means for users to undo the minor damage caused by the bug. The bug was causing every new email address added by users to be saved against the contact <em>twice</em>. The fix stops that from happening. And a new feature has been added in the form of a <code>--delete</code> flag for <a href='/documentation/commands/email'>ppl email</a> so that dupliate addresses can be removed.</p>
-
-<ul>
-<li>Fixed a bug causing duplicate email addresses to be saved</li>
-
-<li>Added <code>--delete</code> flag to <code>ppl email</code></li>
-</ul>
-
-<h3 id='153'>1.5.3</h3>
-
-<p>There have been a lot of internal changes in this release, and one user-facing change to improve the error message when a non-existent contact is specified in a command.</p>
-
-<p>Before this change, non-existent contacts resulted in a fairly cryptic error message consisting only of the given non-existent contact ID. From now on the problem is actually explained to the user.</p>
-
-<ul>
-<li>Added a proper error message when a non-existent contact is specified</li>
-</ul>
-
-<h3 id='152'>1.5.2</h3>
-
-<p>Another very small, very minor release addressing a usability issue with <a href='/documentation/commands/shell'>ppl shell</a>.</p>
-
-<ul>
-<li>Add &#8220;welcome&#8221; message to <code>ppl shell</code> explaining how to quit</li>
-
-<li>Don&#8217;t show &#8220;ppl&gt;&#8221; prompt in <code>ppl shell</code> if stdin isn&#8217;t a tty</li>
-</ul>
-
-<h3 id='151'>1.5.1</h3>
-
-<p>This is a very small release to fix one very small bug.</p>
-
-<ul>
-<li>Fix fatal error in <code>ppl post &lt;contact&gt;</code> when contact has no address</li>
-</ul>
-
-<h3 id='150'>1.5.0</h3>
-
-<p>The addition of &#8220;interactive mode&#8221; in the form of <a href='/documentation/commands/shell'>ppl shell</a>. Thanks to <a href='https://github.com/axelGschaider'>@axelGschaider</a> on GitHub for <a href='https://github.com/h2s/ppl/issues/7'>the suggestion</a>. This ought to make life a lot easier for people entering lots of commands at once!</p>
-
-<ul>
-<li>Added <code>ppl shell</code> command</li>
-</ul>
-
-<h3 id='141'>1.4.1</h3>
-
-<p>This version is a first step towards removing the annoying limitation of one email address, postal address and so on per contact. This isn&#8217;t glamorous work but it&#8217;s vital functionality.</p>
-
-<p>The ability to add more than one email address to a contact has been added. This is not 100% complete: email addresses cannot yet be deleted, for example. And <a href='/documentation/commands/show'>ppl show</a> does not yet show all the addresses (only <a href='/documentation/commands/email'>ppl email</a> does for now). But at least it&#8217;s now possible to store the data</p>
-
-<ul>
-<li>Contacts can now have more than one email address</li>
-</ul>
-
-<h3 id='130'>1.3.0</h3>
-
-<p>Adds support for XDG-compatible configuration. Many thanks to <a href='https://github.com/h2s/ppl/issues/4'>@tijn</a> on GitHub for <a href='https://github.com/h2s/ppl/issues/4'>recommending this functionality</a>.</p>
-
-<p>This means ppl can now be alternatively configured using a file at <code>~/.config/ppl/config</code>. If you like keeping your <code>~/</code> free of dotfile clutter then this is good news. If not, don&#8217;t worry, <code>~/.pplconfig</code> continues working as normal.</p>
-
-<ul>
-<li>Add support for XDG-compatible configuration file location</li>
-</ul>
-
-<h3 id='120'>1.2.0</h3>
-
-<p>A relatively small release in terms of new functionality, <code>1.2.0</code> simply adds the <a href='/documentation/commands/post'>ppl post</a> command. This command was always in the pipeline, but thanks anways to <a href='http://news.ycombinator.com/user?id=nicky0'>nicky0</a> on Hacker News for <a href='http://news.ycombinator.com/item?id=4947468'>prompting me</a> to prioritise it slightly.</p>
-
-<ul>
-<li>Added <code>ppl post</code> command</li>
-</ul>
-
-<h3 id='110'>1.1.0</h3>
-
-<p>These are some very quickly added changes resulting from this morning&#8217;s exposure on <a href='http://news.ycombinator.com/item?id=4947047'>Hacker News</a>. A few real show-stopping bugs have been fixed, and a new feature has been added for mutt users.</p>
-
-<p>Many thanks to <a href='https://github.com/storge'>@storge</a> on GitHub for all the help fixing the long series of issues in <a href='https://github.com/h2s/ppl/issues/1'>Issue #1</a>. You absolute legend.</p>
-
-<p>Also, thanks to <a href='http://news.ycombinator.com/user?id=7h0ma5'>7h0ma5</a> on HN for the <a href='http://news.ycombinator.com/item?id=4947256'>mutt integration suggestion</a> and the helpful documentation link. Support for usage as the backend to mutt&#8217;s <code>query_command</code> option has been added in the form of <a href='/documentation/commands/mutt'>ppl mutt</a>.</p>
-
-<ul>
-<li>Fixed missing dependency declaration in gemspec</li>
-
-<li>Fixed missing minimum ruby version in gemspec</li>
-
-<li>Fixed completely broken and useless <code>ppl init</code> command</li>
-
-<li>Added <code>ppl mutt</code> command</li>
-</ul>
-
-<h3 id='100'>1.0.0</h3>
-
-<p>This is the first publicly-announced release. Since none of the previous releases have been publicised in any way, it&#8217;s assumed that nobody out there has been using them.</p>
-
-<p>This being the case, the changelog entry for <code>1.0.0</code> is effectively the set of all changes since the non-existence of the program until this version. So let&#8217;s put that in list form as seems to be customary in changelogs:</p>
-
-<ul>
-<li>ppl now exists</li>
-</ul>
+    <dl class='version-history'>
+
+  <dt>
+    <a href='/development/changelog/1.25.0'>
+      1.25.0
+    </a>
+  </dt>
+  <dd>
+    Customizable Output
+  </dd>
+
+  <dt>
+    <a href='/development/changelog/1.24.0'>
+      1.24.0
+    </a>
+  </dt>
+  <dd>
+    Preferred email addresses
+  </dd>
+
+  <dt>
+    <a href='/development/changelog/1.23.0'>
+      1.23.0
+    </a>
+  </dt>
+  <dd>
+    Bash completion enhancements
+  </dd>
+
+  <dt>
+    <a href='/development/changelog/1.22.2'>
+      1.22.2
+    </a>
+  </dt>
+  <dd>
+    Fix for broken --delete option
+  </dd>
+
+  <dt>
+    <a href='/development/changelog/1.22.1'>
+      1.22.1
+    </a>
+  </dt>
+  <dd>
+    Fix minor output formatting bug
+  </dd>
+
+  <dt>
+    <a href='/development/changelog/1.22.0'>
+      1.22.0
+    </a>
+  </dt>
+  <dd>
+    Noticeable performance optimization
+  </dd>
+
+  <dt>
+    <a href='/development/changelog/1.21.0'>
+      1.21.0
+    </a>
+  </dt>
+  <dd>
+    ppl phone --type added
+  </dd>
+
+  <dt>
+    <a href='/development/changelog/1.20.0'>
+      1.20.0
+    </a>
+  </dt>
+  <dd>
+    ppl nick --no-color added
+  </dd>
+
+  <dt>
+    <a href='/development/changelog/1.19.0'>
+      1.19.0
+    </a>
+  </dt>
+  <dd>
+    ppl scrape added
+  </dd>
+
+  <dt>
+    <a href='/development/changelog/1.18.0'>
+      1.18.0
+    </a>
+  </dt>
+  <dd>
+    ppl completion added
+  </dd>
+
+  <dt>
+    <a href='/development/changelog/1.17.2'>
+      1.17.2
+    </a>
+  </dt>
+  <dd>
+    Fix for minor release bugs
+  </dd>
+
+  <dt>
+    <a href='/development/changelog/1.17.1'>
+      1.17.1
+    </a>
+  </dt>
+  <dd>
+    Mutt integration tweaks
+  </dd>
+
+  <dt>
+    <a href='/development/changelog/1.17.0'>
+      1.17.0
+    </a>
+  </dt>
+  <dd>
+    UTF-8 support
+  </dd>
+
+  <dt>
+    <a href='/development/changelog/1.16.0'>
+      1.16.0
+    </a>
+  </dt>
+  <dd>
+    Mutt integration tweaks
+  </dd>
+
+  <dt>
+    <a href='/development/changelog/1.15.1'>
+      1.15.1
+    </a>
+  </dt>
+  <dd>
+    Ruby 2.0 support
+  </dd>
+
+  <dt>
+    <a href='/development/changelog/1.15.0'>
+      1.15.0
+    </a>
+  </dt>
+  <dd>
+    Color output added
+  </dd>
+
+  <dt>
+    <a href='/development/changelog/1.14.1'>
+      1.14.1
+    </a>
+  </dt>
+  <dd>
+    Removes discrepancy with documentation
+  </dd>
+
+  <dt>
+    <a href='/development/changelog/1.14.0'>
+      1.14.0
+    </a>
+  </dt>
+  <dd>
+    Bang aliases
+  </dd>
+
+  <dt>
+    <a href='/development/changelog/1.13.0'>
+      1.13.0
+    </a>
+  </dt>
+  <dd>
+    ppl push, pull and remote
+  </dd>
+
+  <dt>
+    <a href='/development/changelog/1.12.0'>
+      1.12.0
+    </a>
+  </dt>
+  <dd>
+    ppl age
+  </dd>
+
+  <dt>
+    <a href='/development/changelog/1.11.0'>
+      1.11.0
+    </a>
+  </dt>
+  <dd>
+    ppl nick
+  </dd>
+
+  <dt>
+    <a href='/development/changelog/1.10.0'>
+      1.10.0
+    </a>
+  </dt>
+  <dd>
+    Multiple organizations and phone numbers
+  </dd>
+
+  <dt>
+    <a href='/development/changelog/1.9.0'>
+      1.9.0
+    </a>
+  </dt>
+  <dd>
+    Aliases and ppl version
+  </dd>
+
+  <dt>
+    <a href='/development/changelog/1.8.0'>
+      1.8.0
+    </a>
+  </dt>
+  <dd>
+    ppl url
+  </dd>
+
+  <dt>
+    <a href='/development/changelog/1.7.0'>
+      1.7.0
+    </a>
+  </dt>
+  <dd>
+    ppl show output overhaul
+  </dd>
+
+  <dt>
+    <a href='/development/changelog/1.6.0'>
+      1.6.0
+    </a>
+  </dt>
+  <dd>
+    ppl email --delete and bugfix
+  </dd>
+
+  <dt>
+    <a href='/development/changelog/1.5.3'>
+      1.5.3
+    </a>
+  </dt>
+  <dd>
+    Better 'no such contact' error message
+  </dd>
+
+  <dt>
+    <a href='/development/changelog/1.5.2'>
+      1.5.2
+    </a>
+  </dt>
+  <dd>
+    ppl shell usability tweaks
+  </dd>
+
+  <dt>
+    <a href='/development/changelog/1.5.1'>
+      1.5.1
+    </a>
+  </dt>
+  <dd>
+    ppl post bugfix
+  </dd>
+
+  <dt>
+    <a href='/development/changelog/1.5.0'>
+      1.5.0
+    </a>
+  </dt>
+  <dd>
+    ppl shell
+  </dd>
+
+  <dt>
+    <a href='/development/changelog/1.4.1'>
+      1.4.1
+    </a>
+  </dt>
+  <dd>
+    Multiple email addresses per contact
+  </dd>
+
+  <dt>
+    <a href='/development/changelog/1.3.0'>
+      1.3.0
+    </a>
+  </dt>
+  <dd>
+    XDG-compatible configuration
+  </dd>
+
+  <dt>
+    <a href='/development/changelog/1.2.0'>
+      1.2.0
+    </a>
+  </dt>
+  <dd>
+    ppl post
+  </dd>
+
+  <dt>
+    <a href='/development/changelog/1.1.0'>
+      1.1.0
+    </a>
+  </dt>
+  <dd>
+    Hacker News feature requests and bugfixes
+  </dd>
+
+  <dt>
+    <a href='/development/changelog/1.0.0'>
+      1.0.0
+    </a>
+  </dt>
+  <dd>
+    First public version
+  </dd>
+
+</dl>
   </div>
 
   <div class="span4">
+    
+<dl class="nav-sidebar">
 
-    <dl class="nav-sidebar">
+  <dt>
+    <a href="/development">Introduction</a>
+  </dt>
+  <dd>
+    The very basics
+  </dd>
 
-      <dt>
-        <a href="/development">Introduction</a>
-      </dt>
-      <dd>
-        The very basics
-      </dd>
+  <dt class="active">
+    <a href="/development/changelog">Changelog</a>
+  </dt>
+  <dd class="active">
+    The story so far
+  </dd>
 
-      <dt class="active">
-        <a href="/development/changelog">Changelog</a>
-      </dt>
-      <dd class="active">
-        The fruit of our labor
-      </dd>
+  <dt>
+    <a href="/development/roadmap">Roadmap</a>
+  </dt>
+  <dd>
+    The plan for the the future
+  </dd>
 
-      <dt>
-        <a href="/development/roadmap">Roadmap</a>
-      </dt>
-      <dd>
-        The plan for the the future
-      </dd>
+</dl>
 
-    </dl>
 
   </div>
 

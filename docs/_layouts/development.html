@@ -11,32 +11,7 @@
   </div>
 
   <div class="span4">
-
-    <dl class="nav-sidebar">
-
-      {% if page.title == "Development" %}<dt class="active">{% else %}<dt>{% endif %}
-        <a href="/development">Introduction</a>
-      </dt>
-      {% if page.title == "Development" %}<dd class="active">{% else %}<dd>{% endif %}
-        The very basics
-      </dd>
-
-      {% if page.title == "Changelog" %}<dt class="active">{% else %}<dt>{% endif %}
-        <a href="/development/changelog">Changelog</a>
-      </dt>
-      {% if page.title == "Changelog" %}<dd class="active">{% else %}<dd>{% endif %}
-        The fruit of our labor
-      </dd>
-
-      {% if page.title == "Roadmap" %}<dt class="active">{% else %}<dt>{% endif %}
-        <a href="/development/roadmap">Roadmap</a>
-      </dt>
-      {% if page.title == "Roadmap" %}<dd class="active">{% else %}<dd>{% endif %}
-        The plan for the the future
-      </dd>
-
-    </dl>
-
+    {% include development-sidebar.html %}
   </div>
 
 </div>

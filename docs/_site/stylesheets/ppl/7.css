@@ -246,6 +246,10 @@ footer.global {
 .nav-sidebar dd {
   margin: 0 0 16px 0;
 }
+dl.version-history dd {
+  margin: 0 0 1em 0;
+  padding: 0;
+}
 body {
   font-family: "Arvo", sans-serif;
   font-size: 16px;
@@ -513,4 +517,8 @@ footer.global {
 }
 .nav-sidebar dd {
   margin: 0 0 16px 0;
+}
+dl.version-history dd {
+  margin: 0 0 1em 0;
+  padding: 0;
 }

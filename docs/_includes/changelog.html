@@ -1,0 +1,24 @@
+
+{% include header.html %}
+
+<h2>
+  Version {{page.title}}
+  <small>
+    {{page.summary}}
+  </small>
+</h2>
+
+<div class="row commands">
+
+  <div class="span8">
+    {{content}}
+  </div>
+
+  <div class="span4">
+    {% include development-sidebar.html %}
+  </div>
+
+</div>
+
+{% include footer.html %}
+
