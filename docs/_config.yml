@@ -13,5 +13,5 @@ lsi    : false
 safe   : false
 server : false
 
-version: 6
+version: 7
 
