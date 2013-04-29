@@ -78,15 +78,14 @@ Phone Numbers:
       <h3>Latest Version</h3>
       <div class="well">
         <h2>
-	  1.25.0
+          {{site.categories.changelog.first.title}}
           <small>
-            (2013-04-24)
+            ({{ site.categories.changelog.first.date | date: '%Y-%m-%d' }})
           </small>
         </h2>
         <p>
-          More details in the
-          <a href="/development/changelog">
-            changelog
+          <a href="{{site.categories.changelog.first.permalink}}">
+            {{site.categories.changelog.first.summary}}
           </a>
         </p>
       </div>

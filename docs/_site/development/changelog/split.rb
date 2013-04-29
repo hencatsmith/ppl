@@ -35,11 +35,12 @@ changes.each do |change|
   body = change.split("\n")[2..-1].join("\n")
 
   post = generate_post({
-    :title => version,
-    :date => date,
-    :layout => "changelog",
+    :title      => version,
+    :date       => date,
+    :layout     => "changelog",
+    :section    => "development",
     :categories => "[changelog]",
-    :permalink => "/development/changelog/#{version}",
+    :permalink  => "/development/changelog/#{version}",
   }, body)
 
   filename = "_posts/#{date}-#{version}.md"
