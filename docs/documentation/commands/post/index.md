@@ -13,41 +13,47 @@ ppl post - List, show or change postal addresses
 
     ppl post
     ppl post <contact>
-    ppl post <contact>
+    ppl post <contact> <address>
         -s, --street <street-address>
         -z, --postal-code <postal-code>
         -p, --po-box <po-box>
         -l, --locality <locality>
         -r, --region <region>
         -c, --country <country>
+    ppl post <contact> <address> (-m | --move) <new-name>
 
 ### Description
 
 With no arguments, the postal addresses of each contact in the address book are
 listed.
 
-If a `<contact>` is specified and no address properties are specified, the
-postal address of that contact is shown.
+If a just a `<contact>` is specified, the postal addresses of that contact are
+shown.
 
-If both a `<contact>` and some address properties are given, then those
-properties are stored as part of the postal address of that contact.
+If both a `<contact>` and an `<address>` are specified, an address will be
+created or updated using the options provided.
+
+Use the `-m` or `--move` flag to move an address to a new ID.
 
 ### Examples
 
-    $ ppl post jdoe --street "350 5th Avenue"
-    $ ppl post jdoe --postal-code 10118
-    $ ppl post jdoe --locality "New York City"
-    $ ppl post jdoe --region "New York"
-    $ ppl post jdoe --country "USA"
-    $ ppl post jdoe
-    Street:       350 5th Avenue 
-    Postal Code:  10118
-    Locality:     New York City
-    Region:       New York
-    Country:      USA
     $ ppl post
-    alice:  3701 Southwest 12th Street, Topeka, Kansas, USA
-    jdoe:   350 5th Avenue, New York City, New York, USA, 10118
+    alice:  home, work
+    jdoe:   home
+    $ ppl post alice
+    *  home  3701 Southwest 12th Street, Topeka, Kansas, USA
+       work  123 Business Road, Businesstown, USA
+    $ ppl post alice home
+    3701 Southwest 12th Street
+    Topeka
+    Kansas
+    USA
+    $ ppl post alice home --country Canada
+    $ ppl post alice home
+    3701 Southwest 12th Street
+    Topeka
+    Kansas
+    Canada
 
 ### See Also
 

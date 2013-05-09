@@ -159,38 +159,44 @@
 
 <pre><code>ppl post
 ppl post &lt;contact&gt;
-ppl post &lt;contact&gt;
+ppl post &lt;contact&gt; &lt;address&gt;
     -s, --street &lt;street-address&gt;
     -z, --postal-code &lt;postal-code&gt;
     -p, --po-box &lt;po-box&gt;
     -l, --locality &lt;locality&gt;
     -r, --region &lt;region&gt;
-    -c, --country &lt;country&gt;</code></pre>
+    -c, --country &lt;country&gt;
+ppl post &lt;contact&gt; &lt;address&gt; (-m | --move) &lt;new-name&gt;</code></pre>
 
 <h3 id='description'>Description</h3>
 
 <p>With no arguments, the postal addresses of each contact in the address book are listed.</p>
 
-<p>If a <code>&lt;contact&gt;</code> is specified and no address properties are specified, the postal address of that contact is shown.</p>
+<p>If a just a <code>&lt;contact&gt;</code> is specified, the postal addresses of that contact are shown.</p>
 
-<p>If both a <code>&lt;contact&gt;</code> and some address properties are given, then those properties are stored as part of the postal address of that contact.</p>
+<p>If both a <code>&lt;contact&gt;</code> and an <code>&lt;address&gt;</code> are specified, an address will be created or updated using the options provided.</p>
+
+<p>Use the <code>-m</code> or <code>--move</code> flag to move an address to a new ID.</p>
 
 <h3 id='examples'>Examples</h3>
 
-<pre><code>$ ppl post jdoe --street &quot;350 5th Avenue&quot;
-$ ppl post jdoe --postal-code 10118
-$ ppl post jdoe --locality &quot;New York City&quot;
-$ ppl post jdoe --region &quot;New York&quot;
-$ ppl post jdoe --country &quot;USA&quot;
-$ ppl post jdoe
-Street:       350 5th Avenue 
-Postal Code:  10118
-Locality:     New York City
-Region:       New York
-Country:      USA
-$ ppl post
-alice:  3701 Southwest 12th Street, Topeka, Kansas, USA
-jdoe:   350 5th Avenue, New York City, New York, USA, 10118</code></pre>
+<pre><code>$ ppl post
+alice:  home, work
+jdoe:   home
+$ ppl post alice
+*  home  3701 Southwest 12th Street, Topeka, Kansas, USA
+   work  123 Business Road, Businesstown, USA
+$ ppl post alice home
+3701 Southwest 12th Street
+Topeka
+Kansas
+USA
+$ ppl post alice home --country Canada
+$ ppl post alice home
+3701 Southwest 12th Street
+Topeka
+Kansas
+Canada</code></pre>
 
 <h3 id='see_also'>See Also</h3>
 
