@@ -1,9 +1,10 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Version 1.0.0 released</title>
+    <title>2.0.0</title>
 
     <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
@@ -45,10 +46,10 @@
             <li>
               <a href="/documentation">Documentation</a>
             </li>
-            <li class="active">
+            <li>
               <a href="/news">News</a>
             </li>
-            <li>
+            <li class="active">
               <a href="/development">Development</a>
             </li>
           </ul>
@@ -61,88 +62,60 @@
 
 
 
+<h2>
+  Version 2.0.0
+  <small>
+    ppl post overhaul
+  </small>
+</h2>
 
-  <h2>
-    Version 1.0.0 released
-  </h2>
-
-
-<div class="row">
+<div class="row commands">
 
   <div class="span8">
-    <p>After a solid month or so of work, the first stable version of ppl has been released to the public. This version includes the ability to store contacts&#8217; names, organizations, email addresses, phone numbers, and birthdays.</p>
+    <p>As a result of its backwards compatibility breaking changes, the overhaul of <a href='/documentation/commands/post'>ppl post</a> brings us to version 2.0.0. The behaviour and usage of this command have changed completely in order to cope with storing multiple postal addresses per contact.</p>
 
-<p>It&#8217;s by no means feature complete at this stage, and the <a href='/development/roadmap'>roadmap</a> has details of the known deficiencies in this release.</p>
+<p>Here is a short summary of what has changed:</p>
+
+<ul>
+<li>Running <code>ppl post</code> no longer lists contacts&#8217; full addresses. Instead it lists contacts&#8217; address <em>IDs</em>.</li>
+
+<li>Running <code>ppl post &lt;contact&gt;</code> no longer shows that contact&#8217;s single postal address. Instead it lists <em>all</em> that contact&#8217;s postal addresses.</li>
+
+<li>Postal address now have their own IDs. In order to change a postal address, the ID of both the contact and the address itself must be given.</li>
+
+<li>It is now possible to mark a postal address as &#8220;preferred&#8221;, similarly to email addresses and phone numbers.</li>
+</ul>
+
+<p>From a technical point of view, the downside of this release is the minor violation of <a href='http://www.ietf.org/rfc/rfc2426.txt'>RFC2426</a> that it introduces. The <code>ADR</code> field&#8217;s <code>TYPE</code> attribute is intended as a means of tagging addresses with extra information such as &#8220;home&#8221; or &#8220;work&#8221;, but as of 2.0.0, ppl misappropriates this attribute as the home of the unique ID of each postal address.</p>
   </div>
 
   <div class="span4">
+    
+<dl class="nav-sidebar">
 
-    <dl class="nav-sidebar">
-      
-        <dt>
-          <a href="/news/version-2.0.0-released">
-            ppl 2.0.0 released
-          </a>
-        </dt>
-        <dd>
-          2013-05-09
-        </dd>
-      
-        <dt>
-          <a href="/news/utf8-fixed-and-more">
-            UTF-8 Fixed And More
-          </a>
-        </dt>
-        <dd>
-          2013-04-15
-        </dd>
-      
-        <dt>
-          <a href="/news/ruby-2.0-compatibility">
-            Ruby 2.0 Compatibility
-          </a>
-        </dt>
-        <dd>
-          2013-04-10
-        </dd>
-      
-        <dt>
-          <a href="/news/coloured-output-released">
-            Coloured Output Released
-          </a>
-        </dt>
-        <dd>
-          2013-03-16
-        </dd>
-      
-        <dt>
-          <a href="/news/two-months-in">
-            Two Months In
-          </a>
-        </dt>
-        <dd>
-          2013-02-17
-        </dd>
-      
-        <dt>
-          <a href="/news/thank-you-for-your-all-your-feedback">
-            Thanks For All Your Feedback
-          </a>
-        </dt>
-        <dd>
-          2012-12-21
-        </dd>
-      
-        <dt class="active">
-          <a href="/news/first-post">
-            Version 1.0.0 released
-          </a>
-        </dt>
-        <dd class="active">
-          2012-12-12
-        </dd>
-      
-    </dl>
+  <dt>
+    <a href="/development">Introduction</a>
+  </dt>
+  <dd>
+    The very basics
+  </dd>
+
+  <dt class="active">
+    <a href="/development/changelog">Changelog</a>
+  </dt>
+  <dd class="active">
+    The story so far
+  </dd>
+
+  <dt>
+    <a href="/development/roadmap">Roadmap</a>
+  </dt>
+  <dd>
+    The plan for the the future
+  </dd>
+
+</dl>
+
 
   </div>
 

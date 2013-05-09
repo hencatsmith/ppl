@@ -132,14 +132,14 @@ Phone Numbers:
       <h3>Latest Version</h3>
       <div class="well">
         <h2>
-          1.25.0
+          2.0.0
           <small>
-            (2013-04-24)
+            (2013-05-09)
           </small>
         </h2>
         <p>
-          <a href="/development/changelog/1.25.0">
-            Customizable Output
+          <a href="/development/changelog/2.0.0">
+            ppl post overhaul
           </a>
         </p>
       </div>
@@ -147,20 +147,20 @@ Phone Numbers:
 
     <div class="span8">
       <h3>
-        UTF-8 Fixed And More
+        ppl 2.0.0 released
         <small>
-          <a href="/news/utf8-fixed-and-more">
-            2013-04-15
+          <a href="/news/version-2.0.0-released">
+            2013-05-09
           </a>
         </small>
       </h3>
-      <p>Over the weekend, in an uncharacteristically late night of coding, I finally put an end to that UTF-8 issue that had been preventing the <a href='https://github.com/h2s/ppl/issues/17'>use of ppl with non-ASCII characters</a> such as ß or ñ. My apologies to anyone who wanted to try ppl and couldn&#8217;t during the <em>two entire months</em> that issue sat open. If it&#8217;s any consolation, fixing it gave me many headaches.</p>
+      <p>It&#8217;s been almost exactly six month since the very <a href='https://github.com/h2s/ppl/commit/e45917e06afd255271bad51ce216642e7277ce86'>first commit</a>, and I&#8217;m proud to announce that ppl has now reached the dizzy heights of version 2.0.0! This is a milestone release for more than one reason, and I&#8217;m very happy that this project has made it to this point.</p>
 
-<p>Even though it&#8217;s only been a few days since the previous news post, there has been a lot of progress in that time, thanks largely to the involvement and encouragement of <a href='https://github.com/pigmonkey'>@pigmonkey</a> and <a href='https://github.com/shushcat'>@shushcat</a> on GitHub. Some good refinements to the <a href='/documentation/integration/mutt/'>mutt integration</a> have already made it into recent versions of ppl, and there&#8217;s some good discussion happening about what needs doing to keep improving ppl in the near future.</p>
+<p>Most important of all, the reason for the major version bump is that <a href='/documentation/commands/post'>ppl post</a> has been overhauled to support storing multiple postal addresses per contact. This overhaul introduced a number of backwards-incompatible changes to the behaviour of that command and ppl&#8217;s underlying vCard integration, hence the bump to 2.0.0.</p>
 
-<p>The <a href='/documentation'>documentation</a> has had some much-needed attention invested in it, too. A few bits and pieces have been tidied up, and a couple of entirely new sections have been added as well. The <a href='/documentation/integration/bash/'>Integration Guide</a> covers the growing number of ways of using ppl with other software, and the <a href='documentation/tips/'>Tips Section</a> should prove to be a good catch-all place for helpful advice about using ppl.</p>
+<p>The other reason why this is quite a milestone release is that support for multiple postal addresses was really the last major missing piece of the puzzle in terms of core ppl functionality. There are still some bits and pieces of vCard functionality that aren&#8217;t yet exposed, but those that remain now are mostly edge cases. It&#8217;s satisfying to see ppl approach the functionality goals I had for it when I started.</p>
 
-<p>Contributions are welcome, so get in touch if you spot any mistakes, have any tips to contribute, or know of any tools for integrating ppl into other software. Big thanks to everyone for your input so far. Shout out to <a href='https://github.com/axelGschaider'>@alexGschaider</a>, <a href='https://github.com/matthewp/'>@matthewp</a>, and <a href='https://github.com/storge'>@storge</a> for their help as well.</p>
+<p>This is by no means the end of the development process. There&#8217;s a long way to go still in terms of ppl&#8217;s flexibility for integration with other software. In the meantime, this version represents a big step forward, and the culmination of six months of hard work.</p>
     </div>
 
   </div>
