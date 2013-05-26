@@ -1,17 +1,11 @@
 
-# filesystem
 source      : .
 destination : ./_site
 plugins     : ./_plugins
 exclude     : [.git, Gemfile, Gemfile.lock, .gitignore, Rakefile, README.md]
-
-url       : "http://ppladdressbook.org"
-permalink : "/news/:title"
-
-auto   : false
-lsi    : false
-safe   : false
-server : false
-
-version: 7
+url         : "http://ppladdressbook.org"
+permalink   : "/news/:title"
+lsi         : false
+safe        : false
+version     : 7
 
