@@ -1,8 +1,8 @@
 
 source      : .
-destination : ./_site
+destination : /var/www/ppladdressbook.org
 plugins     : ./_plugins
-exclude     : [.git, Gemfile, Gemfile.lock, .gitignore, Rakefile, README.md]
+exclude     : [.git, Gemfile, Gemfile.lock, .gitignore, Rakefile, README.md, Vagrantfile, manifests, modules]
 url         : "http://ppladdressbook.org"
 permalink   : "/news/:title"
 lsi         : false
