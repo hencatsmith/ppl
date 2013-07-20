@@ -14,6 +14,11 @@ ppl name - List, show or change names
     ppl name
     ppl name <contact>
     ppl name <contact> <name>
+        -f, --family <family-name(s)>
+        -g, --given  <given-name(s)>
+        -m, --middle <middle-name(s)>
+        -p, --prefix <prefix>
+        -s, --suffix <suffix>
 
 ### Description
 
@@ -28,7 +33,7 @@ full name of the contact.
 ### Examples
 
     $ ppl name jdoe "John Doe"
-    $ ppl name adam "Adam West"
+    $ ppl name adam "Adam West" --family West -g Adam
     $ ppl name jdoe
     John Doe
     $ ppl name

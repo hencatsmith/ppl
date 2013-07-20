@@ -30,6 +30,9 @@ to its namesake expected by the [ppl name](../name) command.  Usually, this
 means it needs to be enclosed in quotation marks to indicate that all the words
 in the name are part of the same parameter. 
 
+The first word in the `<name>` will also be stored as the contact's given name,
+with the remainder of the string being treated as their family name.
+
 ### Examples
 
     ppl add jdoe "John Doe"
