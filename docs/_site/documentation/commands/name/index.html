@@ -159,7 +159,12 @@
 
 <pre><code>ppl name
 ppl name &lt;contact&gt;
-ppl name &lt;contact&gt; &lt;name&gt;</code></pre>
+ppl name &lt;contact&gt; &lt;name&gt;
+    -f, --family &lt;family-name(s)&gt;
+    -g, --given  &lt;given-name(s)&gt;
+    -m, --middle &lt;middle-name(s)&gt;
+    -p, --prefix &lt;prefix&gt;
+    -s, --suffix &lt;suffix&gt;</code></pre>
 
 <h3 id='description'>Description</h3>
 
@@ -172,7 +177,7 @@ ppl name &lt;contact&gt; &lt;name&gt;</code></pre>
 <h3 id='examples'>Examples</h3>
 
 <pre><code>$ ppl name jdoe &quot;John Doe&quot;
-$ ppl name adam &quot;Adam West&quot;
+$ ppl name adam &quot;Adam West&quot; --family West -g Adam
 $ ppl name jdoe
 John Doe
 $ ppl name
