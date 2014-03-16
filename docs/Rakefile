@@ -1,5 +1,5 @@
-
 require "psych"
+require "webrick"
 
 namespace "ppl" do
 
@@ -35,3 +35,10 @@ def config(key)
   config[key]
 end
 
+task :server do
+  http_port = 8080
+  document_root = File.expand_path("_site")
+  server = WEBrick::HTTPServer.new :Port => http_port, :DocumentRoot => document_root
+  trap('INT') { server.shutdown }
+  server.start
+end
