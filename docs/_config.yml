@@ -1,6 +1,6 @@
 
 source      : .
-destination : /var/www/ppladdressbook.org
+destination : _site
 plugins     : ./_plugins
 exclude     : [.git, Gemfile, Gemfile.lock, .gitignore, Rakefile, README.md, Vagrantfile, manifests, modules]
 url         : "http://ppladdressbook.org"
