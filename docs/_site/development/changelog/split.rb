@@ -2,7 +2,7 @@
 
 require "rugged"
 
-repo = Rugged::Repository.new("/home/h2s/src/ppl")
+repo = Rugged::Repository.new("/home/urael/src/ppl")
 index = File.read("development/changelog/index.md")
 
 changes = index.split("### ")

@@ -20,7 +20,7 @@ The elephant in the room is obviously sync functionality at this point.  Lots
 and lots of people have made it very clear that even though they think this
 project is a great idea it is useless in the extreme to them unless it can sync
 with their GMail or iCloud. Rest assured that [this has not gone
-unnoticed](https://github.com/h2s/ppl/issues/5).
+unnoticed](https://github.com/urael/ppl/issues/5).
 
 Stay tuned!
 
