@@ -3,7 +3,7 @@ ppladdressbook.org
 ==================
 
 The official documentation of the [ppl address
-book](https://github.com/urael/ppl) project.
+book](https://github.com/hnrysmth/ppl) project.
 
 Contributing
 ------------
@@ -31,7 +31,7 @@ date: 2015-05-01
 layout: tip
 categories: [tips]
 permalink: /documentation/tips/make-ppl-dance
-author_name: urael
+author_name: hnrysmth
 author_url: http://henrysmith.org
 ---
 

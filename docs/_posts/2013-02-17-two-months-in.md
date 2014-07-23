@@ -14,7 +14,7 @@ been fixed, as [the changelog](/development/changelog) will attest.
 
 One particularly nasty bug has been reported whose solution eludes me for the
 moment. It seems ppl does not cope well with [non-ASCII
-characters](https://github.com/urael/ppl/issues/17). The error itself is coming
+characters](https://github.com/hnrysmth/ppl/issues/17). The error itself is coming
 from within vpim - although it is almost certainly not a vpim bug - and is
 proving a tough nut to crack. Encodings in Ruby 1.9 are [fraught with
 complexity](http://yehudakatz.com/2010/05/05/ruby-1-9-encodings-a-primer-and-the-solution-for-rails/),

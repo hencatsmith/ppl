@@ -4,7 +4,7 @@ date: 2013-04-16
 layout: tip
 categories: [tips]
 permalink: /documentation/tips/set-up-color-output
-author_name: urael
+author_name: hnrysmth
 author_url: http://henrysmith.org/
 ---
 
