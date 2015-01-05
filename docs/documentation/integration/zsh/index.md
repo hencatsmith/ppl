@@ -11,7 +11,7 @@ well. Here's how to get it set up:
 
 ### Install the completion function
 
-    $ ppl completion zsh | sudo tee /usr/share/zsh/site-functions/
+    $ ppl completion zsh | sudo tee /usr/share/zsh/site-functions/_ppl
 
 Depending on your choice of operating system, the target directory in the above
 code may differ. The above is certainly correct for Arch Linux, but on Debian,
