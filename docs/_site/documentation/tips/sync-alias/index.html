@@ -77,9 +77,10 @@
 <div class="row">
 
   <div class="span8">
-    <p>If your ppl address book is cloned on multiple computers, you&#8217;re probably accustomed to using <a href='/documentation/commands/pull/'>pull</a> and <a href='/documentation/commands/pull/'>push</a> to synchronise your data using Git. If so, that&#8217;s great. You&#8217;re making the most of ppl&#8217;s core functionality. But you could probably be making more of its convenience-oriented features.</p>
+    
+<p>If your ppl address book is cloned on multiple computers, you’re probably accustomed to using <a href="/documentation/commands/pull/">pull</a> and <a href="/documentation/commands/pull/">push</a> to synchronise your data using Git. If so, that’s great. You’re making the most of ppl’s core functionality. But you could probably be making more of its convenience-oriented features.</p>
 
-<p>ppl allows you to configure <a href='/documentation/configuration/alias/'>aliases</a> as shorcuts for often-used commands, or as a way of composing commands together. Here&#8217;s an alias called <code>sync</code> which does the latter.</p>
+<p>ppl allows you to configure <a href="/documentation/configuration/alias/">aliases</a> as shorcuts for often-used commands, or as a way of composing commands together. Here’s an alias called <code>sync</code> which does the latter.</p>
 
 <pre><code>sync = !ppl pull origin master &amp;&amp; ppl push origin master</code></pre>
 
@@ -87,6 +88,7 @@
 master</code> in your address book directory by simply entering <code>ppl sync</code>. For most users, this probably automates the entire synchronisation process.</p>
 
 <p>Bear in mind that this alias will only work if you keep your contacts on the <code>master</code> branch and have a remote called <code>origin</code>. If your setup is more complex than that, you may have to get creative with your aliases to achieve this level of laziness.</p>
+
 
     <hr />
     <div class="well well-large">

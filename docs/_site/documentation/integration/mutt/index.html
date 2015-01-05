@@ -94,23 +94,25 @@
       </h2>
     
 
-    <p>The <a href='http://www.mutt.org/'>Mutt E-Mail Client</a></p>
+    
+<p>The <a href="http://www.mutt.org/">Mutt E-Mail Client</a></p>
 
-<h3 id='email_address_autocompletion'>Email Address Autocompletion</h3>
+<h3 id="email_address_autocompletion">Email Address Autocompletion</h3>
 
-<p>Mutt supports the use of external address book programs as a source of <a href='http://www.mutt.org/doc/manual/manual-4.html#ss4.5'>email address autocompletion suggestions</a>. You can use this to integrate ppl into mutt by adding the following to your <code>~/.muttrc</code>:</p>
+<p>Mutt supports the use of external address book programs as a source of <a href="http://www.mutt.org/doc/manual/manual-4.html#ss4.5">email address autocompletion suggestions</a>. You can use this to integrate ppl into mutt by adding the following to your <code>~/.muttrc</code>:</p>
 
 <pre><code>set query_command = &quot;ppl mutt &#39;%s&#39;&quot;</code></pre>
 
 <p>With that configured, you can then invoke ppl from within mutt as a means of quickly finding email addresses by pressing <code>Q</code> in the index menu, or by pressing <code>^T</code> in any prompt for address entry.</p>
 
-<h3 id='quickly_adding_new_contacts'>Quickly Adding New Contacts</h3>
+<h3 id="quickly_adding_new_contacts">Quickly Adding New Contacts</h3>
 
 <p>If you have a lot of email to deal with, you may find it tedious to have to add each new email contact to your address book manually. With a macro like the following in your <code>~/.muttrc</code>, adding the sender of the currently selected email is as simple as pressing the <code>a</code> key.</p>
 
 <pre><code>macro index,pager a &quot;&lt;pipe-message&gt;ppl scrape --sender&lt;return&gt;&quot;</code></pre>
 
-<p>This macro uses the <a href='/documentation/commands/scrape'>scrape</a> command to pull out the sender&#8217;s email address and name (if available), and adds them to the address book.</p>
+<p>This macro uses the <a href="/documentation/commands/scrape">scrape</a> command to pull out the sender’s email address and name (if available), and adds them to the address book.</p>
+
   </div>
 
 </div>

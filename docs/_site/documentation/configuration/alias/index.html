@@ -121,7 +121,8 @@
       </h2>
     
 
-    <p>Sometimes typing the same long commands repeatedly becomes tiresome. The <code>[alias]</code> section is intended to address this issue by providing a means of configuring shorter forms of commands.</p>
+    
+<p>Sometimes typing the same long commands repeatedly becomes tiresome. The <code>[alias]</code> section is intended to address this issue by providing a means of configuring shorter forms of commands.</p>
 
 <pre><code>[alias]
     l = ls
@@ -141,14 +142,15 @@ John Doe &lt;jdoe@example.org&gt;
 Email Addresses
   jdoe@example.org</code></pre>
 
-<h3 id='bang_aliases'>Bang Aliases</h3>
+<h3 id="bang_aliases">Bang Aliases</h3>
 
-<p>ppl&#8217;s alias system is similar to git&#8217;s in that it supports executing external commands via aliases prefixed with an exclamation mark, or &#8220;bang&#8221;. In your <code>~/.pplconfig</code>, this would look something like the following:</p>
+<p>ppl’s alias system is similar to git’s in that it supports executing external commands via aliases prefixed with an exclamation mark, or “bang”. In your <code>~/.pplconfig</code>, this would look something like the following:</p>
 
 <pre><code>[alias]
     lsx = !ppl ls | grep -i x</code></pre>
 
-<p>The above example creates an alias <code>lsx</code> that pipes the output of <a href='/documentation/commands/ls'>ppl ls</a> through <code>grep -i x</code>. This means that you effectively create a new command - <code>ppl lsx</code> - which is identical to <code>ppl ls</code> except that it only displays lines containing the letter x.</p>
+<p>The above example creates an alias <code>lsx</code> that pipes the output of <a href="/documentation/commands/ls">ppl ls</a> through <code>grep -i x</code>. This means that you effectively create a new command - <code>ppl lsx</code> - which is identical to <code>ppl ls</code> except that it only displays lines containing the letter x.</p>
+
   </div>
 
 </div>

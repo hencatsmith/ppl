@@ -72,9 +72,10 @@
 <div class="row commands">
 
   <div class="span8">
-    <p>With thanks to <a href='https://github.com/pigmonkey'>@pigmonkey</a> for raising this as <a href='https://github.com/hnrysmth/ppl/issues/42'>issue #42</a> on GitHub, version 2.1.0 brings increased control over the names of contacts. This is intended to improve interoperability with other address book software, including the Android system&#8217;s contact list.</p>
+    
+<p>With thanks to <a href="https://github.com/pigmonkey">@pigmonkey</a> for raising this as <a href="https://github.com/hnrysmth/ppl/issues/42">issue #42</a> on GitHub, version 2.1.0 brings increased control over the names of contacts. This is intended to improve interoperability with other address book software, including the Android system’s contact list.</p>
 
-<p>Short, lower case contact IDs are great for a CLI program, but on a phone, you probably want to see full names. This update provides full access to all the bits &amp; pieces of vCard&#8217;s <code>N</code> (name) field:</p>
+<p>Short, lower case contact IDs are great for a CLI program, but on a phone, you probably want to see full names. This update provides full access to all the bits &amp; pieces of vCard’s <code>N</code> (name) field:</p>
 
 <ul>
 <li>Family name(s)</li>
@@ -88,9 +89,10 @@
 <li>Suffix</li>
 </ul>
 
-<p>See the documentation of <a href='/documentation/commands/name/'>ppl name</a> for more details on how to use this new functionality.</p>
+<p>See the documentation of <a href="/documentation/commands/name/">ppl name</a> for more details on how to use this new functionality.</p>
 
-<p>Also included is some slightly different behaviour under the hood of <a href='/documentation/commands/name/'>ppl add</a>. This command now attempts to &#8220;have a guess&#8221; at the structure of the name of a newly-added contact. It&#8217;ll treat the first word of the full name as the contact&#8217;s given name, and the rest of the string as their family name. This is a shamefully anglocentric approach to name parsing, but at least it&#8217;s a start.</p>
+<p>Also included is some slightly different behaviour under the hood of <a href="/documentation/commands/name/">ppl add</a>. This command now attempts to “have a guess” at the structure of the name of a newly-added contact. It’ll treat the first word of the full name as the contact’s given name, and the rest of the string as their family name. This is a shamefully anglocentric approach to name parsing, but at least it’s a start.</p>
+
   </div>
 
   <div class="span4">

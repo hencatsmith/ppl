@@ -154,29 +154,31 @@
       </h2>
     
 
-    <h3 id='name'>Name</h3>
+    
+<h3 id="name">Name</h3>
 
 <p>ppl scrape - Scrape contact details from an email in <code>stdin</code></p>
 
-<h3 id='synopsis'>Synopsis</h3>
+<h3 id="synopsis">Synopsis</h3>
 
 <pre><code>ppl scrape [&lt;options&gt;]
     -q, --quiet        Add contacts to the address book without prompting
     -s, --sender       Scrape the sender&#39;s contact details</code></pre>
 
-<h3 id='description'>Description</h3>
+<h3 id="description">Description</h3>
 
 <p>Reads an email message from stdin and scrapes contact information from it into the address book. By default nothing will be scraped; the command must be told explicitly which information to scrape via its arguments.</p>
 
-<p>If the <code>--sender</code> option is used, then the details of the person in the email&#8217;s <code>From:</code> header will be scraped into the address book.</p>
+<p>If the <code>--sender</code> option is used, then the details of the person in the email’s <code>From:</code> header will be scraped into the address book.</p>
 
 <p>If the <code>--quiet</code> option is used, the command will not prompt the user to confirm whether they approve of each contact before saving them to the address book.</p>
 
-<p>This command is analogous to <a href='http://abook.sourceforge.net/'>abook</a>&#8217;s <code>--add-email</code> functionality. Both the confirmation prompt and the <code>--quiet</code> flag are provided with the intention of achieving feature parity with this part of abook.</p>
+<p>This command is analogous to <a href="http://abook.sourceforge.net/">abook</a>‘s <code>--add-email</code> functionality. Both the confirmation prompt and the <code>--quiet</code> flag are provided with the intention of achieving feature parity with this part of abook.</p>
 
-<h3 id='examples'>Examples</h3>
+<h3 id="examples">Examples</h3>
 
 <pre><code>ppl scrape --sender --quiet &lt; ~/Mail/cur/1234.example.org</code></pre>
+
   </div>
 
 </div>

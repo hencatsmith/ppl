@@ -77,14 +77,15 @@
 <div class="row">
 
   <div class="span8">
-    <p>ppl provides a system for configuring the output of many of its commands in a way that&#8217;s almost identical to git&#8217;s color output configuration. While not an essential piece of functionality, a small amount of color can go a long way towards improving your experience using ppl.</p>
+    
+<p>ppl provides a system for configuring the output of many of its commands in a way that’s almost identical to git’s color output configuration. While not an essential piece of functionality, a small amount of color can go a long way towards improving your experience using ppl.</p>
 
 <p>Personally, I try to rein in the temptation to go to town and assign a color to absolutely everything. My <code>~/.pplconfig</code> simply colorizes all contact IDs in all output, highlighting them in cyan to maximize their visibility.</p>
 <pre><code>$ ppl ls</code>
 <code><span style='color: #2AA198;'>alice:</span>  Alice  alice@example.org</code>
 <code><span style='color: #2AA198;'>bob:</span>    Bob    bob@example.org</code>
 <code><span style='color: #2AA198;'>eve:</span>    Eve    eve@example.org</code></pre>
-<p>Configuring ppl to colorize the output of ls like in the above example is extremely easy, and will be especially familiar to you if you&#8217;re already used to configuring git. Here are the exact config file contents necesssary to show contact IDs in cyan in the output of <a href='/documentation/commands/ls'>ppl ls</a>.</p>
+<p>Configuring ppl to colorize the output of ls like in the above example is extremely easy, and will be especially familiar to you if you’re already used to configuring git. Here are the exact config file contents necesssary to show contact IDs in cyan in the output of <a href="/documentation/commands/ls">ppl ls</a>.</p>
 
 <pre><code>[color]
     ls = true
@@ -92,9 +93,10 @@
 [color &quot;ls&quot;]
     id = cyan</code></pre>
 
-<p>Simply add the above to your <code>~/.pplconfig</code>, run <code>ppl ls</code>, and you should see contact IDs in cyan. If not, double-check whether you&#8217;re running an up-to-date version of ppl. This feature has been supported since <code>1.15.0</code>, making it only about a month old at the time of writing.</p>
+<p>Simply add the above to your <code>~/.pplconfig</code>, run <code>ppl ls</code>, and you should see contact IDs in cyan. If not, double-check whether you’re running an up-to-date version of ppl. This feature has been supported since <code>1.15.0</code>, making it only about a month old at the time of writing.</p>
 
-<p>Now that you know the basic gist of how to configure color, you&#8217;ll probably be glad to know that there&#8217;s some fairly extensive <a href='/documentation/configuration/color'>reference documentation for this functionality</a>, including a <a href='/documentation/configuration/color/#list_of_supported_colors'>list of supported colors</a> and an example for each command which shows the <a href='/documentation/configuration/color_ls'>full list of configurable text elements</a>.</p>
+<p>Now that you know the basic gist of how to configure color, you’ll probably be glad to know that there’s some fairly extensive <a href="/documentation/configuration/color">reference documentation for this functionality</a>, including a <a href="/documentation/configuration/color/#list_of_supported_colors">list of supported colors</a> and an example for each command which shows the <a href="/documentation/configuration/color_ls">full list of configurable text elements</a>.</p>
+
 
     <hr />
     <div class="well well-large">
