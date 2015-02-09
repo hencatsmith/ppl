@@ -1,11 +1,5 @@
-
-source      : .
-destination : _site
-plugins     : ./_plugins
-exclude     : [.git, Gemfile, Gemfile.lock, .gitignore, Rakefile, README.md, Vagrantfile, manifests, modules]
-url         : "http://ppladdressbook.org"
-permalink   : "/news/:title"
-lsi         : false
-safe        : false
-version     : 7
-
+source: .
+destination: _site
+exclude: [.git, Gemfile, Gemfile.lock, .gitignore, README.md, Rakefile]
+url: "http://ppladdressbook.org"
+permalink: "/news/:title"
