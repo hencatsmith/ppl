@@ -1,5 +1,5 @@
 source: .
 destination: _site
 exclude: [.git, Gemfile, Gemfile.lock, .gitignore, README.md, Rakefile]
-url: "http://ppladdressbook.org"
+url: "http://hnrysmth.github.io/ppladdressbook.org/"
 permalink: "/news/:title"
