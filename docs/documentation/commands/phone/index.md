@@ -15,7 +15,7 @@ ppl phone - List, show or change phone numbers
     ppl phone <contact>
     ppl phone <contact> <phone-number>
     ppl phone <contact> <phone-number>
-        -d, --delete         delete email address
+        -d, --delete         delete phone number
         -t, --type <type>    set the number's type
         -p, --preferred      mark as preferred
         -P, --not-preferred  mark as not preferred
