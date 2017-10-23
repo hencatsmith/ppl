@@ -7,7 +7,7 @@ section: development
 <dl class="version-history">
 {% for post in site.categories.changelog %}
   <dt>
-    <a href="/development/changelog/{{post.title}}">
+    <a href="{{site.url}}/development/changelog/{{post.title}}">
       {{post.title}}
     </a>
   </dt>
