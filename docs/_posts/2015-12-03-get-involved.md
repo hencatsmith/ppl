@@ -10,7 +10,7 @@ The time has come to give this project a nudge into a slightly different mode of
 operation. Enough people are interested in the long term health of this little
 CLI app that I think it'd benefit from opening the doors a bit to potential
 collaborators and maintainers. So I've converted the project into a proper
-[GitHub organization](https://github.com/ppladdressbook) and I'm inviting you to
+[GitHub organization](https://github.com/hnrysmth) and I'm inviting you to
 come and join it.
 
 I see lots of people come and go with great ideas for this project. I love 99%
