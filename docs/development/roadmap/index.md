@@ -4,22 +4,12 @@ layout: development
 section: development
 ---
 
-### Improved Expressiveness
+As of January 2018 this project is in quite a stable state, with no major
+increases in functionality planned. That being said, I'm not actually against
+adding more functionality to this thing if somebody out there feels like taking
+on the implementation work. I'm very very open to adding lots more stuff, just
+not interested in creating it myself.
 
-Some small amount of demand has arisen on GitHub for the ability to mark email
-addresses and phone numbers as
-[preferred](https://github.com/hnrysmth/ppl/issues/25), and to be able to mark phone
-numbers with a [type](https://github.com/hnrysmth/ppl/issues/24). These are helpful
-as concrete examples of the sort of expressiveness still lacking from ppl's
-commands which will be addressed in the not-too-distant future.
-
-### Improved Integrability
-
-There has been talk on GitHub of providing a means of [scraping email
-addresses](https://github.com/hnrysmth/ppl/issues/23) out of email messages, and of
-[importing already-encoded vCard
-data](https://github.com/hnrysmth/ppl/issues/27#issuecomment-16373162) directly using
-ppl add. These, and other such additions, are likely to arrive with the passage
-of time as ppl works to become easier to integrate into existing systems and
-workflows.
+Please don't hesitate to get in touch if you have ideas for ppl that you want to
+build and contribute!
 
