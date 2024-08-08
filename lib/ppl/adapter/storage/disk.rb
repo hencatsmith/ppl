@@ -6,7 +6,7 @@ class Ppl::Adapter::Storage::Disk < Ppl::Adapter::Storage
   attr_accessor :vcard_adapter
 
   def self.create_address_book(path)
-    if !Dir.exists? path
+    if !Dir.exist? path
       FileUtils.mkdir_p(path)
     end
     storage = self.new(Dir.new(path))
@@ -41,7 +41,7 @@ class Ppl::Adapter::Storage::Disk < Ppl::Adapter::Storage
   def load_contact(id)
     filename = filename_for_contact_id(id)
     contact  = nil
-    if File.exists?(filename)
+    if File.exist?(filename)
       vcard   = File.read filename
       contact = @vcard_adapter.decode(vcard)
       if !contact.nil? && contact.is_a?(Ppl::Entity::Contact)

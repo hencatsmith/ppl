@@ -11,7 +11,7 @@ describe Ppl::Adapter::Storage::Disk, "#create_address_book" do
   describe "#create_address_book" do
     it "should create the directory if it doesn't exist yet" do
       Ppl::Adapter::Storage::Disk.create_address_book("/contacts")
-      expect(Dir.exists?("/contacts")).to eq true
+      expect(Dir.exist?("/contacts")).to eq true
       FileUtils.rm_rf("/contacts")
     end
     it "should return a Ppl::Adapter::Storage::Disk" do
@@ -130,7 +130,7 @@ describe Ppl::Adapter::Storage::Disk do
       FileUtils.touch "/contacts/test.vcf"
       @contact.id = "test"
       @storage.delete_contact(@contact)
-      expect(File.exists?("/contacts/test.vcf")).to eq false
+      expect(File.exist?("/contacts/test.vcf")).to eq false
     end
   end
 

@@ -12,7 +12,7 @@ class Ppl::Adapter::Storage::Factory
 
     adapter = disk_adapter
 
-    if File.exists?(git_dir)
+    if File.exist?(git_dir)
       git_adapter = Ppl::Adapter::Storage::Git.new(disk_adapter)
       git_adapter.vcard_adapter = @vcard_adapter
       adapter = git_adapter

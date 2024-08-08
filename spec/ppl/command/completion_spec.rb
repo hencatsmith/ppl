@@ -18,7 +18,7 @@ describe Ppl::Command::Completion do
 
     before(:each) do
       allow(@directory).to receive(:path).and_return("")
-      allow(File).to receive(:exists?).and_return(true)
+      allow(File).to receive(:exist?).and_return(true)
       allow(File).to receive(:read)
     end
 
@@ -29,7 +29,7 @@ describe Ppl::Command::Completion do
 
     it "should raise an error if the shell is not recognised" do
       @input.arguments = ["invalidshell"]
-      expect(File).to receive(:exists?).with("/invalidshell").and_return(false)
+      expect(File).to receive(:exist?).with("/invalidshell").and_return(false)
       expect{@command.execute(@input, @output)}.to raise_error(Ppl::Error::CompletionNotFound)
     end
 

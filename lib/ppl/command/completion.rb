@@ -26,7 +26,7 @@ class Ppl::Command::Completion < Ppl::Application::Command
 
   def require_completion_existence(shell_name)
     path = File.join(@completions_directory.path, shell_name)
-    if !File.exists? path
+    if !File.exist? path
       raise Ppl::Error::CompletionNotFound, shell_name
     end
     path

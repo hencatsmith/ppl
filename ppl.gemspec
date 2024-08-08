@@ -17,8 +17,11 @@ Gem::Specification.new do |spec|
   spec.add_dependency("colored", "1.2")
   spec.add_dependency("inifile", "3.0.0")
   spec.add_dependency("mail", "2.7.1")
+  spec.add_dependency("net-imap", "0.4.14")
+  spec.add_dependency("net-pop", "0.1.2")
+  spec.add_dependency("net-smtp", "0.5.0")
   spec.add_dependency("morphine", "0.1.1")
-  spec.add_dependency("rugged", "1.1.0")
+  spec.add_dependency("rugged", "1.7.2")
   spec.add_dependency("vpim", "13.11.11")
 
   spec.add_development_dependency("cucumber")

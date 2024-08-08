@@ -64,9 +64,9 @@ class Ppl::Application::Configuration
     end
     filename     = File.expand_path(USER_CONFIG)
     @user_config = {}
-    if File.exists?(filename)
+    if File.exist?(filename)
       @user_config = IniFile::load(filename).to_h
-    elsif File.exists?(xdg_path)
+    elsif File.exist?(xdg_path)
       @user_config = IniFile::load(xdg_path).to_h
     end
     return @user_config

@@ -9,7 +9,7 @@ end
 task :disable_config do
   pplconfig = File.expand_path("~/.pplconfig")
   bkpconfig = File.expand_path("~/.pplconfig.bkp")
-  if File.exists? pplconfig
+  if File.exist? pplconfig
     FileUtils.mv pplconfig, bkpconfig
   end
   at_exit { Rake::Task["enable_config"].invoke }
@@ -18,7 +18,7 @@ end
 task :enable_config do
   pplconfig = File.expand_path("~/.pplconfig")
   bkpconfig = File.expand_path("~/.pplconfig.bkp")
-  if File.exists? bkpconfig
+  if File.exist? bkpconfig
     FileUtils.mv bkpconfig, pplconfig
   end
 end
