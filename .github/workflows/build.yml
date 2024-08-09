@@ -38,7 +38,7 @@ jobs:
 
       - uses: dawidd6/action-publish-gem@v1
         continue-on-error: true
-        if: ${{ github.ref == 'refs/heads/trunk' }}
+        if: ${{ github.ref == 'refs/heads/main' }}
         with:
           api_key: ${{secrets.RUBYGEMS_API_KEY}}
           github_token: ${{secrets.GITHUB_TOKEN}}
