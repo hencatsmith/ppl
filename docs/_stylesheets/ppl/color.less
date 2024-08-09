@@ -1,0 +1,119 @@
+
+@base03  : #002b36;
+@base02  : #073642;
+@base01  : #586e75;
+@base00  : #657b83;
+@base0   : #839496;
+@base1   : #93a1a1;
+@base2   : #eee8d5;
+@base3   : #fdf6e3;
+@yellow  : #b58900;
+@orange  : #cb4b16;
+@red     : #dc322f;
+@magenta : #d33682;
+@violet  : #6c71c4;
+@blue    : #268bd2;
+@cyan    : #2aa198;
+@green   : #859900;
+
+@lightGrey: #FAFAFA;
+@darkGrey: #F0F0F0;
+
+a:link, a:visited {
+  color: @blue;
+}
+
+body {
+  background-color: @lightGrey;
+  color: @base01;
+}
+
+div.content {
+  background-color: @lightGrey;
+}
+
+code {
+  background-color: @base3;
+}
+
+h2 { color: @base03; }
+h3 { color: @orange; }
+
+pre {
+  background-color: @base03;
+  color: @base2;
+  display: block;
+}
+
+.front-page {
+  h1.big-welcome, .little-welcome {
+    color: @base03;
+  }
+}
+
+.btn {
+	&.btn-primary {
+		background-color: @blue;
+		color: @base2;
+	}
+}
+
+.navbar {
+  .navbar-inner {
+    background-color: @darkGrey;
+  }
+  .brand {
+    color: @base03;
+    font-weight: bold;
+    text-shadow: none;
+  }
+}
+
+.command-list {
+  h2 {
+    color: inherit;
+  }
+}
+
+.navbar .nav > li > a {
+  color: @base02;
+}
+
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus {
+  background-color: @orange;
+  color: @base3;
+}
+
+.nav-list  {
+  background-color: @darkGrey;
+  border: 1px solid rgb(221, 221, 221);
+}
+.nav-list > li:hover > a {
+  background-color: inherit;
+  color: inherit;
+}
+.nav-list > li.active:hover > a,
+.nav-list > li.active > a {
+  background-color: @orange;
+  color: @base3;
+}
+
+footer.global {
+  color: @base1;
+
+  a:link, a:visited {
+    color: @base0;
+  }
+}
+
+.nav-sidebar {
+  dt.active,
+  dt.active a,
+  dd.active {
+    background-color: @orange;
+    color: @base3;
+  }
+}
+

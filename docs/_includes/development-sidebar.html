@@ -1,0 +1,25 @@
+<dl class="nav-sidebar">
+
+  {% if page.title == "Development" %}<dt class="active">{% else %}<dt>{% endif %}
+    <a href="{{site.url}}/development">Introduction</a>
+  </dt>
+  {% if page.title == "Development" %}<dd class="active">{% else %}<dd>{% endif %}
+    The very basics
+  </dd>
+
+  {% if page.title == "Changelog" or page.layout == "changelog" %}<dt class="active">{% else %}<dt>{% endif %}
+    <a href="{{site.url}}/development/changelog">Changelog</a>
+  </dt>
+  {% if page.title == "Changelog" or page.layout == "changelog" %}<dd class="active">{% else %}<dd>{% endif %}
+    The story so far
+  </dd>
+
+  {% if page.title == "Roadmap" %}<dt class="active">{% else %}<dt>{% endif %}
+    <a href="{{site.url}}/development/roadmap">Roadmap</a>
+  </dt>
+  {% if page.title == "Roadmap" %}<dd class="active">{% else %}<dd>{% endif %}
+    The plan for the the future
+  </dd>
+
+</dl>
+

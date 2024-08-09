@@ -1,0 +1,54 @@
+
+{% include header.html %}
+
+{% if page.title %}
+  <h2>
+    {{page.title}}
+    <small>
+      from
+      <a href="{{page.author_url}}">
+        {{page.author_name}}
+      </a>
+    </small>
+  </h2>
+{% endif %}
+
+<div class="row">
+
+  <div class="span8">
+    {{content}}
+
+    <hr />
+    <div class="well well-large">
+      <p>
+        Got a tip or trick you want to share with the community? Want to add it
+        to the core documentation, under your own name and with an attribution
+        link? If you've got what it takes, just write it up and <a
+        href="mailto:henry@henrysmith.org">email me</a>, or better still, <a
+        href="https://github.com/hnrysmth/ppladdressbook.org">send a pull
+        request</a>!
+      </p>
+    </div>
+  </div>
+
+  <div class="span4">
+
+    <dl class="nav-sidebar">
+      {% for post in site.categories.tips %}
+        {% if post.url == page.url %}<dt class="active">{% else %}<dt>{% endif %}
+          <a href="{{site.url}}{{post.url}}">
+            {{post.title}}
+          </a>
+        </dt>
+        {% if post.url == page.url %}<dd class="active">{% else %}<dd>{% endif %}
+          {{post.date | date: '%Y-%m-%d'}}
+        </dd>
+      {% endfor %}
+    </dl>
+
+  </div>
+
+</div>
+
+{% include footer.html %}
+

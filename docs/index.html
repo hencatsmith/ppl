@@ -1,0 +1,108 @@
+---
+title: ppl - The Command Line Address Book
+layout: frontpage
+---
+
+
+<div class="front-page">
+
+  <div class="row welcome">
+
+    <div class="span4">
+
+      <h1 class="big-welcome">
+        ppl
+      </h1>
+
+      <p class="little-welcome">
+        The command line address book
+      </p>
+      <p class="little-welcome">
+        <a href="{{site.url}}/documentation/quick-start">
+          Try it!
+        </a>
+      </p>
+
+    </div>
+
+    <div class="span8">
+      <pre class="welcome-example"><code><span class="bash-prompt">$</span> ppl add henry "Henry Smith"
+<span class="bash-prompt">$</span> ppl phone henry 012345678
+<span class="bash-prompt">$</span> ppl email henry henry@henrysmith.org
+<span class="bash-prompt">$</span> ppl show henry
+Henry Smith &lt;henry@henrysmith.org&gt;
+
+Email Addresses:
+  henry@henrysmith.org
+
+Phone Numbers:
+  0123456789
+</code></pre>
+    </div>
+
+  </div>
+
+  <div class="row what">
+
+    <div class="span4">
+      <h2>Free</h2>
+      <p>
+        ppl is free software made out of other free software. It's built on top
+        of Ruby and Git, and the completely free vcard address book format.
+      </p>
+    </div>
+
+    <div class="span4">
+      <h2>Decentralized</h2>
+      <p>
+        ppl is built on top of Git, the world's most popular decentralized
+        version control system. Use your address book wherever you like and let
+        Git worry about making sense of it all.
+      </p>
+    </div>
+
+    <div class="span4">
+      <h2>Good</h2>
+      <p>
+        ppl does its best to be a proper UNIX-style comand line program. Proper
+        exit codes, no superfluous output, that sort of thing.
+      </p>
+    </div>
+
+  </div>
+
+  <div class="row latest">
+
+    <div class="span4">
+      <h3>Latest Version</h3>
+      <div class="well">
+        <h2>
+          {{site.categories.changelog.first.title}}
+          <small>
+            ({{ site.categories.changelog.first.date | date: '%Y-%m-%d' }})
+          </small>
+        </h2>
+        <p>
+          <a href="{{site.url}}{{site.categories.changelog.first.permalink}}">
+            {{site.categories.changelog.first.summary}}
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="span8">
+      <h3>
+        {{site.categories.news.first.title}}
+        <small>
+          <a href="{{site.url}}{{site.categories.news.first.url}}">
+            {{site.categories.news.first.date | date: '%Y-%m-%d'}}
+          </a>
+        </small>
+      </h3>
+      {{site.categories.news.first.content}}
+    </div>
+
+  </div>
+
+</div>
+

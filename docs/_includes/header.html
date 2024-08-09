@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta property="og:title" content="{{page.title}}" />
+    <meta property="og:url" content="{{site.url}}{{page.url}}" />
+    <meta property="og:type" content="website" />
+    <title>{{page.title}}</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+
+    <link href="{{ site.url }}/stylesheets/flatstrap.css" rel="stylesheet" />
+    <link href="{{ site.url }}/stylesheets/ppl.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+
+    <div class="navbar navbar-static-top">
+      <div class="navbar-inner">
+        <div class="container">
+
+          {% if page.url != "/index.html" %}
+            <a class="brand" href="{{site.url}}/">ppl</a>
+          {% endif %}
+
+          <ul class="nav pull-right">
+            {% if page.section == "documentation" %}<li class="active">{% else %}<li>{% endif %}
+              <a href="{{site.url}}/documentation">Documentation</a>
+            </li>
+            {% if page.section == "news" %}<li class="active">{% else %}<li>{% endif %}
+              <a href="{{site.url}}/news">News</a>
+            </li>
+            {% if page.section == "development" %}<li class="active">{% else %}<li>{% endif %}
+              <a href="{{site.url}}/development">Development</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+    <div class="container global">
+

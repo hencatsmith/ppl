@@ -1,0 +1,104 @@
+{% include header.html %}
+
+<div class="commands">
+
+<div class="row">
+
+  <div class="span4 command-list">
+    <h2>
+      Commands
+    </h2>
+
+    <ul class="nav nav-list">
+      <li{%if page.command == "age"%} class="active"{% endif %}>
+        <a href="{{site.url}}/documentation/commands/age">age</a>
+      </li>
+      <li{%if page.command == "add"%} class="active"{% endif %}>
+        <a href="{{site.url}}/documentation/commands/add">add</a>
+      </li>
+      <li{%if page.command == "bday"%} class="active"{% endif %}>
+        <a href="{{site.url}}/documentation/commands/bday">bday</a>
+      </li>
+      <li{%if page.command == "completion"%} class="active"{% endif %}>
+        <a href="{{site.url}}/documentation/commands/completion">completion</a>
+      </li>
+      <li{%if page.command == "email"%} class="active"{% endif %}>
+        <a href="{{site.url}}/documentation/commands/email">email</a>
+      </li>
+      <li{%if page.command == "grep"%} class="active"{% endif %}>
+        <a href="{{site.url}}/documentation/commands/grep">grep</a>
+      </li>
+      <li{%if page.command == "init"%} class="active"{% endif %}>
+        <a href="{{site.url}}/documentation/commands/init">init</a>
+      </li>
+      <li{%if page.command == "ls"%} class="active"{% endif %}>
+        <a href="{{site.url}}/documentation/commands/ls">ls</a>
+      </li>
+      <li{%if page.command == "mutt"%} class="active"{% endif %}>
+        <a href="{{site.url}}/documentation/commands/mutt">mutt</a>
+      </li>
+      <li{%if page.command == "mv"%} class="active"{% endif %}>
+        <a href="{{site.url}}/documentation/commands/mv">mv</a>
+      </li>
+      <li{%if page.command == "name"%} class="active"{% endif %}>
+        <a href="{{site.url}}/documentation/commands/name">name</a>
+      </li>
+      <li{%if page.command == "nick"%} class="active"{% endif %}>
+        <a href="{{site.url}}/documentation/commands/nick">nick</a>
+      </li>
+      <li{%if page.command == "org"%} class="active"{% endif %}>
+        <a href="{{site.url}}/documentation/commands/org">org</a>
+      </li>
+      <li{%if page.command == "phone"%} class="active"{% endif %}>
+        <a href="{{site.url}}/documentation/commands/phone">phone</a>
+      </li>
+      <li{%if page.command == "post"%} class="active"{% endif %}>
+        <a href="{{site.url}}/documentation/commands/post">post</a>
+      </li>
+      <li{%if page.command == "pull"%} class="active"{% endif %}>
+        <a href="{{site.url}}/documentation/commands/pull">pull</a>
+      </li>
+      <li{%if page.command == "push"%} class="active"{% endif %}>
+        <a href="{{site.url}}/documentation/commands/push">push</a>
+      </li>
+      <li{%if page.command == "remote"%} class="active"{% endif %}>
+        <a href="{{site.url}}/documentation/commands/remote">remote</a>
+      </li>
+      <li{%if page.command == "rm"%} class="active"{% endif %}>
+        <a href="{{site.url}}/documentation/commands/rm">rm</a>
+      </li>
+      <li{%if page.command == "scrape"%} class="active"{% endif %}>
+        <a href="{{site.url}}/documentation/commands/scrape">scrape</a>
+      </li>
+      <li{%if page.command == "shell"%} class="active"{% endif %}>
+        <a href="{{site.url}}/documentation/commands/shell">shell</a>
+      </li>
+      <li{%if page.command == "show"%} class="active"{% endif %}>
+        <a href="{{site.url}}/documentation/commands/show">show</a>
+      </li>
+      <li{%if page.command == "url"%} class="active"{% endif %}>
+        <a href="{{site.url}}/documentation/commands/url">url</a>
+      </li>
+      <li{%if page.command == "version"%} class="active"{% endif %}>
+        <a href="{{site.url}}/documentation/commands/version">version</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="span8">
+
+    {% if page.title %}
+      <h2>
+        {{page.title}}
+      </h2>
+    {% endif %}
+
+    {{content}}
+  </div>
+
+</div>
+
+</div>
+
+{% include footer.html %}
+
