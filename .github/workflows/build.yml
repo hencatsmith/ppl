@@ -36,6 +36,13 @@ jobs:
       - name: cucumber
         run: bundle exec rake features
 
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
+          enable_jekyll: true
+
       - uses: dawidd6/action-publish-gem@v1
         continue-on-error: true
         if: ${{ github.ref == 'refs/heads/main' }}
