@@ -19,7 +19,7 @@ different demands on my time. That's the bottleneck that's holding the project
 back and it's silly, really.
 
 For a while I've been wanting to do something about this. If you want to help
-out in any way, however small, speak up on GitHub, [email me](mailto:henry@henrysmith.org),
+out in any way, however small, speak up on GitHub, [email me](mailto:henry@catalinismith.com),
 or get in touch on [Twitter](https://twitter.com/hnrysmth). I'd love to add you
 to the organization and let you *just get started* making your ideas happen.
 Even if you just like the project, but don't have any immediate plans to do

@@ -5,7 +5,7 @@ layout: tip
 categories: [tips]
 permalink: /documentation/tips/set-up-color-output
 author_name: hnrysmth
-author_url: http://henrysmith.org/
+author_url: http://henry.catalinismith.com/
 ---
 
 ppl provides a system for configuring the output of many of its commands in a

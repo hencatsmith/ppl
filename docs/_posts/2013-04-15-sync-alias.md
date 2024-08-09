@@ -5,7 +5,7 @@ layout: tip
 categories: [tips]
 permalink: /documentation/tips/sync-alias
 author_name: hnrysmth
-author_url: http://henrysmith.org/
+author_url: http://henry.catalinismith.com/
 ---
 
 If your ppl address book is cloned on multiple computers, you're probably
