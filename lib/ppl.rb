@@ -120,6 +120,7 @@ require "ppl/service/email_address"
 require "ppl/service/name"
 require "ppl/service/phone_number"
 require "ppl/service/postal_address"
+require "ppl/version"
 
 class String
   alias_method :each, :each_line
