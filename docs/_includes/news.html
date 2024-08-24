@@ -18,7 +18,7 @@
     <dl class="nav-sidebar">
       {% for post in site.categories.news %}
         {% if post.url == page.url %}<dt class="active">{% else %}<dt>{% endif %}
-          <a href="{{post.url}}">
+          <a href="{{ post.url | relative_url }}">
             {{post.title}}
           </a>
         </dt>

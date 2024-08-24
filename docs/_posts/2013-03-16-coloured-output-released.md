@@ -17,7 +17,7 @@ hopefully the resulting usage of the
 [morphine](https://github.com/bkeepers/morphine) dependency injection container
 should reduce such code churn in future.
 
-In other news, the [UTF-8 bug](https://github.com/hnrysmth/ppl/issues/17) mentioned
+In other news, the [UTF-8 bug](https://github.com/henrycatalinismith/ppl/issues/17) mentioned
 in [last month's update](/news/two-months-in/) should be gone soon. I've spoken
 to the maintainer of vpim about it, and [his
 response](http://rubyforge.org/pipermail/vpim-talk/2013/000185.html) was

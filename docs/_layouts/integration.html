@@ -11,16 +11,16 @@
 
     <ul class="nav nav-list">
       <li{%if page.integration == "bash"%} class="active"{% endif %}>
-        <a href="{{site.url}}/documentation/integration/bash">Bash</a>
+        <a href="{{ "/documentation/integration/bash" | relative_url }}">Bash</a>
       </li>
       <li{%if page.integration == "google"%} class="active"{% endif %}>
-        <a href="{{site.url}}/documentation/integration/google">Google</a>
+        <a href="{{ "/documentation/integration/google" | relative_url }}">Google</a>
       </li>
       <li{%if page.integration == "mutt"%} class="active"{% endif %}>
-        <a href="{{site.url}}/documentation/integration/mutt">Mutt</a>
+        <a href="{{ "/documentation/integration/mutt" | relative_url }}">Mutt</a>
       </li>
       <li{%if page.integration == "zsh"%} class="active"{% endif %}>
-        <a href="{{site.url}}/documentation/integration/zsh">ZSH</a>
+        <a href="{{ "/documentation/integration/zsh" | relative_url }}">ZSH</a>
       </li>
     </ul>
   </div>

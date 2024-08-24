@@ -18,7 +18,7 @@ layout: frontpage
         The command line address book
       </p>
       <p class="little-welcome">
-        <a href="{{site.url}}/documentation/quick-start">
+        <a href="{{ "/documentation/quick-start" | relative_url }}">
           Try it!
         </a>
       </p>
@@ -83,7 +83,7 @@ Phone Numbers:
           </small>
         </h2>
         <p>
-          <a href="{{site.url}}{{site.categories.changelog.first.permalink}}">
+          <a href="{{ "{{site.categories.changelog.first.permalink}}" | relative_url }}">
             {{site.categories.changelog.first.summary}}
           </a>
         </p>
@@ -94,7 +94,7 @@ Phone Numbers:
       <h3>
         {{site.categories.news.first.title}}
         <small>
-          <a href="{{site.url}}{{site.categories.news.first.url}}">
+          <a href="{{ "{{site.categories.news.first.url}}" | relative_url }}">
             {{site.categories.news.first.date | date: '%Y-%m-%d'}}
           </a>
         </small>

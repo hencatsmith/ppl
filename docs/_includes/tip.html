@@ -25,7 +25,7 @@
         to the core documentation, under your own name and with an attribution
         link? If you've got what it takes, just write it up and <a
         href="mailto:henry@catalinismith.com">email me</a>, or better still, <a
-        href="https://github.com/hnrysmth/ppladdressbook.org">send a pull
+        href="https://github.com/henrycatalinismith/ppladdressbook.org">send a pull
         request</a>!
       </p>
     </div>
@@ -36,7 +36,7 @@
     <dl class="nav-sidebar">
       {% for post in site.categories.tips %}
         {% if post.url == page.url %}<dt class="active">{% else %}<dt>{% endif %}
-          <a href="{{site.url}}{{post.url}}">
+          <a href="{{ post.url | relative_url }}">
             {{post.title}}
           </a>
         </dt>

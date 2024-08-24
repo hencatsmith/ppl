@@ -4,7 +4,7 @@ date: 2013-04-15
 layout: tip
 categories: [tips]
 permalink: /documentation/tips/sync-alias
-author_name: hnrysmth
+author_name: henrycatalinismith
 author_url: http://henry.catalinismith.com/
 ---
 
